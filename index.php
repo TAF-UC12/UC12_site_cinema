@@ -196,25 +196,25 @@
 	
 	<div class="artigo">
 		
-		<img src="img/artigos/destaques_livros_v2.jpg">
+		<img src="img/artigos/img_provisória.jpg">
 		<h4>Críticas</h4>
 	</div>
 	
 	<div class="artigo">
 		
-		<img src="img/artigos/destaques_teste_v2.jpg">
+		<img src="img/artigos/img_provisória.jpg">
 		<h4>Artigos</h4>
 	</div>
 	
 	<div class="artigo">
 		
-		<img src="img/artigos/destaques_personagens_v2.jpg">
+		<img src="img/artigos/img_provisória.jpg">
 		<h4>??????</h4>
 	</div>
 	
 	<div class="artigo">
 		
-		<img src="img/artigos/destaques_cinema_v2.jpg">
+		<img src="img/artigos/img_provisória.jpg">
 		<h4>??????</h4>
 	</div>
 	
