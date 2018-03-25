@@ -35,6 +35,8 @@ header{
 	width: 100%;
 	height: auto;
 	background-color: aqua;
+	overflow: visible;
+	padding-bottom: 70px;
 }
 
 
@@ -43,9 +45,10 @@ header{
 	position: relative;
 	width: 100%;
 	height: auto;
-	/*background-color: burlywood;*/
+	background-color: burlywood;
 	margin-top: 0;
-	overflow: hidden;
+	overflow: visible;
+	
 }
 /*################################
 estilização do slideshow*/
@@ -65,8 +68,8 @@ estilização do slideshow*/
 
 .noticia_titulo_home{
 	position:absolute;
-	right: 150px;
-	bottom: 20px;
+	right: 8.333333333333333%; /*100px de 1200px de borda*/
+	bottom: 10px;
 	width:480px;
 	height:130px;
 	background-color:rgba(255,188,5,0.8);
@@ -75,6 +78,7 @@ estilização do slideshow*/
 	line-height:1.27;
 	padding:5px 5px 5px 5px;
 	box-sizing:border-box;
+	z-index: 1;
 }
 
         /*jssor slider bullet skin 032 css*/
@@ -118,7 +122,7 @@ table {
 
 nav {
 	position: absolute;
-	left: 150px;
+	left: 8.333333333333333%; /*100px de 1200px*/
 	top: 60px;
 	z-index: 1;
 }
@@ -228,7 +232,7 @@ header nav ul {
 	display: block;
 	line-height: 32px;
 	border-bottom: 1px solid #005500;	
-	text-align: center;
+	text-align: left;
 }
 
 .mobile-nav a:focus,
@@ -289,7 +293,40 @@ header nav ul {
 	position: relative;
 	width: 100%;
 	background-color: seagreen;
-	height: 200px;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+
+.artigo {
+	position: relative;
+	width: 20,83333333333333%; /*250px de 1200px*/
+	background-color: cadetblue;
+	height: auto;
+	float: left;
+	overflow: visible;
+	display: block;
+	margin-right: 5.5%;
+}
+
+.artigo:last-child {
+	margin-right: 0px;
+}
+
+.artigo img {
+	width: 100%;
+}
+
+.artigo h4 {
+	font-size: 1.125em;
+	position: absolute;
+	bottom: -10px;
+	right: -10px;
+	padding: 5px;
+	background-color: yellow;
+	z-index: 1;
 }
 
 #noticias_container {
