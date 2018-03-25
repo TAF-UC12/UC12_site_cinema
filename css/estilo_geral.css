@@ -274,6 +274,36 @@ header nav ul {
 }
 
 
+/*ESTILO DAS  SECTIONS DO CORPO DO SITE_HOME*/
 
+#corpo_home {
+	position: relative;
+	width: 87.84773060029283%; /*1200px de 1366px*/
+	height: 600px;
+	background-color: grey;
+	margin: 0 auto;
+	
+}
 
+#artigos_container {
+	position: relative;
+	width: 100%;
+	background-color: seagreen;
+	height: 200px;
+}
 
+#noticias_container {
+	position: relative;
+	width: 66.66666666666667%; /*800px de 1200px*/
+	background-color: khaki;
+	float: left;
+	height: 400px;
+}
+
+#filmes_cartaz_container {
+	position: relative;
+	width: 33.33333333333333%; /*400px de 1200px*/
+	background-color: lightcoral;
+	float: left;
+	height: 400px;
+}
