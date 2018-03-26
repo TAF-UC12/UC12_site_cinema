@@ -5,6 +5,7 @@
 <meta name="viewport" content="initial-scale=1">
 <title>Home</title>
 <link href="css/estilo_geral.css" rel="stylesheet" type="text/css">
+<link href="css/estilo_menu.css" rel="stylesheet" type="text/css">
  <!-- #region Jssor Slider Begin -->
     <!-- Generator: Jssor Slider Maker -->
     <!-- Source: https://www.jssor.com -->
@@ -229,8 +230,50 @@
 	
 <!--INICIO SECTION COM AS DIVS DE FILMES-->	
 <section id="filmes_cartaz_container">
+
+	<h2>Em cartaz</h2>
+	
+	<div class="cartaz_container">
+		
+		<div><a href="#"><img src="img/posters/img_poster_provisorio.jpg"></a></div>
+		
+		<div><a href="#"><img src="img/posters/img_poster_provisorio.jpg"></a></div>
+		
+		<div><a href="#"><img src="img/posters/img_poster_provisorio.jpg"></a></div>
+		
+		<div><a href="#"><img src="img/posters/img_poster_provisorio.jpg"></a></div>
+		
+		<div><a href="#"><img src="img/posters/img_poster_provisorio.jpg"></a></div>
+		
+		<div><a href="#"><img src="img/posters/img_poster_provisorio.jpg"></a></div>
+		
+		
+	</div>
+	
+	<p><a href="#">Ver todos</a></p>
 	
 	
+	
+	<h2>Em breve</h2>
+	
+	<div class="embreve_container">
+
+			<div><a href="#"><img src="img/posters/img_poster_provisorio.jpg"></a></div>
+
+			<div><a href="#"><img src="img/posters/img_poster_provisorio.jpg"></a></div>
+
+			<div><a href="#"><img src="img/posters/img_poster_provisorio.jpg"></a></div>
+
+			<div><a href="#"><img src="img/posters/img_poster_provisorio.jpg"></a></div>
+
+			<div><a href="#"><img src="img/posters/img_poster_provisorio.jpg"></a></div>
+
+			<div><a href="#"><img src="img/posters/img_poster_provisorio.jpg"></a></div>
+
+
+		</div>
+	
+		<p><a href="#">Ver todos</a></p>
 	
 </section>	
 	
@@ -240,7 +283,12 @@
 	
 	
 	
+
 	
+<footer>
+	
+</footer>		
+				
 </main>
 
 
