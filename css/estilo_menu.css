@@ -52,11 +52,16 @@ header nav ul {
 }
 
 .btn-menu .text {
+	position: absolute;
+	left: 8.333333333333333%;
+	top: -20px;
 	display: block;
-	text-indent: 150%;
 	white-space: nowrap;
-	overflow: hidden;	
+	text-transform: uppercase;
+	font-weight: bolder;
+	color: #FFFFFF;
 }
+
 
 .btn-menu .bar,
 .btn-menu .bar:before,
