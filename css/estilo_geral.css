@@ -16,7 +16,7 @@ body{
 
 main{
 	margin: 0 auto;
-	max-width:1366px; /*largura máxima do layout*/
+	/*max-width:1366px; largura máxima do layout*/
 	width: 100%; /*ajuste do layout à tela*/
 	height:auto;
 	/*background-color: aqua;*/
@@ -201,11 +201,12 @@ estilização do slideshow*/
 .cartaz_container, .embreve_container {
 	position: relative;
 	width: 100%;
-	height: auto;
+	height: 340px;
 	background-color: darkslateblue;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+	overflow: hidden;
 }
 
 .cartaz_container > div, .embreve_container > div {
