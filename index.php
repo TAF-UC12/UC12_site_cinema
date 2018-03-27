@@ -234,7 +234,7 @@
 			<img src="img/noticias/img_noticia_provisorio.jpg" alt="">
 			<div class="info_noticia">
 			
-				<div>data</div>
+				<div>data</div> 
 				<div>hora</div>
 				<div>autor</div>
 				

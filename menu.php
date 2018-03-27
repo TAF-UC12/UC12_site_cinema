@@ -9,27 +9,26 @@
 </button>
 <ul>
 	<li><a href="#">Home</a></li>
-	<li><a href="#" class="dd dd-01">About</a>
+	<li><a href="#">Notícias</a></li>
+	<!--<li><a href="#" class="dd dd-01">Notícias</a>
     	<ul class="dd-01-ul">
-        	<li><a href="#">One</a></li>
-        <li><a href="#">Two</a></li>
-        <li><a href="#">Three</a></li>
-        <li><a href="#">Four</a></li>
-        <li><a href="#">Five</a></li>
-        <li><a href="#">Six</a></li>
-     </ul>
-</li>
-	<li><a href="#" class="dd dd-02">Services</a>
+			<li><a href="#">One</a></li>
+			<li><a href="#">Two</a></li>
+			<li><a href="#">Three</a></li>
+			<li><a href="#">Four</a></li>
+			<li><a href="#">Five</a></li>
+			<li><a href="#">Six</a></li>
+    	 </ul>
+</li>-->
+	<li><a href="#">Críticas</a></li>
+	<li><a href="#" class="dd dd-02">Lançamentos</a>
     	<ul class="dd-02-ul">
-    		<li><a href="#">Lorem</a></li>
-    		<li><a href="#">Fuga</a></li>
-    		<li><a href="#">Veniam</a></li>
-    		<li><a href="#">Amet</a></li>
-    		<li><a href="#">Repudiandae</a></li>
+    		<li><a href="#">Filmes em cartaz</a></li>
+    		<li><a href="#">Breve nos cinemas</a></li>
     	</ul>
     </li>
-	<li><a href="#">Blog</a></li>
-	<li><a href="#">Contact</a></li>
+    <li><a href="#">Artigos especiais</a></li>
+	<li><a href="#">Contato</a></li>
 </ul>
 </nav>
         
