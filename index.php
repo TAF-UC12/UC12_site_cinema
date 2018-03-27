@@ -225,6 +225,57 @@
 <section id="noticias_container">
 	
 	
+	<h2>Últimas notícias</h2>
+	
+	<div class="lista_noticias">
+		
+		<div class="noticia">
+			
+			<img src="img/noticias/img_noticia_provisorio.jpg" alt="">
+			<div class="info_noticia">
+			
+				<div>data</div>
+				<div>hora</div>
+				<div>autor</div>
+				
+			</div>
+			
+			
+			<div class="chamada_noticia">
+				<div><h1>titulo</h1></div>
+				<div><h2>subtitulo</h2></div>
+				<a href="#">continuar lendo</a>
+			</div>
+			
+			
+		</div>
+		
+		<div class="noticia">
+			
+			<img src="img/noticias/img_noticia_provisorio.jpg" alt="">
+			<div class="info_noticia">
+			
+				<div>data</div>
+				<div>hora</div>
+				<div>autor</div>
+				
+			</div>
+			
+			
+			<div class="chamada_noticia">
+				<div><h1>titulo</h1></div>
+				<div><h2>subtitulo</h2></div>
+				<a href="#">continuar lendo</a>
+			</div>
+			
+		</div>
+		
+		
+		
+	</div>
+	
+	
+	
 	
 </section>		
 	

@@ -175,6 +175,92 @@ estilização do slideshow*/
 	
 }
 
+.lista_noticias {
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin-top: 20px ;
+	background-color: #555454;
+}
+
+.noticia{
+	position: relative;
+	width: auto; /*780px de 800px*/
+	height: auto;
+	margin: 2.5% ; /*10px de 800px*/
+	background-color: #867A7A;
+	overflow: auto;
+}
+
+.noticia img {
+	width: 20%; /*156px de 780px */
+	height: auto;
+	float: left;
+	
+}
+
+.info_noticia {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	width: 79%; /*624px de 780px descontado 1%*/
+	background-color: darkgoldenrod;
+	float: left;
+	margin-left: 1%;
+	margin-bottom: 5px;
+}
+
+.info_noticia div {
+	float: left;
+	width: auto;
+	margin-right: 20px;
+	padding: 2px;
+	
+	font-size: .625em; /*10px*/
+}
+
+.info_noticia div:last-child {
+	margin-right: 0px;
+}
+
+.chamada_noticia {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 79%; /*624px de 780px descontado 1%*/
+	background-color: darkgoldenrod;
+	float: left;
+	margin-left: 1%;
+	margin-bottom: 5px;
+	
+}
+
+.chamada_noticia h1 {
+	float: left;
+	width: auto;
+	margin-right: 20px;
+	padding: 2px;
+	font-size: 1.375em; /*22px*/
+}
+
+.chamada_noticia h2 {
+	float: left;
+	width: auto;
+	margin-right: 20px;
+	padding: 2px;
+	font-size: 1em; /*16px*/
+}
+
+.chamada_noticia a {
+	float: left;
+	width: auto;
+	margin-right: 20px;
+	padding: 2px;
+	font-size: .875em; /*14px*/
+	text-decoration: none;
+	text-align: right;
+}
+
 #filmes_cartaz_container {
 	position: relative;
 	width: 33.33333333333333%; /*400px de 1200px*/
