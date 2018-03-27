@@ -8,8 +8,8 @@
   <span class="text">Menu</span>
 </button>
 <ul>
-	<li><a href="#">Home</a></li>
-	<li><a href="#">Notícias</a></li>
+	<li><a href="index.php">Home</a></li>
+	<li><a href="noticias_index.php">Notícias</a></li>
 	<!--<li><a href="#" class="dd dd-01">Notícias</a>
     	<ul class="dd-01-ul">
 			<li><a href="#">One</a></li>
@@ -20,7 +20,7 @@
 			<li><a href="#">Six</a></li>
     	 </ul>
 </li>-->
-	<li><a href="#">Críticas</a></li>
+	<li><a href="criticas_index.php">Críticas</a></li>
 	<li><a href="#" class="dd dd-02">Lançamentos</a>
     	<ul class="dd-02-ul">
     		<li><a href="#">Filmes em cartaz</a></li>
@@ -28,7 +28,7 @@
     	</ul>
     </li>
     <li><a href="#">Artigos especiais</a></li>
-	<li><a href="#">Contato</a></li>
+	<li><a href="contato.php">Contato</a></li>
 </ul>
 </nav>
         

@@ -4,8 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1">
 <title>Home</title>
+
 <link href="css/estilo_geral.css" rel="stylesheet" type="text/css">
+<link href="css/estilo_index.css" rel="stylesheet" type="text/css">
 <link href="css/estilo_menu.css" rel="stylesheet" type="text/css">
+
  <!-- #region Jssor Slider Begin -->
     <!-- Generator: Jssor Slider Maker -->
     <!-- Source: https://www.jssor.com -->

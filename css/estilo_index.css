@@ -1,0 +1,272 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#topo_slides_container{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: aqua;
+	overflow: visible;
+	padding-bottom: 70px;
+}
+
+
+
+#destaques_topo{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: burlywood;
+	margin-top: 0;
+	overflow: visible;
+	
+}
+/*################################
+estilização do slideshow*/
+
+.jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+
+.noticia_titulo_home{
+	position:absolute;
+	right: 8.333333333333333%; /*100px de 1200px de borda*/
+	bottom: 10px;
+	width:480px;
+	height:130px;
+	background-color:rgba(255,188,5,0.8);
+	font-size:30px;
+	color:#000000;
+	line-height:1.27;
+	padding:5px 5px 5px 5px;
+	box-sizing:border-box;
+	z-index: 1;
+}
+
+        /*jssor slider bullet skin 032 css*/
+        .jssorb032 {position:absolute;}
+        .jssorb032 .i {position:absolute;cursor:pointer;}
+        .jssorb032 .i .b {fill:#fff;fill-opacity:0.7;stroke:#000;stroke-width:1200;stroke-miterlimit:10;stroke-opacity:0.25;}
+        .jssorb032 .i:hover .b {fill:#000;fill-opacity:.6;stroke:#fff;stroke-opacity:.35;}
+        .jssorb032 .iav .b {fill:#000;fill-opacity:1;stroke:#fff;stroke-opacity:.35;}
+        .jssorb032 .i.idn {opacity:.3;}
+
+        /*jssor slider arrow skin 051 css*/
+        .jssora051 {display:block;position:absolute;cursor:pointer;}
+        .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+        .jssora051:hover {opacity:.8;}
+        .jssora051.jssora051dn {opacity:.5;}
+        .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+
+
+
+/*ESTILIZANDO O MENU RETRATIL: movido para um css separado*/
+
+
+
+
+
+/*ESTILO DAS  SECTIONS DO CORPO DO SITE_HOME*/
+
+#corpo_home {
+	position: relative;
+	width: 87.84773060029283%; /*1200px de 1366px*/
+	height: auto;
+	background-color: grey;
+	margin: 0 auto;
+	float: none;
+	
+	
+}
+
+#artigos_container {
+	position: relative;
+	width: 100%;
+	background-color: seagreen;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+
+.artigo {
+	position: relative;
+	width: 20,83333333333333%; /*250px de 1200px*/
+	background-color: cadetblue;
+	height: auto;
+	float: left;
+	overflow: visible;
+	display: block;
+	margin-right: 5.5%;
+}
+
+.artigo:last-child {
+	margin-right: 0px;
+}
+
+.artigo img {
+	width: 100%;
+}
+
+.artigo h4 {
+	font-size: 1.125em;
+	position: absolute;
+	bottom: -10px;
+	right: -10px;
+	padding: 5px;
+	background-color: yellow;
+	z-index: 1;
+}
+
+#noticias_container {
+	position: relative;
+	width: 66.66666666666667%; /*800px de 1200px*/
+	background-color: khaki;
+	float: left;
+	height: auto;
+	margin-top: 30px;
+	
+}
+
+.lista_noticias {
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin-top: 20px ;
+	background-color: #555454;
+}
+
+.noticia{
+	position: relative;
+	width: auto; /*780px de 800px*/
+	height: auto;
+	margin: 2.5% ; /*10px de 800px*/
+	background-color: #867A7A;
+	overflow: auto;
+}
+
+.noticia img {
+	width: 20%; /*156px de 780px */
+	height: auto;
+	float: left;
+	margin: 5px 0;
+	
+}
+
+.info_noticia {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	width: 79%; /*624px de 780px descontado 1%*/
+	background-color: darkgoldenrod;
+	float: left;
+	margin: 5px 0 5px 1%;
+}
+
+.info_noticia div {
+	float: left;
+	width: auto;
+	margin-right: 20px;
+	padding: 2px;
+	
+	font-size: .625em; /*10px*/
+}
+
+.info_noticia div:last-child {
+	margin-right: 0px;
+}
+
+.chamada_noticia {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 79%; /*624px de 780px descontado 1%*/
+	background-color: darkgoldenrod;
+	float: left;
+	margin-left: 1%;
+	margin-bottom: 5px;
+	
+}
+
+.chamada_noticia h1 {
+	float: left;
+	width: auto;
+	margin-right: 20px;
+	padding: 2px;
+	font-size: 1.375em; /*22px*/
+}
+
+.chamada_noticia h2 {
+	float: left;
+	width: auto;
+	margin-right: 20px;
+	padding: 2px;
+	font-size: .875em; /*14px*/
+}
+
+.chamada_noticia a {
+	float: left;
+	width: auto;
+	margin-right: 20px;
+	padding: 2px;
+	font-size: .875em; /*14px*/
+	text-decoration: none;
+	text-align: right;
+}
+
+#filmes_cartaz_container {
+	position: relative;
+	width: 33.33333333333333%; /*400px de 1200px*/
+	background-color: lightcoral;
+	float: left;
+	height: auto;
+	margin-top: 30px;
+}
+
+#filmes_cartaz_container p{
+	position: relative;
+	width: auto;
+	margin: 0px 5% 20px 0px;
+	font-size: .75em; /*12px*/
+	text-align: right;
+	}
+
+#filmes_cartaz_container a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+
+.cartaz_container, .embreve_container {
+	position: relative;
+	width: 100%;
+	height: 340px;
+	background-color: darkslateblue;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	overflow: hidden;
+}
+
+.cartaz_container > div, .embreve_container > div {
+	width: 100px;
+	height: auto;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.cartaz_container img, .embreve_container img {
+	width: 100%;
+	height: auto;
+}

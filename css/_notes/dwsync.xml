@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="estilo_geral.css" server="192.168.1.10//var/www/html/" local="131666538875629817" remote="131666646600000000" Dst="1" />
+<file name="estilo_geral.css" server="192.168.1.10//var/www/html/" local="131666612385617871" remote="131666719800000000" Dst="1" />
 <file name="estilo_menu.css" server="192.168.1.10//var/www/html/" local="131665097512739619" remote="131665205400000000" Dst="1" />
+<file name="estilo_index.css" server="192.168.1.10//var/www/html/" local="131666612373162768" remote="131666719800000000" Dst="1" />
+<file name="estilo_noticias.css" server="192.168.1.10//var/www/html/" local="131666612605083669" remote="131666720400000000" Dst="1" />
 </dwsync>
