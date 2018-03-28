@@ -8,7 +8,6 @@
 	height: auto;
 	background-color: aqua;
 	overflow: visible;
-	padding-bottom: 70px;
 }
 
 
@@ -97,7 +96,6 @@ estilização do slideshow*/
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin-top: 30px;
 }
 
 .artigo {

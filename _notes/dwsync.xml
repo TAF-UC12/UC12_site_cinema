@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="index.php" server="192.168.1.10//var/www/html/" local="131666613003330462" remote="131666720400000000" Dst="1" />
+<file name="index.php" server="192.168.1.10//var/www/html/" local="131666737230623569" remote="131666845200000000" Dst="1" />
 <file name="menu.php" server="192.168.1.10//var/www/html/" local="131666604957105801" remote="131666712600000000" Dst="1" />
-<file name="noticias_index.php" server="192.168.1.10//var/www/html/" local="131666613015729537" remote="131666721000000000" Dst="1" />
+<file name="noticias_index.php" server="192.168.1.10//var/www/html/" local="131666775252960738" remote="131666883000000000" Dst="1" />
+<file name="noticia.php" server="192.168.1.10//var/www/html/" local="131666777426840285" remote="131666885400000000" Dst="1" />
+<file name="README.md" server="192.168.1.10//var/www/html/" local="131664858987722104" remote="131666881200000000" Dst="1" />
 </dwsync>

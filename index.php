@@ -192,6 +192,12 @@
 </div>
 <!--FIM DA DIV COM SLIDER E MENUS-->	
 
+<div class="pg_titulo">
+	
+	Home
+	
+</div>
+
 
 <div id="corpo_home">			
 									
