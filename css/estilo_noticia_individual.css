@@ -84,16 +84,29 @@
 	height: auto;
 }
 
-#noticia_completa_subtitulo {
-	margin: 30px 0px;
-	
+#noticia_completa_subtitulo{
+	padding: 30px 20px;
+	background-color: darkkhaki;
+}
+
+#noticia_completa_subtitulo p{
+	font-size: 1.125em; /*18px*/
+	font-weight: bold;
+	max-width: 480px;
 }
 
 #texto_noticia {
 	position: relative;
 	width: 100%; /*800px de 1200px*/
-	height: 400px;
+	height: auto;
 	background-color: green;
-	
+	padding: 0 10px;
 }
 
+#texto_noticia > p {
+	text-indent: 5%; /*40px???*/
+}
+
+#texto_noticia p::first-letter {
+	font-size: 2em;
+}

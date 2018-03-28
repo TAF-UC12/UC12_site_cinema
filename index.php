@@ -285,7 +285,7 @@
 			<div class="chamada_noticia">
 				<div><h1>titulo</h1></div>
 				<div><h2>subtitulo</h2></div>
-				<a href="#">continuar lendo</a>
+				<a href="noticia.php">continuar lendo</a>
 			</div>
 			
 			

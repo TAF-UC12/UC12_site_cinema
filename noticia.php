@@ -125,13 +125,21 @@
 	
 	<div id="noticia_completa_subtitulo">
 	
-		<h2>Subtitulo da notícia</h2>
+		<p>Subtitulo da notícia</p>
 		
 	</div>
 	
 	<div id="texto_noticia">
 		
-		
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sapien purus, molestie vitae dui eget, rhoncus sagittis ligula. Donec sit amet mattis metus, in mattis nunc. Mauris accumsan elit id sollicitudin consectetur. Nullam ultricies ultrices lacinia. Integer elementum ex sed justo ullamcorper, eu placerat eros euismod. Mauris ut ligula quis justo faucibus rutrum quis id dolor. In non massa justo. Donec lectus lacus, auctor id facilisis eget, fermentum quis velit. Vivamus porta, felis eget laoreet dignissim, magna tellus finibus mauris, vitae commodo nisl risus sagittis massa. Vivamus ullamcorper nunc quis purus maximus, et iaculis sapien vestibulum. Etiam interdum turpis id volutpat hendrerit.</p>
+
+		<p>Phasellus tortor nisi, venenatis vel nunc nec, sagittis hendrerit ex. Nulla id dignissim nunc. Nulla in nulla dolor. Phasellus volutpat congue elit a scelerisque. Sed dignissim enim ornare neque luctus, sed feugiat turpis congue. In euismod purus laoreet dolor consequat, sit amet condimentum ante scelerisque. Phasellus vel velit id risus feugiat egestas. In sit amet nisl id sapien imperdiet gravida. Pellentesque ut pretium orci. Vestibulum euismod leo ultricies bibendum sollicitudin. Ut mollis interdum est sed dictum. Fusce cursus elit arcu, in euismod ligula mollis in. Mauris et tempor nunc. Quisque semper tincidunt gravida. Curabitur ultricies dictum metus vitae placerat.</p>
+
+		<p>Nam porta porttitor odio. Duis vitae vulputate dolor, id luctus massa. Nullam lobortis magna id elit tincidunt, ut gravida elit vehicula. Nam vestibulum sagittis quam, ut laoreet dolor posuere vel. Mauris mollis velit dolor, sed venenatis libero malesuada vitae. Vestibulum ultricies fringilla facilisis. Nulla elit lacus, maximus vitae odio ac, facilisis molestie nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+
+		<p>Quisque in eros orci. Suspendisse vestibulum elit nec est hendrerit, nec convallis justo iaculis. Proin luctus pellentesque metus eget gravida. Mauris fringilla nibh nec lorem varius ullamcorper. Vestibulum faucibus facilisis metus vitae lobortis. Suspendisse pretium fringilla scelerisque. Vivamus interdum quam quis mauris accumsan, ac efficitur tortor aliquam. Praesent commodo sit amet quam eu vehicula. Proin congue, libero tincidunt sagittis mattis, lectus purus dignissim nibh, vel auctor magna neque nec tortor. Donec ullamcorper sodales nulla, at consequat nibh cursus quis. Vestibulum a libero sed eros tincidunt vestibulum at eu est. Aenean eget urna vitae ex aliquam congue vitae sed lorem. Pellentesque fermentum dignissim eros, et ultricies velit faucibus a. Nam elementum placerat vestibulum. Curabitur tempor nulla semper, malesuada neque quis, pellentesque ex.</p>
+
+		<p>Phasellus id ligula leo. Donec ut ultrices ligula. Integer dui tellus, consectetur vel accumsan ac, scelerisque vitae magna. Nam rhoncus, nulla id sodales porta, diam felis interdum turpis, non fermentum neque urna nec felis. Mauris in rutrum ligula. Sed et vehicula nibh. Maecenas sagittis orci dolor, in finibus dolor auctor in. Nam feugiat, orci non hendrerit consectetur, nibh nisi iaculis sapien, vel blandit risus lorem eget nibh. Vestibulum ut luctus urna. Suspendisse cursus sed tellus sit amet luctus.</p>
 		
 	</div>
 	
