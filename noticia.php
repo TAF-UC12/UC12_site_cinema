@@ -6,7 +6,7 @@
 <title>Notícia</title>
 
 <link href="css/estilo_geral.css" rel="stylesheet" type="text/css">
-<link href="css/estilo_noticias.css" rel="stylesheet" type="text/css">
+<link href="css/estilo_noticia_individual.css" rel="stylesheet" type="text/css">
 <link href="css/estilo_menu.css" rel="stylesheet" type="text/css">
 
  <!-- #region Jssor Slider Begin -->
@@ -90,11 +90,11 @@
 	<img src="img/noticias/img_noticia_provisorio.jpg" alt="">
 		<div class="noticia_titulo">
 
-                 <div>
+                
                  	
                  	<h1>Título da notícia Título da notícia</h1>
 
-                 </div>   
+                   
                  
                  <div class="info_noticia">
 			
@@ -103,7 +103,8 @@
 					<div>autor</div>
 				
 				</div>              
-                   
+                 
+                    
                    
           </div>
 		
@@ -112,11 +113,35 @@
 	
 </div>	
 	
-<div class="pg_titulo">
+<!--<div class="pg_titulo">
 	
 	Notícias
 	
-</div>	
+</div>-->
+
+<div id="corpo_noticia_individual">	
+
+<section id="noticia_completa_container">
+	
+	<div id="noticia_completa_subtitulo">
+	
+		<h2>Subtitulo da notícia</h2>
+		
+	</div>
+	
+	<div id="texto_noticia">
+		
+		
+		
+	</div>
+	
+	
+</section>
+
+
+<footer>
+	
+</footer>			
 	
 </main>
 </body>

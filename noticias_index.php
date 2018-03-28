@@ -191,7 +191,102 @@
 	
 	Notícias
 	
-</div>	
+</div>
+
+<div id="corpo_noticias">			
+										
+	
+<!--INICIO SECTION COM AS DIVS DE LISTA DE NOTICIAS DA PAGINA DE NOTICIAS-->
+<section id="noticias_container">
+	
+	
+	<h2>Últimas notícias</h2>
+	
+	<div class="lista_noticias">
+		
+		<div class="noticia">
+			
+			<img src="img/noticias/img_noticia_provisorio.jpg" alt="">
+			<div class="info_noticia">
+			
+				<div>data</div> 
+				<div>hora</div>
+				<div>autor</div>
+				
+			</div>
+			
+			
+			<div class="chamada_noticia">
+				<div><h1>titulo</h1></div>
+				<div><h2>subtitulo</h2></div>
+				<a href="#">continuar lendo</a>
+			</div>
+			
+			
+		</div>
+		
+		<div class="noticia">
+			
+			<img src="img/noticias/img_noticia_provisorio.jpg" alt="">
+			<div class="info_noticia">
+			
+				<div>data</div>
+				<div>hora</div>
+				<div>autor</div>
+				
+			</div>
+			
+			
+			<div class="chamada_noticia">
+				<div><h1>titulo</h1></div>
+				<div><h2>subtitulo</h2></div>
+				<a href="#">continuar lendo</a>
+			</div>
+			
+		</div>
+		
+		
+		
+	</div>
+	
+	
+	
+	
+</section>		
+	
+<!--INICIO SECTION COM AS DIVS DE NOTICIAS MAIS COMENTADAS-->	
+<section id="mais_comentados_container">
+
+	<h2>Notícias mais comentadas</h2>
+	
+	<div class="noticia_comentadas">
+		
+		<div class="comentadas">
+			<div class="n_comentarios"> 125 COMENTÁRIOS</div>
+			<div class="titulo_noticia_comentada">Título notícia</div>
+		</div>
+		
+		<div class="comentadas">
+			<div class="n_comentarios"> 120 COMENTÁRIOS</div>
+			<div class="titulo_noticia_comentada">Título notícia</div>
+		</div>
+		
+		<div class="comentadas">
+			<div class="n_comentarios"> 15 COMENTÁRIOS</div>
+			<div class="titulo_noticia_comentada">Título notícia</div>
+		</div>
+		
+	</div>
+	
+</section>	
+	
+	
+	
+</div><!--final do corpo-->		
+		
+<footer>
+	
+</footer>					
 	
 </main>
 </body>

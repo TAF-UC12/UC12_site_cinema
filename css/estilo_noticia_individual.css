@@ -68,137 +68,32 @@
 	}
 
 
-#corpo_noticias {
+#corpo_noticia_individual {
 	position: relative;
 	width: 87.84773060029283%; /*1200px de 1366px*/
-	height: 600px;
+	height: auto;
 	background-color: grey;
 	margin: 0 auto;
-	float: none;
 	}
 
-#noticias_container {
+#noticia_completa_container {
 	position: relative;
 	width: 66.66666666666667%; /*800px de 1200px*/
 	background-color: khaki;
 	float: left;
-	height: auto;	
+	height: auto;
 }
 
-.lista_noticias {
-	position: relative;
-	width: 100%;
-	height: auto;
-	margin-top: 20px ;
-	background-color: #555454;
-}
-
-.noticia{
-	position: relative;
-	width: auto; /*780px de 800px*/
-	height: auto;
-	margin: 2.5% ; /*10px de 800px*/
-	background-color: #867A7A;
-	overflow: auto;
-}
-
-.noticia img {
-	width: 20%; /*156px de 780px */
-	height: auto;
-	float: left;
-	margin: 5px 0;
+#noticia_completa_subtitulo {
+	margin: 30px 0px;
 	
 }
 
-.info_noticia {
+#texto_noticia {
 	position: relative;
-	display: flex;
-	flex-direction: row;
-	width: 79%; /*624px de 780px descontado 1%*/
-	background-color: darkgoldenrod;
-	float: left;
-	margin: 5px 0 5px 1%;
-}
-
-.info_noticia div {
-	float: left;
-	width: auto;
-	margin-right: 20px;
-	padding: 2px;
-	
-	font-size: .625em; /*10px*/
-}
-
-.info_noticia div:last-child {
-	margin-right: 0px;
-}
-
-.chamada_noticia {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	width: 79%; /*624px de 780px descontado 1%*/
-	background-color: darkgoldenrod;
-	float: left;
-	margin-left: 1%;
-	margin-bottom: 5px;
+	width: 100%; /*800px de 1200px*/
+	height: 400px;
+	background-color: green;
 	
 }
 
-.chamada_noticia h1 {
-	float: left;
-	width: auto;
-	margin-right: 20px;
-	padding: 2px;
-	font-size: 1.375em; /*22px*/
-}
-
-.chamada_noticia h2 {
-	float: left;
-	width: auto;
-	margin-right: 20px;
-	padding: 2px;
-	font-size: .875em; /*14px*/
-}
-
-.chamada_noticia a {
-	float: left;
-	width: auto;
-	margin-right: 20px;
-	padding: 2px;
-	font-size: .875em; /*14px*/
-	text-decoration: none;
-	text-align: right;
-}
-
-
-#mais_comentados_container {
-	position: relative;
-	width: 33.33333333333333%; /*400px de 1200px*/
-	background-color: lightcoral;
-	float: left;
-	height: auto;
-}
-
-#mais_comentados_container h2 {
-	font-size: 1.125em; /*18px*/
-}
-
-.noticia_comentadas {
-	position: relative;
-	width: 100%;
-	height: auto;
-	background-color: silver;
-	padding-left: 10px;
-}
-
-.n_comentarios {
-	margin-top: 30px;
-	font-size: .875em; /*14px*/
-	font-weight: bold;
-}
-
-.titulo_noticia_comentada {
-	height: auto;
-	font-size: .875em; /*14px*/
-}
