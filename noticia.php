@@ -131,7 +131,7 @@
 	
 	<div id="texto_noticia">
 		
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sapien purus, molestie vitae dui eget, rhoncus sagittis ligula. Donec sit amet mattis metus, in mattis nunc. Mauris accumsan elit id sollicitudin consectetur. Nullam ultricies ultrices lacinia. Integer elementum ex sed justo ullamcorper, eu placerat eros euismod. Mauris ut ligula quis justo faucibus rutrum quis id dolor. In non massa justo. Donec lectus lacus, auctor id facilisis eget, fermentum quis velit. Vivamus porta, felis eget laoreet dignissim, magna tellus finibus mauris, vitae commodo nisl risus sagittis massa. Vivamus ullamcorper nunc quis purus maximus, et iaculis sapien vestibulum. Etiam interdum turpis id volutpat hendrerit.</p>
+		<p class="par_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sapien purus, molestie vitae dui eget, rhoncus sagittis ligula. Donec sit amet mattis metus, in mattis nunc. Mauris accumsan elit id sollicitudin consectetur. Nullam ultricies ultrices lacinia. Integer elementum ex sed justo ullamcorper, eu placerat eros euismod. Mauris ut ligula quis justo faucibus rutrum quis id dolor. In non massa justo. Donec lectus lacus, auctor id facilisis eget, fermentum quis velit. Vivamus porta, felis eget laoreet dignissim, magna tellus finibus mauris, vitae commodo nisl risus sagittis massa. Vivamus ullamcorper nunc quis purus maximus, et iaculis sapien vestibulum. Etiam interdum turpis id volutpat hendrerit.</p>
 
 		<p>Phasellus tortor nisi, venenatis vel nunc nec, sagittis hendrerit ex. Nulla id dignissim nunc. Nulla in nulla dolor. Phasellus volutpat congue elit a scelerisque. Sed dignissim enim ornare neque luctus, sed feugiat turpis congue. In euismod purus laoreet dolor consequat, sit amet condimentum ante scelerisque. Phasellus vel velit id risus feugiat egestas. In sit amet nisl id sapien imperdiet gravida. Pellentesque ut pretium orci. Vestibulum euismod leo ultricies bibendum sollicitudin. Ut mollis interdum est sed dictum. Fusce cursus elit arcu, in euismod ligula mollis in. Mauris et tempor nunc. Quisque semper tincidunt gravida. Curabitur ultricies dictum metus vitae placerat.</p>
 
@@ -145,6 +145,25 @@
 	
 	
 </section>
+
+<aside id="ficha_tec_filme_container">
+	<div id="ficha_tec">
+		
+		<img src="img/posters/img_poster_provisorio.jpg" alt="">
+		
+		<div id="titulo_filme">
+			<h2>Título do filme</h2>
+			
+			<a href="#">Ficha técnica</a>
+			<br>
+			<a href="#">Crítica</a>
+			
+		</div>
+		
+	</div>
+	
+	
+</aside>
 
 
 <footer>

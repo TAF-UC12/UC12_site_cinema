@@ -92,7 +92,7 @@
 #noticia_completa_subtitulo p{
 	font-size: 1.125em; /*18px*/
 	font-weight: bold;
-	max-width: 480px;
+	
 }
 
 #texto_noticia {
@@ -105,8 +105,50 @@
 
 #texto_noticia > p {
 	text-indent: 5%; /*40px???*/
+	margin-bottom: 1em;
 }
 
-#texto_noticia p::first-letter {
-	font-size: 2em;
+.par_1::first-letter {
+	font-size: 3em; /*48px*/
+}
+
+
+/*#####ESTILO DO ASIDE*/
+
+#ficha_tec_filme_container {
+	position: relative;
+	width: 33.33333333333333%; /*400px de 1200px*/
+	background-color: lightcoral;
+	float: left;
+	height: auto;
+	margin-top: 30px;
+}
+
+#ficha_tec {
+	position: relative;
+	width: 97.5%; /*390px*/
+	height: auto;
+	margin: 1.25%;
+	background-color: lightblue;
+	padding: 5px;
+}
+
+#ficha_tec img {
+	width: 76.92307692307692%; /*300px de 390px*/
+	height: auto;
+	margin-left: 11.53846153846154%;
+}
+
+#titulo_filme {
+	position: relative;
+	text-align: center;
+}
+
+#titulo_filme h2{
+	padding-bottom: 5px;
+	font-size: 1.5em; /*24px*/
+}
+
+#titulo_filme a{
+	text-decoration: none;
 }
