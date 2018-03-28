@@ -8,8 +8,8 @@
   <span class="text">Menu</span>
 </button>
 <ul>
-	<li><a href="index.php">Home</a></li>
-	<li><a href="noticias_index.php">Notícias</a></li>
+	<li><a href="index.php?pg=">Home</a></li>
+	<li><a href="noticias_index.php?pg=noticias">Notícias</a></li>
 	<!--<li><a href="#" class="dd dd-01">Notícias</a>
     	<ul class="dd-01-ul">
 			<li><a href="#">One</a></li>

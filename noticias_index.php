@@ -3,7 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1">
-<title>Notícias</title>
+<title>
+	
+	<?php
+		$pgtitulo = $_GET["pg"];
+	
+		if ($pgtitulo == "noticias") { echo "Últimas notícias";}
+	
+	?>	
+
+
+</title>
 
 <link href="css/estilo_geral.css" rel="stylesheet" type="text/css">
 <link href="css/estilo_noticias.css" rel="stylesheet" type="text/css">
@@ -189,7 +199,12 @@
 	
 <div class="pg_titulo">
 	
-	Notícias
+	<?php
+	$pgtitulo = $_GET["pg"];
+	
+	if ($pgtitulo == "noticias") { echo "Notícias";}
+	
+	?>
 	
 </div>
 

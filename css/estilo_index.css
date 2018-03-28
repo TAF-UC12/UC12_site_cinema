@@ -113,7 +113,9 @@ estilização do slideshow*/
 
 .artigo img {
 	width: 100%;
+	border: 0;
 }
+
 
 .artigo h4 {
 	font-size: 1.125em;
