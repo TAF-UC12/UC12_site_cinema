@@ -143,6 +143,105 @@
 		
 	</div>
 	
+	<div id="comentarios_container">
+		
+		<p>Comentários</p>
+		
+		<div id="comentar">
+			
+			<section class='formulario'>
+		
+				
+		<form action='' method='post'>		
+			<fieldset>
+				<fieldset class='grupo'>
+ 
+                <div class='campo'>
+					<label for='nome'>Nome*</label>
+					<input type='text' id='nome' name='nome' style='width: 10em'>
+            	</div>
+           		
+				</fieldset>
+				
+				<fieldset class='grupo'>
+        		<div class='campo'>
+            		<label for='email'>E-mail</label>
+           			<input type='email' id='email' name='email' style='width: 30em' value=''>
+        		</div>
+					
+       			<div class='campo'>
+            		<label for='texto' placeholder='Escreva seu comentário...'>Comentário</label>
+           	 		<textarea rows='10' style='width: 30em' id='texto' name='texto'></textarea>
+        		</div>
+
+ 				</fieldset>	
+				
+ 				<fieldset>
+					<input name='data' type='hidden' value='$data'><input name='hora' type='hidden' value='$hora'>
+				
+					<button type='submit' name='enviar'>Enviar</button>
+ 				</fieldset>	
+ 
+    		</fieldset>
+		</form>
+	
+		<i>Campos marcados com <b>*</b> são obrigatórios no cadastro.<br>
+		<b>Observação</b>: Será inserido no seu cadastro a data atual, bem como a hora atual do cadastro<br>Data: $novadata - Hora: $novahora<br>			
+						
+						
+		</section>
+			
+			
+		</div>
+		
+		<div class="lista_comentarios">
+			
+			<div class="comentario">
+			
+			<img src="img/icon-person-128.png" alt="">
+			<div class="info_comentario">
+			
+				<div>data</div> 
+				<div>hora</div>
+				<div>autor</div>
+				
+			</div>
+			
+			
+			<div class="texto_comentario">
+				<p>Phasellus tortor nisi, venenatis vel nunc nec, sagittis hendrerit ex. Nulla id dignissim nunc. Nulla in nulla dolor. Phasellus volutpat congue elit a scelerisque. Sed dignissim enim ornare neque luctus, sed feugiat turpis congue.</p>
+			</div>
+			
+			
+		</div>
+		
+		<div class="comentario">
+			
+			<img src="img/icon-person-128.png" alt="">
+			<div class="info_comentario">
+			
+				<div>data</div> 
+				<div>hora</div>
+				<div>autor</div>
+				
+			</div>
+			
+			
+			<div class="texto_comentario">
+				<p>Phasellus tortor nisi, venenatis vel nunc nec, sagittis hendrerit ex. Nulla id dignissim nunc. Nulla in nulla dolor. Phasellus volutpat congue elit a scelerisque. Sed dignissim enim ornare neque luctus, sed feugiat turpis congue.</p>
+			</div>
+			
+			
+		</div>
+			
+		<div class="mostrar_mais">
+			<p><a href="#">Mostrar mais comentários</a></p>
+		</div>
+								
+		</div>
+		
+	</div>
+	
 	
 </section>
 
@@ -159,6 +258,17 @@
 			<a href="#">Crítica</a>
 			
 		</div>
+		
+	</div>
+	
+	<div id="relacionadas">
+		
+		<p>Notícias relacionadas</p>
+		
+		<li><a href="#">Título notícia relacionada</a></li>
+		<li><a href="#">Título notícia relacionada</a></li>
+		<li><a href="#">Título notícia relacionada</a></li>
+		<li><a href="#">Título notícia relacionada</a></li>
 		
 	</div>
 	

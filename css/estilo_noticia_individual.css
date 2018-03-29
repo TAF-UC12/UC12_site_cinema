@@ -152,3 +152,96 @@
 #titulo_filme a{
 	text-decoration: none;
 }
+
+#relacionadas p {
+	margin-top: 30px;
+}
+
+#relacionadas p {
+	width: auto;
+	padding: 2px;
+	font-size: 1.125em; /*18px*/
+	font-weight: bold;
+}
+
+#relacionadas li {
+	list-style: none;
+	padding-left: 20px;
+	font-size: 1em;
+	padding-top: 5px;
+}
+
+#relacionadas a {
+	text-decoration: none;
+}
+
+
+
+
+.lista_comentarios {
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin: 20px 0;
+	background-color: #555454;
+}
+
+.mostrar_mais p{
+	position: relative;
+	width: 97.5%;
+	border-radius: 3px;
+	background-color: chartreuse;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.mostrar_mais a{
+	text-decoration: none;
+}
+
+.comentario{
+	position: relative;
+	width: auto; /*780px de 800px*/
+	height: auto;
+	margin: 2.5% ; /* 2.5% = 10px de 800px*/
+	background-color: #867A7A;
+	overflow: auto;
+	border: 2px solid #FF0004;
+}
+
+.comentario img {
+	width: 10%; /*78px de 780px */
+	height: auto;
+	float: left;
+	margin: 5px 0;
+	
+}
+
+.info_comentario {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	width: 89%; /*624px de 780px descontado 1%*/
+	background-color: darkgoldenrod;
+	float: left;
+	margin: 5px 0 5px 1%;
+}
+
+.info_comentario div {
+	float: left;
+	width: auto;
+	margin-right: 20px;
+	padding: 2px;
+	font-size: .625em; /*10px*/
+}
+
+.texto_comentario {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	width: 89%; /*624px de 780px descontado 1%*/
+	height: auto;
+	background-color: darkgoldenrod;
+	float: left;
+	margin: 5px 0 5px 1%;
+}
