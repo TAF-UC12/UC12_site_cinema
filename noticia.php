@@ -183,10 +183,7 @@
  				</fieldset>	
  
     		</fieldset>
-		</form>
-	
-		<i>Campos marcados com <b>*</b> são obrigatórios no cadastro.<br>
-		<b>Observação</b>: Será inserido no seu cadastro a data atual, bem como a hora atual do cadastro<br>Data: $novadata - Hora: $novahora<br>			
+		</form>		
 						
 						
 		</section>
