@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: 29-Mar-2018 às 23:34
+-- Generation Time: 30-Mar-2018 às 15:30
 -- Versão do servidor: 5.7.11
 -- PHP Version: 5.6.18
 
@@ -19,21 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `cinema`
 --
-
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `comentario`
---
-
-CREATE TABLE `comentario` (
-  `id` smallint(6) NOT NULL,
-  `nome` varchar(60) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `data` date NOT NULL,
-  `hora` time NOT NULL,
-  `comentario` text
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -97,12 +82,6 @@ CREATE TABLE `usuarios` (
 --
 
 --
--- Indexes for table `comentario`
---
-ALTER TABLE `comentario`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `filmes`
 --
 ALTER TABLE `filmes`
@@ -113,8 +92,7 @@ ALTER TABLE `filmes`
 --
 ALTER TABLE `noticias`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `FK_ID_usuario` (`id_usuario`),
-  ADD KEY `FK_ID_comentario` (`id_comentario`);
+  ADD KEY `FK_ID_usuario` (`id_usuario`);
 
 --
 -- Indexes for table `usuarios`
@@ -126,11 +104,6 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT for dumped tables
 --
 
---
--- AUTO_INCREMENT for table `comentario`
---
-ALTER TABLE `comentario`
-  MODIFY `id` smallint(6) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `filmes`
 --
@@ -154,7 +127,6 @@ ALTER TABLE `usuarios`
 -- Limitadores para a tabela `noticias`
 --
 ALTER TABLE `noticias`
-  ADD CONSTRAINT `FK_ID_comentario` FOREIGN KEY (`id_comentario`) REFERENCES `comentario` (`id`),
   ADD CONSTRAINT `FK_ID_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
