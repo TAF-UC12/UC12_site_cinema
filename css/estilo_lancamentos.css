@@ -1,0 +1,148 @@
+@charset "utf-8";
+/* CSS Document */
+
+#lancamentos_topo {
+	position: relative;
+	width: 100%;
+	height: 250px;
+	background-color: maroon;
+}
+
+#corpo_lancamentos {
+	position: relative;
+	width: 87.84773060029283%; /*1200px de 1366px*/
+	height: 800px;
+	background-color: grey;
+	margin: 0 auto;
+	float: none;
+	}
+
+#descricao_container{
+	position: relative;
+	width: 100%;
+	height: 600px;
+	background-color: lemonchiffon;
+	margin: 0 auto;
+}
+
+
+
+/*FORMATAÇÃO DAS ABAS DE SELEÇÃO*/
+
+
+.TabControl{
+	width:100%; 
+	overflow:hidden; 
+	height:auto;
+}
+
+.TabControl #header{
+	width:100%;  
+	overflow:hidden; 
+	cursor:hand;
+	margin: 10px 0;
+}
+
+.TabControl #content{ 
+	width:100%; 
+	overflow:hidden; 
+	height:100%; 
+}
+
+.TabControl .abas{
+	display:inline;
+}
+
+.TabControl .abas li{
+	width: auto;
+	float:left;
+	list-style: none;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.aba{
+	width:110px; 
+	height:30px; 
+	text-align:center; 
+	padding-top:5px; 
+	background: #B5B5B5;
+}
+
+.ativa{
+	width:110px; 
+	height:30px; 
+	text-align:center; 
+	padding-top:5px; 
+	background: #EFEFEF;
+}
+
+.ativa span, .selected span{
+	color: #A0A0A0;
+}
+
+.TabControl #content{
+/*	background: #FFFFFF;
+*/}
+
+.TabControl .conteudo{
+	width:100%;  
+/*	background:#FFFFFF; */	
+	display:none; 
+	height:100%;
+	color:#000000;
+}
+
+.selected{
+	width:110px; 
+	height:30px; 
+	border-bottom: 4px solid #A0A0A0;
+	text-align:center; 
+	padding-top:5px; 
+	background: #EFEFEF;
+}
+
+.tabPersonagens, .tabCidades{
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 8px;
+	margin-top: 10px;
+	overflow: hidden;		
+}
+
+.Personagem, .cidade{
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+.Personagem img, .cidade img{
+	width: 100%;
+	border: 2px #393939;
+	box-shadow: 1px 1px 3px black;
+}
+
+.Personagem h4{
+	position: absolute;
+	font-size: 1.75em;
+	bottom: 33%;	
+	right: 5%;
+	color: #FFFFFF;
+	text-shadow: 1px 1px 2px black;
+	transition: .8s all;
+}
+
+.Personagem h4:hover{
+	color: #A0A0A0;
+}
+
+.cidade h4{
+	position: absolute;
+	font-size: 1.75em;
+	bottom: 33%;	
+	right: 5%;
+	color: #321A1B;
+	text-shadow: 1px 1px 2px black;
+}

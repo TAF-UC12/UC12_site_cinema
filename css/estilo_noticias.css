@@ -100,6 +100,7 @@
 	margin: 2.5% ; /*10px de 800px*/
 	background-color: #867A7A;
 	overflow: auto;
+	border-bottom: 2px dotted #000000;
 }
 
 .noticia img {
