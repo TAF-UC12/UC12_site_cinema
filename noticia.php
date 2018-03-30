@@ -5,6 +5,8 @@
 <meta name="viewport" content="initial-scale=1">
 <title>Notícia</title>
 
+<script defer src="js/fontawesome/fontawesome-all.js"></script>
+
 <link href="css/estilo_geral.css" rel="stylesheet" type="text/css">
 <link href="css/estilo_noticia_individual.css" rel="stylesheet" type="text/css">
 <link href="css/estilo_menu.css" rel="stylesheet" type="text/css">
@@ -143,97 +145,80 @@
 		
 	</div>
 	
+	
+	<div id="relacionadas_container">
+		
+		<p>Notícias relacionadas</p>
+		
+		
+		<div id="relacionadas">
+		
+			<div class="noticia_relacionada">
+		
+				<img src="img/noticias/img_noticia_provisorio.jpg" alt="">
+			
+				<a href="#">Título da noticia</a>
+
+			</div>
+
+			<div class="noticia_relacionada">
+		
+				<img src="img/noticias/img_noticia_provisorio.jpg" alt="">
+			
+				<a href="#">Título da noticia Título da noticia</a>
+
+			</div>
+
+			<div class="noticia_relacionada">
+		
+				<img src="img/noticias/img_noticia_provisorio.jpg" alt="">
+			
+				<a href="#">Título da noticia</a>
+
+			</div>
+
+		</div>
+		
+	</div>
+	
+	
+	
 	<div id="comentarios_container">
 		
 		<p>Comentários</p>
 		
-		<div id="comentar">
-			
-			<section class='formulario'>
-		
-				
-		<form action='' method='post'>		
-			<fieldset>
-				<fieldset class='grupo'>
- 
-                <div class='campo'>
-					<label for='nome'>Nome*</label>
-					<input type='text' id='nome' name='nome' style='width: 10em'>
-            	</div>
-           		
-				</fieldset>
-				
-				<fieldset class='grupo'>
-        		<div class='campo'>
-            		<label for='email'>E-mail</label>
-           			<input type='email' id='email' name='email' style='width: 30em' value=''>
-        		</div>
-					
-       			<div class='campo'>
-            		<label for='texto' placeholder='Escreva seu comentário...'>Comentário</label>
-           	 		<textarea rows='10' style='width: 30em' id='texto' name='texto'></textarea>
-        		</div>
-
- 				</fieldset>	
-				
- 				<fieldset>
-					<input name='data' type='hidden' value='$data'><input name='hora' type='hidden' value='$hora'>
-				
-					<button type='submit' name='enviar'>Enviar</button>
- 				</fieldset>	
- 
-    		</fieldset>
-		</form>		
-						
-						
-		</section>
-			
-			
-		</div>
 		
 		<div class="lista_comentarios">
 			
-			<div class="comentario">
-			
-			<img src="img/icon-person-128.png" alt="">
-			<div class="info_comentario">
-			
-				<div>data</div> 
-				<div>hora</div>
-				<div>autor</div>
-				
-			</div>
 			
 			
-			<div class="texto_comentario">
-				<p>Phasellus tortor nisi, venenatis vel nunc nec, sagittis hendrerit ex. Nulla id dignissim nunc. Nulla in nulla dolor. Phasellus volutpat congue elit a scelerisque. Sed dignissim enim ornare neque luctus, sed feugiat turpis congue.</p>
-			</div>
 			
-			
-		</div>
-		
 		<div class="comentario">
 			
-			<img src="img/icon-person-128.png" alt="">
-			<div class="info_comentario">
-			
-				<div>data</div> 
-				<div>hora</div>
-				<div>autor</div>
-				
-			</div>
-			
-			
-			<div class="texto_comentario">
-				<p>Phasellus tortor nisi, venenatis vel nunc nec, sagittis hendrerit ex. Nulla id dignissim nunc. Nulla in nulla dolor. Phasellus volutpat congue elit a scelerisque. Sed dignissim enim ornare neque luctus, sed feugiat turpis congue.</p>
-			</div>
+			<div id="disqus_thread"></div>
+				<script>
+
+				/**
+				*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+				*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+				/*
+				var disqus_config = function () {
+				this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+				this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+				};
+				*/
+				(function() { // DON'T EDIT BELOW THIS LINE
+				var d = document, s = d.createElement('script');
+				s.src = 'https://cineontherocks.disqus.com/embed.js';
+				s.setAttribute('data-timestamp', +new Date());
+				(d.head || d.body).appendChild(s);
+				})();
+				</script>
+				<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 			
 			
 		</div>
 			
-		<div class="mostrar_mais">
-			<p><a href="#">Mostrar mais comentários</a></p>
-		</div>
 								
 		</div>
 		
@@ -258,16 +243,7 @@
 		
 	</div>
 	
-	<div id="relacionadas">
-		
-		<p>Notícias relacionadas</p>
-		
-		<li><a href="#">Título notícia relacionada</a></li>
-		<li><a href="#">Título notícia relacionada</a></li>
-		<li><a href="#">Título notícia relacionada</a></li>
-		<li><a href="#">Título notícia relacionada</a></li>
-		
-	</div>
+	
 	
 	
 </aside>
@@ -278,5 +254,7 @@
 </footer>			
 	
 </main>
+
+<script id="dsq-count-scr" src="//cineontherocks.disqus.com/count.js" async></script>
 </body>
 </html>
