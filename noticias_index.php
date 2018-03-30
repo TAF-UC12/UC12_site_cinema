@@ -166,13 +166,13 @@
         </div>
         
         <!-- Bullet Navigator -->
-        <div data-u="navigator" class="jssorb032" style="position:absolute;bottom:12px;left:150px;" data-scale="0.5" data-scale-bottom="0.75">
+      <!--  <div data-u="navigator" class="jssorb032" style="position:absolute;bottom:12px;left:100%;" data-scale="0.5" data-scale-bottom="0.75">
             <div data-u="prototype" class="i" style="width:16px;height:16px;">
                 <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
                     <circle class="b" cx="8000" cy="8000" r="5800"></circle>
                 </svg>
             </div>
-        </div>
+        </div>-->
         
         <!-- Arrow Navigator -->
         <div data-u="arrowleft" class="jssora051" style="width:65px;height:65px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
