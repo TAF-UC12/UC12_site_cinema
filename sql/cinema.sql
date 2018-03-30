@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.4.1
+-- version 4.5.4.1deb2ubuntu2
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: 30-Mar-2018 às 15:30
--- Versão do servidor: 5.7.11
--- PHP Version: 5.6.18
+-- Tempo de geração: 30/03/2018 às 14:55
+-- Versão do servidor: 5.7.20-0ubuntu0.16.04.1
+-- Versão do PHP: 7.0.22-0ubuntu0.16.04.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,18 +17,19 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `cinema`
+-- Banco de dados: `portal_cinema`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `filmes`
+-- Estrutura para tabela `filmes`
 --
 
 CREATE TABLE `filmes` (
   `id` smallint(6) NOT NULL,
-  `nome` varchar(30) NOT NULL,
+  `nome` varchar(100) NOT NULL,
+  `nomeOriginal` varchar(100) NOT NULL,
   `lancamento` date NOT NULL,
   `genero` varchar(20) NOT NULL,
   `direcao` varchar(50) NOT NULL,
@@ -42,13 +43,12 @@ CREATE TABLE `filmes` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `noticias`
+-- Estrutura para tabela `noticias`
 --
 
 CREATE TABLE `noticias` (
   `id` smallint(6) NOT NULL,
   `id_usuario` smallint(6) NOT NULL,
-  `id_comentario` smallint(6) NOT NULL,
   `data` date NOT NULL,
   `hora` time NOT NULL,
   `titulo` varchar(100) NOT NULL,
@@ -57,20 +57,18 @@ CREATE TABLE `noticias` (
   `img` varchar(100) DEFAULT NULL,
   `imgSlideshow` varchar(100) DEFAULT NULL,
   `destaque` char(3) DEFAULT 'off',
-  `ver` char(3) DEFAULT 'off',
   `tipoNoticia` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `usuarios`
+-- Estrutura para tabela `usuarios`
 --
 
 CREATE TABLE `usuarios` (
   `id` smallint(6) NOT NULL,
   `nome` varchar(20) NOT NULL,
-  `sobrenome` varchar(40) NOT NULL,
   `email` varchar(100) NOT NULL,
   `senha` varchar(100) NOT NULL,
   `data` date DEFAULT NULL,
@@ -78,53 +76,53 @@ CREATE TABLE `usuarios` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Indexes for dumped tables
+-- Índices de tabelas apagadas
 --
 
 --
--- Indexes for table `filmes`
+-- Índices de tabela `filmes`
 --
 ALTER TABLE `filmes`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `noticias`
+-- Índices de tabela `noticias`
 --
 ALTER TABLE `noticias`
   ADD PRIMARY KEY (`id`),
   ADD KEY `FK_ID_usuario` (`id_usuario`);
 
 --
--- Indexes for table `usuarios`
+-- Índices de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT de tabelas apagadas
 --
 
 --
--- AUTO_INCREMENT for table `filmes`
+-- AUTO_INCREMENT de tabela `filmes`
 --
 ALTER TABLE `filmes`
   MODIFY `id` smallint(6) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `noticias`
+-- AUTO_INCREMENT de tabela `noticias`
 --
 ALTER TABLE `noticias`
   MODIFY `id` smallint(6) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `usuarios`
+-- AUTO_INCREMENT de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
   MODIFY `id` smallint(6) NOT NULL AUTO_INCREMENT;
 --
--- Constraints for dumped tables
+-- Restrições para dumps de tabelas
 --
 
 --
--- Limitadores para a tabela `noticias`
+-- Restrições para tabelas `noticias`
 --
 ALTER TABLE `noticias`
   ADD CONSTRAINT `FK_ID_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id`);
