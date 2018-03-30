@@ -236,28 +236,46 @@
 <section id="artigos_container">
 	
 	<div class="artigo">
+		<a href="#">
+			
+			<img src="img/artigos/img_provisória.jpg">
+			<h4>Nome do artigo</h4>
+			
+		</a>
 		
-		<img src="img/artigos/img_provisória.jpg">
-		<h4>Críticas</h4>
 	</div>
 	
 	<div class="artigo">
+		<a href="#">
+			
+			<img src="img/artigos/img_provisória.jpg">
+			<h4>Nome do artigo</h4>
+			
+		</a>
 		
-		<img src="img/artigos/img_provisória.jpg">
-		<h4>Artigos</h4>
 	</div>
 	
 	<div class="artigo">
+		<a href="#">
+			
+			<img src="img/artigos/img_provisória.jpg">
+			<h4>Nome do artigo</h4>
+			
+		</a>
 		
-		<img src="img/artigos/img_provisória.jpg">
-		<h4>??????</h4>
 	</div>
 	
 	<div class="artigo">
+		<a href="#">
+			
+			<img src="img/artigos/img_provisória.jpg">
+			<h4>Nome do artigo</h4>
+			
+		</a>
 		
-		<img src="img/artigos/img_provisória.jpg">
-		<h4>??????</h4>
 	</div>
+	
+	
 	
 </section>	
 	

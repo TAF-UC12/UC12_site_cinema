@@ -54,19 +54,24 @@ estilização do slideshow*/
 
 .noticia_titulo_home h1 {
 	font-size: 1.125em; /*18px*/
-	color: red;
+	color: #51708E;
+	text-shadow: 1px 1px 2px #000000;
+	font-weight: bold;
 }
 
 .noticia_titulo_home h2 {
 	font-size: .75em; /*12px*/
+	color: #A4B2C1;
+	text-shadow: 1px 1px 2px #000000;
+	
 }
 
 .noticia_titulo_home a {
 	text-decoration: none;
 	font-size: .5em;
-	color: #000000;
+	color: #233B72;
 	float: right;
-	border-bottom: 5px solid #000000;
+	border-bottom: 5px solid #233B72;
 }
 
 /*jssor slider bullet skin 032 css*/
@@ -123,6 +128,18 @@ estilização do slideshow*/
 	display: block;
 	margin-right: 5.5%;
 }
+
+.artigo a{
+	text-decoration: none;
+	
+}
+
+.artigo h4{
+	font-size: .5em; /*8px*/
+	text-align: right;
+	color: gray;
+}
+
 
 .artigo:last-child {
 	margin-right: 0px;
