@@ -15,6 +15,8 @@
 
 </title>
 
+<script defer src="js/fontawesome/fontawesome-all.js"></script>
+
 <link href="css/estilo_geral.css" rel="stylesheet" type="text/css">
 <link href="css/estilo_noticias.css" rel="stylesheet" type="text/css">
 <link href="css/estilo_menu.css" rel="stylesheet" type="text/css">
