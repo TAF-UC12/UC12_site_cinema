@@ -15,6 +15,7 @@
     <!-- Generator: Jssor Slider Maker -->
     <!-- Source: https://www.jssor.com -->
     <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
     <script src="js/jssor.slider-27.1.0.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         jssor_1_slider_init = function() {
@@ -111,79 +112,105 @@
 	
 <section id="descricao_container">	
 	
-	<div id="selecaoPersonagem">
-	
 	<div class="TabControl">
 	<div id="header">
 		<ul class="abas">
 			<li>
 				<div class="aba">
-					<span>Personagens</span>
+					<span>Em cartaz</span>
 				</div>
 			</li>
 			<li>
 				<div class="aba">
-					<span>Cidades</span>
+					<span>Em breve</span>
 				</div>
-			</li>						
+			</li>
+			<li>
+				<div class="aba">
+					<span>Mostrar todos</span>
+				</div>
+			</li>
 		</ul>
 	</div>
 	<div id="content">
-		<div class='conteudo'>
-			<div class='tabPersonagens'>  		
- 	     		<a href='#'>
-  	        		<div class='Personagem'>
-	  	        		<img src='img/galerias/personagensLugares/$imgMenu' alt='Hester Shaw'>
-			    		<h4>Título filme</h4>	
-	            	</div>
-	            </a>
-			
-	
-								
-				</div>				
-			</div>
-	
-		</div>
 		<div class="conteudo">
-		<a href='index.php?p=pgPersonagens&escolha=$id'>
-  	        		<div class='Personagem'>
-	  	        		<img src='img/galerias/personagensLugares/$imgMenu' alt='Hester Shaw'>
-			    		<h4>$personagem</h4>	
-	            	</div>
-	            </a>
+			<section>
 			
+			 <figure>
+  				<a href="#"><img src="img/posters/img_poster_provisorio.jpg" alt="The Pulpit Rock"></a>
+  				<figcaption><b>Título do filme Título do filme</b><br>01/01/2018</figcaption>
+			</figure> 
+			
+			<figure>
+  				<img src="img/posters/img_poster_provisorio.jpg" alt="The Pulpit Rock">
+  				<figcaption>Título do filme<br>01/01/2018</figcaption>
+			</figure> 
+			
+			<figure>
+  				<img src="img/posters/img_poster_provisorio.jpg" alt="The Pulpit Rock">
+  				<figcaption>Título do filme<br>01/01/2018</figcaption>
+			</figure> 
+			
+			<figure>
+  				<img src="img/posters/img_poster_provisorio.jpg" alt="The Pulpit Rock">
+  				<figcaption>Título do filme<br>01/01/2018</figcaption>
+			</figure> 
+			
+			<figure>
+  				<img src="img/posters/img_poster_provisorio.jpg" alt="The Pulpit Rock">
+  				<figcaption>Título do filme<br>01/01/2018</figcaption>
+			</figure> 
+			
+			<figure>
+  				<img src="img/posters/img_poster_provisorio.jpg" alt="The Pulpit Rock">
+  				<figcaption>Título do filme<br>01/01/2018</figcaption>
+			</figure> 
+			
+			</section>
 			
 			
 		</div>
-</div>
-
-<script type="text/javascript">
-	$(document).ready(function(){
-		$("#content div:nth-child(1)").show();
-		$(".abas li:first div").addClass("selected");		
-		$(".aba").click(function(){
-			$(".aba").removeClass("selected");
-			$(this).addClass("selected");
-			var indice = $(this).parent().index();
-			indice++;
-			$("#content div").hide();
-			$("#content div:nth-child("+indice+")").show();
-		});
-
-		$(".aba").hover(
-			function(){$(this).addClass("ativa")},
-			function(){$(this).removeClass("ativa")}
-		);				
-	});
-	
-	$(elemento).hover(
-	function(){/*função a ser executada ao pôr o cursor sobre o elemento*/},
-	function(){/*função a ser executada ao tirar o cursor do elemento*/}
-	);
-</script>	
+		
+		<div class="conteudo">
+			<section>
 			
+			 <figure>
+  				<a href="#"><img src="img/posters/img_poster_provisorio.jpg" alt="The Pulpit Rock"></a>
+  				<figcaption><b>Título do filme Título do filme</b><br>01/01/2018</figcaption>
+			</figure> 
+			
+			<figure>
+  				<a href="#"><img src="img/posters/img_poster_provisorio.jpg" alt="The Pulpit Rock"></a>
+  				<figcaption><b>Título do filme Título do filme</b><br>01/01/2018</figcaption>
+			</figure> 
+			
+			</section>
+		</div>
+		
+		<div class="conteudo">
+			<section>
+			
+			 <figure>
+  				<a href="#"><img src="img/posters/img_poster_provisorio.jpg" alt="The Pulpit Rock"></a>
+  				<figcaption><b>Título do filme Título do filme</b><br>01/01/2018</figcaption>
+			</figure> 
+			
+			<figure>
+  				<img src="img/posters/img_poster_provisorio.jpg" alt="The Pulpit Rock">
+  				<figcaption>Título do filme<br>01/01/2018</figcaption>
+			</figure> 
+			
+			<figure>
+  				<img src="img/posters/img_poster_provisorio.jpg" alt="The Pulpit Rock">
+  				<figcaption>Título do filme<br>01/01/2018</figcaption>
+			</figure> 
+
+			</section>
+		</div>
+		
+	</div>
+</div>
 	
-</div>		
 				
 </section>
 	

@@ -11,7 +11,7 @@
 #corpo_lancamentos {
 	position: relative;
 	width: 87.84773060029283%; /*1200px de 1366px*/
-	height: 800px;
+	height: auto;
 	background-color: grey;
 	margin: 0 auto;
 	float: none;
@@ -20,7 +20,7 @@
 #descricao_container{
 	position: relative;
 	width: 100%;
-	height: 600px;
+	height: auto;
 	background-color: lemonchiffon;
 	margin: 0 auto;
 }
@@ -36,17 +36,19 @@
 	height:auto;
 }
 
-.TabControl #header{
-	width:100%;  
+.TabControl #header{ 
+	width:100%; 
+	/*border: solid 1px; */
 	overflow:hidden; 
 	cursor:hand;
-	margin: 10px 0;
 }
 
 .TabControl #content{ 
 	width:100%; 
-	overflow:hidden; 
-	height:100%; 
+	/*border: solid 1px;*/
+	/*overflow:hidden; */
+	height:auto; 
+	margin-top: 20px;
 }
 
 .TabControl .abas{
@@ -54,95 +56,88 @@
 }
 
 .TabControl .abas li{
-	width: auto;
 	float:left;
-	list-style: none;
-	font-weight: bold;
-	color: #FFFFFF;
 }
 
 .aba{
-	width:110px; 
+	width:auto; 
 	height:30px; 
-	text-align:center; 
-	padding-top:5px; 
-	background: #B5B5B5;
+	border-bottom: solid 5px #095CAA; 
+	/*border-radius:5px 5px 0 0;*/
+	text-align:left; 
+	padding:5px 20px 0px 0px; 
+	/*background:#3A5FCD;*/
 }
 
-.ativa{
-	width:110px; 
+.ativa{ /*ATIVA AO PASSAR MOUSE*/
+	width:auto; 
 	height:30px; 
-	text-align:center; 
-	padding-top:5px; 
-	background: #EFEFEF;
+	border-bottom: solid 5px #476F83; 
+	/*border-radius:5px 5px 0 0;*/
+	text-align:left; 
+	padding:5px 20px 0px 20px; 
+	/*background:#27408B;*/
 }
 
 .ativa span, .selected span{
-	color: #A0A0A0;
+	color: #146819;
 }
 
 .TabControl #content{
-/*	background: #FFFFFF;
-*/}
+	/*background:#27408B;*/
+}
 
 .TabControl .conteudo{
 	width:100%;  
-/*	background:#FFFFFF; */	
+	/*background:#27408B; */
 	display:none; 
 	height:100%;
 	color:#000000;
 }
 
 .selected{
-	width:110px; 
+	width:auto; 
 	height:30px; 
-	border-bottom: 4px solid #A0A0A0;
+	border-bottom: solid 5px #022958; 
+	/*border-radius:5px 5px 0 0;*/
 	text-align:center; 
-	padding-top:5px; 
-	background: #EFEFEF;
+	padding:5px 20px 0px 20px; 
+	/*background:#27408B;*/
 }
 
-.tabPersonagens, .tabCidades{
+
+/*FORMATAÇÃO DO CONTEUDO DAS ABAS*/
+
+.conteudo {
 	position: relative;
 	width: 100%;
+	background-color: seagreen;
 	height: auto;
-	padding: 8px;
-	margin-top: 10px;
-	overflow: hidden;		
 }
 
-.Personagem, .cidade{
+.conteudo section {
 	position: relative;
 	width: 100%;
+	background-color: olive;
 	height: auto;
-	margin-bottom: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
-.Personagem img, .cidade img{
+.conteudo section figure {
+	width: 200px; /*200px de 1200px????*/
+	height: auto;
+	line-height: 1em;
+	margin-bottom: 30px;
+}
+
+figure img {
 	width: 100%;
-	border: 2px #393939;
-	box-shadow: 1px 1px 3px black;
+	height: auto;
 }
 
-.Personagem h4{
-	position: absolute;
-	font-size: 1.75em;
-	bottom: 33%;	
-	right: 5%;
-	color: #FFFFFF;
-	text-shadow: 1px 1px 2px black;
-	transition: .8s all;
-}
-
-.Personagem h4:hover{
-	color: #A0A0A0;
-}
-
-.cidade h4{
-	position: absolute;
-	font-size: 1.75em;
-	bottom: 33%;	
-	right: 5%;
-	color: #321A1B;
-	text-shadow: 1px 1px 2px black;
+figcaption {
+	text-align: center;
 }
