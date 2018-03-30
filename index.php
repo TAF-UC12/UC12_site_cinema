@@ -121,15 +121,12 @@
                 <img data-u="image" src="img/slideshow_home/slide1.jpg" />
                 <div class="noticia_titulo_home">
                     <!--<img style="position:absolute;top:0px;left:0px;width:470px;height:160px;" src="img/c-phone-horizontal.png" />-->
-                 <div>
+                 
                  	
-                 	<h1>Título da notícia</h1>
-                    <h2>Subtitulo da notícia</h2>
+                 	<h1>Título da notícia Título da notícia</h1>
+                    <h2>Phasellus tortor nisi, venenatis vel nunc nec, sagittis hendrerit ex. Nulla id dignissim nunc. Nulla in nulla dolor.</h2>
                  	
-                 	
-                 </div>   
-                        
-                   
+                 	<a href="#">Continuar lendo</a>
                    
                 </div>
             </div>

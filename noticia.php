@@ -100,9 +100,20 @@
                  
                  <div class="info_noticia">
 			
-					<div>data</div> 
+					<div>
+					<i class="fas fa-calendar-alt"></i> 
+					data
+					</div> 
 					
-					<div>autor</div>
+					<div>
+					<i class="fas fa-user"></i>
+					autor
+					</div>
+					
+					<div>
+					<i class="fas fa-comment-alt"></i>
+					12 <!--verificar com discus-->
+					</div>
 				
 				</div>              
                  
@@ -235,8 +246,10 @@
 		<div id="titulo_filme">
 			<h2>Título do filme</h2>
 			
+			<i class="fas fa-film"></i> 
 			<a href="#">Ficha técnica</a>
 			<br>
+			<i class="far fa-star"></i> 
 			<a href="#">Crítica</a>
 			
 		</div>
