@@ -127,17 +127,53 @@
 }
 
 .conteudo section figure {
-	width: 200px; /*200px de 1200px????*/
+	width: 200px; 
 	height: auto;
 	line-height: 1em;
 	margin-bottom: 30px;
 }
+
+
 
 figure img {
 	width: 100%;
 	height: auto;
 }
 
+/*figure img:hover {
+	transition: opacity 1s ease;
+    opacity: 0.5; 
+}*/
+
 figcaption {
 	text-align: center;
 }
+
+.poster {
+  display: inline-block;
+  height: auto;
+  position: relative;
+  width: auto;
+}
+
+.poster:hover::after {
+  visibility: visible
+}
+
+.poster img {
+  width: 100%
+}
+
+.poster::after {
+  background: url(../img/posters/info.png) no-repeat;
+  background-size: 100%;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+}
+

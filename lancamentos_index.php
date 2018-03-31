@@ -136,35 +136,77 @@
 		<div class="conteudo">
 			<section>
 			
-			 <figure>
-  				<a href="#"><img src="img/posters/img_poster_provisorio.jpg" alt="The Pulpit Rock"></a>
-  				<figcaption><b>Título do filme Título do filme</b><br>01/01/2018</figcaption>
+			<figure>
+  				
+				<a class='poster' href='#'>
+  					<img src="img/posters/teste.jpg" alt="">
+  				</a>
+				
+				<figcaption><b>Título do filme</b><br>01/01/2018</figcaption>
+  				
 			</figure> 
 			
 			<figure>
-  				<img src="img/posters/img_poster_provisorio.jpg" alt="The Pulpit Rock">
+  				
+				<a class='poster' href='#'>
+  					<img src="img/posters/teste.jpg" alt="">
+  				</a>
+				
   				<figcaption>Título do filme<br>01/01/2018</figcaption>
+  				
 			</figure> 
 			
 			<figure>
-  				<img src="img/posters/img_poster_provisorio.jpg" alt="The Pulpit Rock">
+  				
+				<a class='poster' href='#'>
+  					<img src="img/posters/teste.jpg" alt="">
+  				</a>
+				
   				<figcaption>Título do filme<br>01/01/2018</figcaption>
+  				
 			</figure> 
 			
 			<figure>
-  				<img src="img/posters/img_poster_provisorio.jpg" alt="The Pulpit Rock">
+  				
+				<a class='poster' href='#'>
+  					<img src="img/posters/teste.jpg" alt="">
+  				</a>
+				
   				<figcaption>Título do filme<br>01/01/2018</figcaption>
+  				
 			</figure> 
 			
 			<figure>
-  				<img src="img/posters/img_poster_provisorio.jpg" alt="The Pulpit Rock">
+  				
+				<a class='poster' href='#'>
+  					<img src="img/posters/teste.jpg" alt="">
+  				</a>
+				
   				<figcaption>Título do filme<br>01/01/2018</figcaption>
+  				
 			</figure> 
 			
 			<figure>
-  				<img src="img/posters/img_poster_provisorio.jpg" alt="The Pulpit Rock">
+  				
+				<a class='poster' href='#'>
+  					<img src="img/posters/teste.jpg" alt="">
+  				</a>
+				
   				<figcaption>Título do filme<br>01/01/2018</figcaption>
+  				
 			</figure> 
+			
+			<figure>
+  				
+				<a class='poster' href='#'>
+  					<img src="img/posters/teste.jpg" alt="">
+  				</a>
+				
+  				<figcaption>Título do filme<br>01/01/2018</figcaption>
+  				
+			</figure> 
+			
+			
 			
 			</section>
 			
@@ -175,14 +217,44 @@
 			<section>
 			
 			 <figure>
-  				<a href="#"><img src="img/posters/img_poster_provisorio.jpg" alt="The Pulpit Rock"></a>
-  				<figcaption><b>Título do filme Título do filme</b><br>01/01/2018</figcaption>
+  				
+				<a class='poster' href='#'>
+  					<img src="img/posters/teste.jpg" alt="">
+  				</a>
+				
+  				<figcaption>Título do filme<br>01/01/2018</figcaption>
+  				
 			</figure> 
 			
 			<figure>
-  				<a href="#"><img src="img/posters/img_poster_provisorio.jpg" alt="The Pulpit Rock"></a>
-  				<figcaption><b>Título do filme Título do filme</b><br>01/01/2018</figcaption>
+  				
+				<a class='poster' href='#'>
+  					<img src="img/posters/teste.jpg" alt="">
+  				</a>
+				
+  				<figcaption>Título do filme<br>01/01/2018</figcaption>
+  				
 			</figure> 
+			
+			<figure>
+  				
+				<a class='poster' href='#'>
+  					<img src="img/posters/teste.jpg" alt="">
+  				</a>
+				
+  				<figcaption>Título do filme<br>01/01/2018</figcaption>
+  				
+			</figure> 
+			
+			<figure>
+  				
+				<a class='poster' href='#'>
+  					<img src="img/posters/teste.jpg" alt="">
+  				</a>
+				
+  				<figcaption>Título do filme<br>01/01/2018</figcaption>
+  				
+			</figure>  
 			
 			</section>
 		</div>
@@ -191,19 +263,26 @@
 			<section>
 			
 			 <figure>
-  				<a href="#"><img src="img/posters/img_poster_provisorio.jpg" alt="The Pulpit Rock"></a>
-  				<figcaption><b>Título do filme Título do filme</b><br>01/01/2018</figcaption>
+  				
+				<a class='poster' href='#'>
+  					<img src="img/posters/teste.jpg" alt="">
+  				</a>
+				
+  				<figcaption>Título do filme<br>01/01/2018</figcaption>
+  				
 			</figure> 
 			
 			<figure>
-  				<img src="img/posters/img_poster_provisorio.jpg" alt="The Pulpit Rock">
+  				
+				<a class='poster' href='#'>
+  					<img src="img/posters/teste.jpg" alt="">
+  				</a>
+				
   				<figcaption>Título do filme<br>01/01/2018</figcaption>
+  				
 			</figure> 
 			
-			<figure>
-  				<img src="img/posters/img_poster_provisorio.jpg" alt="The Pulpit Rock">
-  				<figcaption>Título do filme<br>01/01/2018</figcaption>
-			</figure> 
+			 
 
 			</section>
 		</div>
