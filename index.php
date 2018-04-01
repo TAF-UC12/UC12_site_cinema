@@ -7,9 +7,9 @@
 
 	<?php
 		$pgtitulo = $_GET["pg"];
-	
+
 		if ($pgtitulo == "") { echo "Página inicial";}
-	
+
 	?>
 
 </title>
@@ -19,7 +19,7 @@
 <link href="css/estilo_geral.css" rel="stylesheet" type="text/css">
 <link href="css/estilo_index.css" rel="stylesheet" type="text/css">
 <link href="css/estilo_menu.css" rel="stylesheet" type="text/css">
-
+<link href="css/cabecalho.css" rel="stylesheet" type="text/css">
  <!-- #region Jssor Slider Begin -->
     <!-- Generator: Jssor Slider Maker -->
     <!-- Source: https://www.jssor.com -->
@@ -89,101 +89,101 @@
 
 <body>
 <main role="main">
-	
+
 <header>
-    
+
   <?php
-	
+
 	include_once "menu.php";
-	
+
 	?>
-                          
+
 </header>
 
 
-	
+
 <div id="topo_slides_container">
 
 	<!--ESTA SECTION SÓ TEM O SLIDER-->
 	<section id='destaques_topo'>
 
-	
-	
+
+
  	    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;visibility:hidden;">
         <!-- Loading Screen -->
         <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
             <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
         </div>
-        
+
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;">
-           
+
             <div data-p="225.00">
                 <img data-u="image" src="img/slideshow_home/slide1.jpg" />
                 <div class="noticia_titulo_home">
                     <!--<img style="position:absolute;top:0px;left:0px;width:470px;height:160px;" src="img/c-phone-horizontal.png" />-->
-                 
-                 	
+
+
                  	<h1>Título da notícia Título da notícia</h1>
                     <h2>Phasellus tortor nisi, venenatis vel nunc nec, sagittis hendrerit ex. Nulla id dignissim nunc. Nulla in nulla dolor.</h2>
-                 	
+
                  	<a href="#">Continuar lendo</a>
-                   
+
                 </div>
             </div>
-            
+
             <div data-p="225.00">
                 <img data-u="image" src="img/slideshow_home/slide2.jpg" />
                 <div class="noticia_titulo_home">
                     <!--<img style="position:absolute;top:0px;left:0px;width:470px;height:160px;" src="img/c-phone-horizontal.png" />-->
                  <div>
-                 	
+
                  	<h1>Título da notícia</h1>
                     <h2>Subtitulo da notícia</h2>
-                 	
-                 	
-                 </div>   
-                        
-                   
-                   
+
+
+                 </div>
+
+
+
                 </div>
             </div>
-            
+
             <div data-p="225.00">
                 <img data-u="image" src="img/slideshow_home/slide3.jpg"/>
                 <div class="noticia_titulo_home">
                     <!--<img style="position:absolute;top:0px;left:0px;width:470px;height:160px;" src="img/c-phone-horizontal.png" />-->
                  <div>
-                 	
+
                  	<h1>Título da notícia</h1>
                     <h2>Subtitulo da notícia</h2>
-                 	
-                 	
-                 </div>   
-                        
-                   
-                   
+
+
+                 </div>
+
+
+
                 </div>
             </div>
-            
+
             <div data-p="225.00">
                 <img data-u="image" src="img/slideshow_home/slide4.jpg"/>
                 <div class="noticia_titulo_home">
                     <!--<img style="position:absolute;top:0px;left:0px;width:470px;height:160px;" src="img/c-phone-horizontal.png" />-->
                  <div>
-                 	
+
                  	<h1>Título da notícia</h1>
                     <h2>Subtitulo da notícia</h2>
-                 	
-                 	
-                 </div>   
-                        
-                   
-                   
+
+
+                 </div>
+
+
+
                 </div>
             </div>
-            
+
         </div>
-        
+
         <!-- Bullet Navigator -->
         <div data-u="navigator" class="jssorb032" style="position:absolute;bottom:12px;left:150px;" data-scale="0.5" data-scale-bottom="0.75">
             <div data-u="prototype" class="i" style="width:16px;height:16px;">
@@ -192,7 +192,7 @@
                 </svg>
             </div>
         </div>
-        
+
         <!-- Arrow Navigator -->
        <!-- <div data-u="arrowleft" class="jssora051" style="width:65px;height:65px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
             <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
@@ -205,166 +205,166 @@
             </svg>
         </div>-->
     </div>
-    
+
     <script type="text/javascript">jssor_1_slider_init();</script>
     <!-- #endregion Jssor Slider End -->
-  	    
-      
-          
-  
+
+
+
+
 	</section>
 	<!--FIM DA SECTION QUE SÓ TEM O SLIDER-->
-	
+
 </div>
-<!--FIM DA DIV COM SLIDER E MENUS-->	
+<!--FIM DA DIV COM SLIDER E MENUS-->
 
 <div class="pg_titulo">
-	
+
 	<?php
 	$pgtitulo = $_GET["pg"];
-	
+
 	if ($pgtitulo == "") { echo "Home";}
-	
+
 	?>
-	
+
 </div>
 
 
-<div id="corpo_home">			
-									
-<!--INICIO SECTION COM AS DIVS DE CRITICAS, ARTIGOS, ETC-->									
+<div id="corpo_home">
+
+<!--INICIO SECTION COM AS DIVS DE CRITICAS, ARTIGOS, ETC-->
 <section id="artigos_container">
-	
+
 	<div class="artigo">
 		<a href="#">
-			
+
 			<img src="img/artigos/img_provisória.jpg">
 			<h4>Nome do artigo</h4>
-			
+
 		</a>
-		
+
 	</div>
-	
+
 	<div class="artigo">
 		<a href="#">
-			
+
 			<img src="img/artigos/img_provisória.jpg">
 			<h4>Nome do artigo</h4>
-			
+
 		</a>
-		
+
 	</div>
-	
+
 	<div class="artigo">
 		<a href="#">
-			
+
 			<img src="img/artigos/img_provisória.jpg">
 			<h4>Nome do artigo</h4>
-			
+
 		</a>
-		
+
 	</div>
-	
+
 	<div class="artigo">
 		<a href="#">
-			
+
 			<img src="img/artigos/img_provisória.jpg">
 			<h4>Nome do artigo</h4>
-			
+
 		</a>
-		
+
 	</div>
-	
-	
-	
-</section>	
-	
+
+
+
+</section>
+
 <!--INICIO SECTION COM AS DIVS DE LISTA DE NOTICIAS-->
 <section id="noticias_container">
-	
-	
+
+
 	<h2>Últimas notícias</h2>
-	
+
 	<div class="lista_noticias">
-		
+
 		<div class="noticia">
-			
+
 			<img src="img/noticias/img_noticia_provisorio.jpg" alt="">
 			<div class="info_noticia">
-			
-				<div>data</div> 
+
+				<div>data</div>
 				<div>hora</div>
 				<div>autor</div>
-				
+
 			</div>
-			
-			
+
+
 			<div class="chamada_noticia">
 				<div><h1>titulo</h1></div>
 				<div><h2>subtitulo</h2></div>
 				<a href="noticia.php">continuar lendo</a>
 			</div>
-			
-			
+
+
 		</div>
-		
+
 		<div class="noticia">
-			
+
 			<img src="img/noticias/img_noticia_provisorio.jpg" alt="">
 			<div class="info_noticia">
-			
+
 				<div>data</div>
 				<div>hora</div>
 				<div>autor</div>
-				
+
 			</div>
-			
-			
+
+
 			<div class="chamada_noticia">
 				<div><h1>titulo</h1></div>
 				<div><h2>subtitulo</h2></div>
 				<a href="#">continuar lendo</a>
 			</div>
-			
+
 		</div>
-		
-		
-		
+
+
+
 	</div>
-	
-	
-	
-	
-</section>		
-	
-<!--INICIO SECTION COM AS DIVS DE FILMES-->	
+
+
+
+
+</section>
+
+<!--INICIO SECTION COM AS DIVS DE FILMES-->
 <section id="filmes_cartaz_container">
 
 	<h2>Em cartaz</h2>
-	
+
 	<div class="cartaz_container">
-		
+
 		<div><a href="#"><img src="img/posters/img_poster_provisorio.jpg"></a></div>
-		
+
 		<div><a href="#"><img src="img/posters/img_poster_provisorio.jpg"></a></div>
-		
+
 		<div><a href="#"><img src="img/posters/img_poster_provisorio.jpg"></a></div>
-		
+
 		<div><a href="#"><img src="img/posters/img_poster_provisorio.jpg"></a></div>
-		
+
 		<div><a href="#"><img src="img/posters/img_poster_provisorio.jpg"></a></div>
-		
+
 		<div><a href="#"><img src="img/posters/img_poster_provisorio.jpg"></a></div>
-		
-		
+
+
 	</div>
-	
+
 	<p><a href="#">Ver todos</a></p>
-	
-	
-	
+
+
+
 	<h2>Em breve</h2>
-	
+
 	<div class="embreve_container">
 
 			<div><a href="#"><img src="img/posters/img_poster_provisorio.jpg"></a></div>
@@ -381,23 +381,23 @@
 
 
 		</div>
-	
-		<p><a href="#">Ver todos</a></p>
-	
-</section>	
-	
-	
-	
-</div><!--final do corpo-->	
-	
-	
-	
 
-	
+		<p><a href="#">Ver todos</a></p>
+
+</section>
+
+
+
+</div><!--final do corpo-->
+
+
+
+
+
 <footer>
-	
-</footer>		
-				
+
+</footer>
+
 </main>
 
 

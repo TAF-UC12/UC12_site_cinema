@@ -1,9 +1,25 @@
+<div id="redessociais">
+  <a href="http://instagram.com"  target="_blank"><img src="img/cabecalho/insta.png" class="rs" alt="Instagram"></a>
+  <a href="http://fb.com/andre0sousa" target="_blank"><img src="img/cabecalho/face.png"  class="rs" alt="Facebook"></a>
+  <a href="http://twitter.com" target="_blank"><img src="img/cabecalho/twitter.png" class="rs" alt="Twitter"></a>
+  <a href="http://youtube.com" target="_blank"><img src="img/cabecalho/tube.png" class="rs" alt="Youtube"></a>
+</div>
+
+<div id="login">
+  <a href="#">Login</a> |
+  <a href="#">Cadastro</a>
+</div>
+
+  <div id="divBusca">
+    <input type="text" id="txtBusca" placeholder="Buscar..."/>
+    <img src="img/cabecalho/baixar.png" id="btnBusca" alt="Buscar"/>
+  </div>
 
 <nav>
 
 
 <button class="btn-menu">
- 
+
   <span class="bar"></span>
   <span class="text">Menu</span>
 </button>
@@ -31,57 +47,57 @@
 	<li><a href="contato.php">Contato</a></li>
 </ul>
 </nav>
-        
+
  <script>
-	
+
 	var menu01 = new MobileMenu;
 
 menu01.init();
 
 function MobileMenu(){
-	
+
 	// set variables
 	var $body = $('body');
 	var $btnMenu = $('.btn-menu');
-	// get the nav li elements from the 
+	// get the nav li elements from the
 	// desktop menu
 	var navLiHTML = $('header nav ul').html();
 	// create the mobile menu from the desktop li elements...
 	var mobileNavHTML = $('<nav class="mobile-nav"><ul>' + navLiHTML  + '</ul></nav>');
-	
+
 	// Add the mobile menu to the main element...
 	$('main').prepend(mobileNavHTML);
-	
+
 	// select the newly created mobile menu
 	var $mobileNav = $('.mobile-nav');
-	
-	// select all the "a" links that have a 
+
+	// select all the "a" links that have a
 	// sub menu
 	var $dd = $('.mobile-nav .dd');
-	
+
 	// initialization method for the
-	// MobileMenu class	
+	// MobileMenu class
 	this.init = function(){
-		
+
 		// measure height of menu in open state
 		// then close the menu
 		$body.addClass('show');
 		var mobileNavOriginalHeight = $mobileNav.height();
 		var mobileNavHeight = $mobileNav.height();
 		$body.removeClass('show');
-		
-		// Open all the menus and the sub menus 
+
+		// Open all the menus and the sub menus
 		// and measure the height of each
-		// sub menu then close all the 
+		// sub menu then close all the
 		// sub menus
 		$body.addClass('show');
 		$('.mobile-nav .dd').addClass('dd-show');
 		// Loop through the sub menus add get the height
-		// of the sub menus and set a data attribute to 
+		// of the sub menus and set a data attribute to
 		// that height
 		$('.mobile-nav .dd').each(function(){
 			var theHeight = $(this).next().height();
-			$(this).next().attr('data-height', theHeight);	
+			$(this).next().attr('data-height', theHeight);
 		}); // end each...
 		// Close the menu and the sub menus
 		$body.removeClass('show');
@@ -102,18 +118,18 @@ function MobileMenu(){
 				// menus
 				$dd.next().removeAttr('style');
 				// remove the "dd-show" class from the
-				// links that have sub menu items 				
-				$dd.removeClass('dd-show');	
+				// links that have sub menu items
+				$dd.removeClass('dd-show');
 			}else{
 				// menu is closed...
 				// set height of mobile menu to the open height
 				$mobileNav.css('height', mobileNavOriginalHeight);
 				// add the class "show" to the body element
-				$body.addClass('show');	
+				$body.addClass('show');
 			} // end if menu is open...
-				
+
 		}); // end mobile menu click event handler
-				
+
 		$dd.click(function(){
 			// check if this sub menu link
 			// is open
@@ -131,7 +147,7 @@ function MobileMenu(){
 				$(this).next().removeAttr('style');
 				// remove the "dd-show" class from the sub menu link
 				// that was clicked on
-				$(this).removeClass('dd-show');	
+				$(this).removeClass('dd-show');
 			}else{
 				// this sub menu is closed
 				// remove any height styles applied
@@ -140,9 +156,9 @@ function MobileMenu(){
 				// remove the "dd-show" class from
 				// any sub menu link elements
 				$dd.removeClass('dd-show');
-				// set the new height of the 
+				// set the new height of the
 				// mobile menu by adding the
-				// height of mobile navs orginal 
+				// height of mobile navs orginal
 				// open state height to the height
 				// of the sub menu item that was
 				// clicked on
@@ -153,10 +169,10 @@ function MobileMenu(){
 				// add the "dd-show" class to
 				// sub menu link that was clicked on...
 				$(this).addClass('dd-show');
-			} // end if sub menu is open	
+			} // end if sub menu is open
 		}) // end sub menu click event handler
 
 	} // end init()
-	
+
 } // end MobileMenu Constructor
-	</script>  
+	</script>
