@@ -138,7 +138,7 @@
 			
 			<figure>
   				
-				<a class='poster' href='#'>
+				<a class='poster' href='filme.php'>
   					<img src="img/posters/teste.jpg" alt="">
   				</a>
 				

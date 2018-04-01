@@ -140,10 +140,6 @@ figure img {
 	height: auto;
 }
 
-/*figure img:hover {
-	transition: opacity 1s ease;
-    opacity: 0.5; 
-}*/
 
 figcaption {
 	text-align: center;
