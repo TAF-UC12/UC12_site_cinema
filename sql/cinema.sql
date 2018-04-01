@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Tempo de geração: 30/03/2018 às 14:55
+-- Tempo de geração: 31/03/2018 às 21:43
 -- Versão do servidor: 5.7.20-0ubuntu0.16.04.1
 -- Versão do PHP: 7.0.22-0ubuntu0.16.04.1
 
@@ -30,12 +30,12 @@ CREATE TABLE `filmes` (
   `id` smallint(6) NOT NULL,
   `nome` varchar(100) NOT NULL,
   `nomeOriginal` varchar(100) NOT NULL,
-  `lancamento` date NOT NULL,
+  `estreia` varchar(20) NOT NULL,
   `genero` varchar(20) NOT NULL,
-  `direcao` varchar(50) NOT NULL,
-  `elenco` tinytext NOT NULL,
+  `direcao` varchar(100) NOT NULL,
+  `elenco` text NOT NULL,
   `sinopse` text NOT NULL,
-  `duracao` tinytext NOT NULL,
+  `duracao` varchar(11) NOT NULL,
   `cartaz` char(3) DEFAULT 'off',
   `breve` char(3) DEFAULT 'off'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -57,7 +57,8 @@ CREATE TABLE `noticias` (
   `img` varchar(100) DEFAULT NULL,
   `imgSlideshow` varchar(100) DEFAULT NULL,
   `destaque` char(3) DEFAULT 'off',
-  `tipoNoticia` varchar(20) DEFAULT NULL
+  `tipoNoticia` varchar(20) DEFAULT NULL,
+  `filme` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
