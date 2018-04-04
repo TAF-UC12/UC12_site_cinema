@@ -1,18 +1,9 @@
+
 #redessociais{
-  position: relative;
-  width:23%;
-  height:50px;
-  margin-left:10%;
-  float: left;
-  /*background-color:#f0f;*/
+
 }
-.rs{
-	width:15.5%;
-	height: 78%;
-	margin-top: 6px;
-	margin-left: 6%;
-	float: left;
-}
+
+
 #login{
   position: relative;
 	color:#FFF;
@@ -23,6 +14,7 @@
 	float: left;
 /*background-color:#f0f;*/
 }
+
 #login a{
 	color:#FFF;
 	text-decoration:none;
@@ -30,30 +22,7 @@
 #login a:hover{
 	text-decoration: underline
 }
-#divBusca{
 
-  position: relative;
-  width:24%;
-  height:25px;
-  background-color: #fff;
-  margin-left: 2%;
-  margin-top: 10px;
-  float: left;
-/*background-color:#f0f;*/
-}
-#txtBusca{
-  float: left;
-  width:85%;
-  height: auto;
-  font-size: 20px;
-  padding-top:2px;
-  border:none;
-/*background-color:#fff;*/
 
-}
-#btnBusca{
-margin-top:4px;
-margin-left:6px;
-  
-/*background-color:#f0f;*/
-}
+/*ESTILO DA BARRA DE BUSCA*/
+

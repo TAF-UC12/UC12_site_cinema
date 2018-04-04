@@ -16,6 +16,20 @@
 
 <script defer src="js/fontawesome/fontawesome-all.js"></script>
 
+<!--LINKS DA BARRA DE BUSCA-->
+		<link rel="shortcut icon" href="http://icanbecreative.com/resources/images/favico.ico" />
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+        <meta property="og:url"           content="http://demo.icanbecreative.com/css3-animated-search-box/" />
+        <meta property="og:type"          content="website" />
+        <meta property="og:title"         content="CSS3 Animated Search Box" />
+        <meta property="og:description"   content="Your description" />
+        <meta property="og:image"         content="http://demo.icanbecreative.com/css3-animated-search-box/featured.jpg" />
+
+
+
 <link href="css/estilo_geral.css" rel="stylesheet" type="text/css">
 <link href="css/estilo_index.css" rel="stylesheet" type="text/css">
 <link href="css/estilo_menu.css" rel="stylesheet" type="text/css">
@@ -81,7 +95,40 @@
         };
     </script>
 
+	<script type="text/javascript">
+        function searchToggle(obj, evt){
+            var container = $(obj).closest('.search-wrapper');
 
+            if(!container.hasClass('active')){
+                  container.addClass('active');
+                  evt.preventDefault();
+            }
+            else if(container.hasClass('active') && $(obj).closest('.input-holder').length == 0){
+                  container.removeClass('active');
+                  // clear input
+                  container.find('.search-input').val('');
+                  // clear and hide result container when we press close
+                  container.find('.result-container').fadeOut(100, function(){$(this).empty();});
+            }
+        }
+
+        function submitFn(obj, evt){
+            value = $(obj).find('.search-input').val().trim();
+
+            _html = "Yup yup! Your search text sounds like this: ";
+            if(!value.length){
+                _html = "Yup yup! Add some text friend :D";
+            }
+            else{
+                _html += "<b>" + value + "</b>";
+            }
+
+            $(obj).find('.result-container').html('<span>' + _html + '</span>');
+            $(obj).find('.result-container').fadeIn(100);
+
+            evt.preventDefault();
+        }
+        </script>
 
 </head>
 
@@ -343,19 +390,31 @@
 	<h2>Em cartaz</h2>
 
 	<div class="cartaz_container">
+		
+		<?php
 
-		<div><a href="#"><img src="img/posters/img_poster_provisorio.jpg"></a></div>
+				
 
-		<div><a href="#"><img src="img/posters/img_poster_provisorio.jpg"></a></div>
+				//conectar ao banco de dados
+				include 'config/conectar.php';
 
-		<div><a href="#"><img src="img/posters/img_poster_provisorio.jpg"></a></div>
 
-		<div><a href="#"><img src="img/posters/img_poster_provisorio.jpg"></a></div>
+				//Agora é realizar a querie de busca no banco de dados
 
-		<div><a href="#"><img src="img/posters/img_poster_provisorio.jpg"></a></div>
+				$sql = "SELECT poster FROM filmes ORDER BY 
+				id DESC LIMIT 8";
 
-		<div><a href="#"><img src="img/posters/img_poster_provisorio.jpg"></a></div>
+				$resultado = mysqli_query($strcon, $sql)
+				or die ("Não foi possível realizar a consulta ao banco de dados");
 
+				while ($linha=mysqli_fetch_array($resultado)) {
+
+				$poster = $linha["poster"];
+
+				echo  "<div><a href='#'><img src='img/posters/$poster'></a></div>";			
+
+				}
+		?>
 
 	</div>
 
@@ -367,17 +426,30 @@
 
 	<div class="embreve_container">
 
-			<div><a href="#"><img src="img/posters/img_poster_provisorio.jpg"></a></div>
+			<?php
 
-			<div><a href="#"><img src="img/posters/img_poster_provisorio.jpg"></a></div>
+				
 
-			<div><a href="#"><img src="img/posters/img_poster_provisorio.jpg"></a></div>
+				//conectar ao banco de dados
+				include 'config/conectar.php';
 
-			<div><a href="#"><img src="img/posters/img_poster_provisorio.jpg"></a></div>
 
-			<div><a href="#"><img src="img/posters/img_poster_provisorio.jpg"></a></div>
+				//Agora é realizar a querie de busca no banco de dados
 
-			<div><a href="#"><img src="img/posters/img_poster_provisorio.jpg"></a></div>
+				$sql = "SELECT poster FROM filmes ORDER BY 
+				id DESC LIMIT 8";
+
+				$resultado = mysqli_query($strcon, $sql)
+				or die ("Não foi possível realizar a consulta ao banco de dados");
+
+				while ($linha=mysqli_fetch_array($resultado)) {
+
+				$poster = $linha["poster"];
+
+				echo  "<div><a href='#'><img src='img/posters/$poster'></a></div>";			
+
+				}
+		?>
 
 
 		</div>

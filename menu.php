@@ -1,19 +1,5 @@
-<div id="redessociais">
-  <a href="http://instagram.com"  target="_blank"><img src="img/cabecalho/insta.png" class="rs" alt="Instagram"></a>
-  <a href="http://fb.com/andre0sousa" target="_blank"><img src="img/cabecalho/face.png"  class="rs" alt="Facebook"></a>
-  <a href="http://twitter.com" target="_blank"><img src="img/cabecalho/twitter.png" class="rs" alt="Twitter"></a>
-  <a href="http://youtube.com" target="_blank"><img src="img/cabecalho/tube.png" class="rs" alt="Youtube"></a>
-</div>
 
-<div id="login">
-  <a href="#">Login</a> |
-  <a href="#">Cadastro</a>
-</div>
 
-  <div id="divBusca">
-    <input type="text" id="txtBusca" placeholder="Buscar..."/>
-    <img src="img/cabecalho/baixar.png" id="btnBusca" alt="Buscar"/>
-  </div>
 
 <nav>
 
