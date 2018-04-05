@@ -1,4 +1,25 @@
 
+<!--BARRA DE BUSCA-->
+<div id="barrabusca">
+	 
+	<div id="wrap">
+	  <form action="" autocomplete="on">
+	  <input id="search" name="search" type="text" placeholder="Buscar..."><input id="search_submit" value="Rechercher" type="submit">
+	  </form>
+	</div>
+	
+	
+</div>
+
+<div id="redessociais">
+	<p>Siga-nos nas redes</p>
+	<a href="#"><i class="fab fa-facebook"></i></a>
+	<a href="#"><i class="fab fa-instagram"></i></a>
+	<a href="#"><i class="fab fa-twitter-square"></i></i></a>
+	
+	
+</div>
+
 
 
 <nav>
