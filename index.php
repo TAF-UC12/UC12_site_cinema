@@ -402,7 +402,7 @@
 
 				//Agora é realizar a querie de busca no banco de dados
 
-				$sql = "SELECT poster FROM filmes ORDER BY 
+				$sql = "SELECT poster FROM filmes WHERE emCartaz='sim' ORDER BY 
 				id DESC LIMIT 8";
 
 				$resultado = mysqli_query($strcon, $sql)
@@ -437,7 +437,7 @@
 
 				//Agora é realizar a querie de busca no banco de dados
 
-				$sql = "SELECT poster FROM filmes ORDER BY 
+				$sql = "SELECT poster FROM filmes WHERE emCartaz='nao' ORDER BY 
 				id DESC LIMIT 8";
 
 				$resultado = mysqli_query($strcon, $sql)
