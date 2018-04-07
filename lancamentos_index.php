@@ -108,9 +108,7 @@ $pgtitulo = $_GET["pg"];
 
 	<div class='pg_titulo'>
 	<?php
-		if ($pgtitulo == '') { echo 'Home';}
-		if ($pgtitulo == 'noticias') { echo 'Notícias';}
-		if ($pgtitulo == 'lancamentos') { echo 'Lançamentos';}
+		if ($pgtitulo == '') { echo 'Lançamentos';}
 		?>
 	</div>
 
@@ -206,6 +204,7 @@ $pgtitulo = $_GET["pg"];
 
 				while ($linha=mysqli_fetch_array($resultado)) {
 				
+				$idfilme = $linha["id"];	
 				$titulo = $linha["nome"];
 				$lancamento = $linha["estreia"];
 				$poster = $linha["poster"];
@@ -213,7 +212,7 @@ $pgtitulo = $_GET["pg"];
 					
 				echo "<figure>
   				
-					<a class='poster' href='filme.php'>
+					<a class='poster' href='filme.php?pgtitulo=$titulo&filme=$idfilme'>
 						<img src='img/posters/$poster' alt='$titulo'>
 					</a>
 
@@ -249,6 +248,7 @@ $pgtitulo = $_GET["pg"];
 
 				while ($linha=mysqli_fetch_array($resultado)) {
 				
+				$idfilme = $linha["id"];
 				$titulo = $linha["nome"];
 				$lancamento = $linha["estreia"];
 				$poster = $linha["poster"];
@@ -256,7 +256,7 @@ $pgtitulo = $_GET["pg"];
 					
 				echo "<figure>
   				
-					<a class='poster' href='filme.php'>
+					<a class='poster' href='filme.php?pgtitulo=$titulo&filme=$idfilme'>
 						<img src='img/posters/$poster' alt='$titulo'>
 					</a>
 

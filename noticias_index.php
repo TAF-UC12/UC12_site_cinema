@@ -213,8 +213,8 @@ $pgtitulo = $_GET["pg"];
 
 	<div class='pg_titulo'>
 	<?php
-		if ($pgtitulo == '') { echo 'Home';}
-		if ($pgtitulo == 'noticias') { echo 'Notícias';}
+		
+		if ($pgtitulo == '') { echo 'Notícias';}
 		?>
 	</div>
 

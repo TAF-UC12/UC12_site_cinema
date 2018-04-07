@@ -105,16 +105,36 @@
 	
 </div>	
 
-<div class="pg_titulo">
+
+<?php
 	
+$pgtitulo = $_GET["pgtitulo"];
+
+?>	
+	<div id='mapasite'>
+		<?php
+		echo "<a href='index.php'>Home | </i></a>";
+		echo "<a href='lancamentos_index.php'>Lançamentos</i></a>";
+		?>	
+	</div>
+
+	<div class='pg_titulo'>
 	<?php
-	$pgtitulo = $_GET["pgtitulo"];
+		if ($pgtitulo == "$pgtitulo") { echo "$pgtitulo";}
+		?>
+	</div>
+
+
+<!--<div class="pg_titulo">
 	
-	if ($pgtitulo == "$pgtitulo") { echo "<h1>$pgtitulo</h1>";}
+	//<?php
+//	$pgtitulo = $_GET["pgtitulo"];
+//	
+//	if ($pgtitulo == "$pgtitulo") { echo "<h1>$pgtitulo</h1>";}
+//	
+//	?>
 	
-	?>
-	
-</div>
+</div>-->
 
 <div id="corpo_filme">
 
