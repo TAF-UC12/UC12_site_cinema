@@ -297,9 +297,11 @@ estilização do slideshow*/
 	height: auto;
 	margin-top: 10px;
 	margin-bottom: 5px;
+	
 }
 
 .cartaz_container img, .embreve_container img {
 	width: 100%;
 	height: auto;
+	box-shadow: 2px 2px 4px #000000;
 }
