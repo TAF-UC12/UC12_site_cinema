@@ -90,20 +90,29 @@
 	
 <div id="lancamentos_topo">
 	
-	
+	<img src="img/capa_paginas.jpg" alt="img_topo">
 	
 </div>	
 
-<div class="pg_titulo">
+<?php
 	
+$pgtitulo = $_GET["pg"];
+
+?>	
+	<div id='mapasite'>
+		<?php
+		echo "<a href='index.php'>Home | </i></a>";
+		echo "<a href='lancamentos_index.php'>Lançamentos</i></a>";
+		?>	
+	</div>
+
+	<div class='pg_titulo'>
 	<?php
-	$pgtitulo = $_GET["pg"];
-	
-	if ($pgtitulo == "") { echo "Lançamentos";}
-	
-	?>
-	
-</div>
+		if ($pgtitulo == '') { echo 'Home';}
+		if ($pgtitulo == 'noticias') { echo 'Notícias';}
+		if ($pgtitulo == 'lancamentos') { echo 'Lançamentos';}
+		?>
+	</div>
 
 
 <div id="corpo_lancamentos">
@@ -135,157 +144,135 @@
 	<div id="content">
 		<div class="conteudo">
 			<section>
-			
-			<figure>
-  				
-				<a class='poster' href='filme.php'>
-  					<img src="img/posters/teste.jpg" alt="">
-  				</a>
-				
-				<figcaption><b>Título do filme</b><br>01/01/2018</figcaption>
-  				
-			</figure> 
-			
-			<figure>
-  				
-				<a class='poster' href='#'>
-  					<img src="img/posters/teste.jpg" alt="">
-  				</a>
-				
-  				<figcaption>Título do filme<br>01/01/2018</figcaption>
-  				
-			</figure> 
-			
-			<figure>
-  				
-				<a class='poster' href='#'>
-  					<img src="img/posters/teste.jpg" alt="">
-  				</a>
-				
-  				<figcaption>Título do filme<br>01/01/2018</figcaption>
-  				
-			</figure> 
-			
-			<figure>
-  				
-				<a class='poster' href='#'>
-  					<img src="img/posters/teste.jpg" alt="">
-  				</a>
-				
-  				<figcaption>Título do filme<br>01/01/2018</figcaption>
-  				
-			</figure> 
-			
-			<figure>
-  				
-				<a class='poster' href='#'>
-  					<img src="img/posters/teste.jpg" alt="">
-  				</a>
-				
-  				<figcaption>Título do filme<br>01/01/2018</figcaption>
-  				
-			</figure> 
-			
-			<figure>
-  				
-				<a class='poster' href='#'>
-  					<img src="img/posters/teste.jpg" alt="">
-  				</a>
-				
-  				<figcaption>Título do filme<br>01/01/2018</figcaption>
-  				
-			</figure> 
-			
-			<figure>
-  				
-				<a class='poster' href='#'>
-  					<img src="img/posters/teste.jpg" alt="">
-  				</a>
-				
-  				<figcaption>Título do filme<br>01/01/2018</figcaption>
-  				
-			</figure> 
-			
-			
-			
-			</section>
-			
-			
-		</div>
-		
-		<div class="conteudo">
-			<section>
-			
-			 <figure>
-  				
-				<a class='poster' href='#'>
-  					<img src="img/posters/teste.jpg" alt="">
-  				</a>
-				
-  				<figcaption>Título do filme<br>01/01/2018</figcaption>
-  				
-			</figure> 
-			
-			<figure>
-  				
-				<a class='poster' href='#'>
-  					<img src="img/posters/teste.jpg" alt="">
-  				</a>
-				
-  				<figcaption>Título do filme<br>01/01/2018</figcaption>
-  				
-			</figure> 
-			
-			<figure>
-  				
-				<a class='poster' href='#'>
-  					<img src="img/posters/teste.jpg" alt="">
-  				</a>
-				
-  				<figcaption>Título do filme<br>01/01/2018</figcaption>
-  				
-			</figure> 
-			
-			<figure>
-  				
-				<a class='poster' href='#'>
-  					<img src="img/posters/teste.jpg" alt="">
-  				</a>
-				
-  				<figcaption>Título do filme<br>01/01/2018</figcaption>
-  				
-			</figure>  
-			
-			</section>
-		</div>
-		
-		<div class="conteudo">
-			<section>
-			
-			 <figure>
-  				
-				<a class='poster' href='#'>
-  					<img src="img/posters/teste.jpg" alt="">
-  				</a>
-				
-  				<figcaption>Título do filme<br>01/01/2018</figcaption>
-  				
-			</figure> 
-			
-			<figure>
-  				
-				<a class='poster' href='#'>
-  					<img src="img/posters/teste.jpg" alt="">
-  				</a>
-				
-  				<figcaption>Título do filme<br>01/01/2018</figcaption>
-  				
-			</figure> 
-			
-			 
 
-			</section>
+	<?php
+
+				
+
+				//conectar ao banco de dados
+				include 'config/conectar.php';
+
+
+				//Agora é realizar a querie de busca no banco de dados
+
+				$sql = "SELECT * FROM filmes WHERE emCartaz='sim' ORDER BY 
+				id DESC";
+
+				$resultado = mysqli_query($strcon, $sql)
+				or die ("Não foi possível realizar a consulta ao banco de dados");
+
+				while ($linha=mysqli_fetch_array($resultado)) {
+				
+				$idfilme = $linha["id"];	
+				$titulo = $linha["nome"];
+				$lancamento = $linha["estreia"];
+				$poster = $linha["poster"];
+
+					
+				echo "<figure>
+  				
+					<a class='poster' href='filme.php?pgtitulo=$titulo&filme=$idfilme'>
+						<img src='img/posters/$poster' alt='$titulo'>
+					</a>
+
+					<figcaption><b>$titulo</b><br>$lancamento</figcaption>
+
+				</figure>"; 			
+
+				}
+		?>		
+			
+			</section>			
 		</div>
+		
+		 <div class="conteudo">
+			<section>
+
+	<?php
+
+				
+
+				//conectar ao banco de dados
+				include 'config/conectar.php';
+
+
+				//Agora é realizar a querie de busca no banco de dados
+
+				$sql = "SELECT * FROM filmes WHERE emCartaz='nao' ORDER BY 
+				id DESC";
+
+				$resultado = mysqli_query($strcon, $sql)
+				or die ("Não foi possível realizar a consulta ao banco de dados");
+
+				while ($linha=mysqli_fetch_array($resultado)) {
+				
+				$titulo = $linha["nome"];
+				$lancamento = $linha["estreia"];
+				$poster = $linha["poster"];
+
+					
+				echo "<figure>
+  				
+					<a class='poster' href='filme.php'>
+						<img src='img/posters/$poster' alt='$titulo'>
+					</a>
+
+					<figcaption><b>$titulo</b><br>$lancamento</figcaption>
+
+				</figure>"; 			
+
+				}
+		?>		
+			
+			</section>	
+							
+		</div> 
+			
+		 <div class="conteudo">
+			<section>
+
+	<?php
+
+				
+
+				//conectar ao banco de dados
+				include 'config/conectar.php';
+
+
+				//Agora é realizar a querie de busca no banco de dados
+
+				$sql = "SELECT * FROM filmes ORDER BY 
+				id DESC";
+
+				$resultado = mysqli_query($strcon, $sql)
+				or die ("Não foi possível realizar a consulta ao banco de dados");
+
+				while ($linha=mysqli_fetch_array($resultado)) {
+				
+				$titulo = $linha["nome"];
+				$lancamento = $linha["estreia"];
+				$poster = $linha["poster"];
+
+					
+				echo "<figure>
+  				
+					<a class='poster' href='filme.php'>
+						<img src='img/posters/$poster' alt='$titulo'>
+					</a>
+
+					<figcaption><b>$titulo</b><br>$lancamento</figcaption>
+
+				</figure>"; 			
+
+				}
+		?>		
+			
+			</section>	
+							
+		</div> 	
+		
+			
+	</div>
 		
 	</div>
 </div>

@@ -137,6 +137,8 @@
 	width: 76.92307692307692%; /*300px de 390px*/
 	height: auto;
 	margin-left: 11.53846153846154%;
+	border: 1px solid #000000;
+	box-shadow: 2px 2px 4px #000000;
 }
 
 #titulo_filme {

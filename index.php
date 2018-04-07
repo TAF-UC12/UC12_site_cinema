@@ -205,7 +205,7 @@ $imgDestaque = $linha["imgDestaque"];
                  	<h1>$titulo</h1>
                     <h2>$subtitulo</h2>
 
-                 	<a href='#'>Continuar lendo</a>
+                 	<a href='#'><i class='fas fa-arrow-circle-right'></i> Continuar lendo</a>
 
                 </div>
             </div>";
@@ -247,18 +247,22 @@ $imgDestaque = $linha["imgDestaque"];
 
 </div>
 <!--FIM DA DIV COM SLIDER E MENUS-->
+<?php
+	
+$pgtitulo = $_GET["pg"];
 
-<div class="pg_titulo">
+?>	
+	<div id='mapasite'>
+		<?php
+		echo "Home ";
+		?>	
+	</div>
 
+	<div class='pg_titulo'>
 	<?php
-	$pgtitulo = $_GET["pg"];
-
-	if ($pgtitulo == "") { echo "Home";}
-
-	?>
-
-</div>
-
+		if ($pgtitulo == '') { echo 'Home';}
+		?>
+	</div>
 
 <div id="corpo_home">
 
@@ -350,12 +354,12 @@ $autor = $linha["autor"];
 
 		echo "<div class='noticia'>
 
-			<img src='img/noticias/img_noticia_provisorio.jpg' alt=''>
+			<img src='img/noticias/$img' alt=''>
 			<div class='info_noticia'>
 
-				<div>$data</div>
-				<div>$hora</div>
-				<div>$autor</div>
+				<div><i class='fas fa-calendar-alt'></i> $data</div>
+				<div><i class='fas fa-clock'></i> $hora</div>
+				<div><i class='fas fa-user'></i> $autor</div>
 
 			</div>
 
@@ -363,7 +367,7 @@ $autor = $linha["autor"];
 			<div class='chamada_noticia'>
 				<div><h1>$titulo</h1></div>
 				<div><h2>$subtitulo</h2></div>
-				<a href='noticia.php?news=$id'>continuar lendo</a>
+				<a href='noticia.php?news=$id&pgtitulo=$titulo'><i class='fas fa-arrow-circle-right'></i> continuar lendo</a>
 			</div>
 
 
@@ -396,7 +400,7 @@ $autor = $linha["autor"];
 
 				//Agora é realizar a querie de busca no banco de dados
 
-				$sql = "SELECT poster FROM filmes WHERE emCartaz='sim' ORDER BY 
+				$sql = "SELECT * FROM filmes WHERE emCartaz='sim' ORDER BY 
 				id DESC LIMIT 8";
 
 				$resultado = mysqli_query($strcon, $sql)
@@ -405,15 +409,18 @@ $autor = $linha["autor"];
 				while ($linha=mysqli_fetch_array($resultado)) {
 
 				$poster = $linha["poster"];
-
-				echo  "<div><a href='#'><img src='img/posters/$poster'></a></div>";			
+				$titulo = $linha["nome"];		
+				echo  "<div><a href='#'><img src='img/posters/$poster' alt='$titulo'></a></div>";	
+					
 
 				}
 		?>
+	
+	
 
 	</div>
 
-	<p><a href="#">Ver todos</a></p>
+	<p><a href="lancamentos_index.php">Ver todos</a></p>
 
 
 
@@ -449,7 +456,7 @@ $autor = $linha["autor"];
 
 		</div>
 
-		<p><a href="#">Ver todos</a></p>
+		<p><a href="lancamentos_index.php">Ver todos</a></p>
 
 </section>
 

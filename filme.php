@@ -3,7 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1">
-<title>Filme</title>
+<title>
+	
+<?php
+		$pgtitulo = $_GET["pg"];
+		$titulo_aba = $_GET["pgtitulo"];
+		
+		if ($titulo_aba == "$titulo_aba") { echo "$titulo_aba";}
+	
+	?>	
+		
+
+</title>
 
 <script defer src="js/fontawesome/fontawesome-all.js"></script>
 
@@ -90,15 +101,16 @@
 
 <div id="filme_topo">
 	
+	<img src="img/capa_paginas.jpg" alt="img_topo">
 	
 </div>	
 
 <div class="pg_titulo">
 	
 	<?php
-	$pgtitulo = $_GET["pg"];
+	$pgtitulo = $_GET["pgtitulo"];
 	
-	if ($pgtitulo == "") { echo "<h1>Título do filme</h1><p>Título original do filme</p>";}
+	if ($pgtitulo == "$pgtitulo") { echo "<h1>$pgtitulo</h1>";}
 	
 	?>
 	
@@ -106,25 +118,57 @@
 
 <div id="corpo_filme">
 
-	<div id="poster_filme">
-		<img src="img/posters/img_poster_provisorio.jpg" alt="">
-		
-	</div>
-	
-	<div id="ficha_filme">
-		<p>Estréia: ???????????</p>
-		<p>Genêro: ???????????</p>
-		<p><img src="img/posters/united-states-flag-.jpg" alt=""> Nome país</p>
-		<p>Diretor: ???????????</p>
-		<p>Atores: ???????????</p>
-		<p>Sinopse</p>
-		
-	</div>
-	
-	
-	<div id=""></div>
 
 
+<?php
+
+include "config/conectar.php";
+
+//Agora é realizar a querie de busca no banco de dados	
+	
+	
+$filme = $_GET["filme"];	
+	
+$sql = "SELECT * FROM filmes WHERE id = $filme";	
+	
+$resultado = mysqli_query($strcon, $sql)
+or die ("Não foi possível realizar a consulta ao banco de dados");
+	
+while ($linha=mysqli_fetch_array($resultado)) {
+	
+$titulo = $linha["nome"];
+$titoriginal = $linha["nomeOriginal"];
+$poster = $linha["poster"];	
+$estreia = $linha["estreia"];
+$elenco = $linha["elenco"];	
+$sinopse = $linha["sinopse"];
+$diretor = $linha["diretor"];
+$duracao = $linha["duracao"];
+$genero = $linha["genero"];
+$pais = $linha["paisOrigem"];	
+	
+	
+		echo "<div id='poster_filme'>
+				<img src='img/posters/$poster' alt='$titulo'>
+		
+			</div>";
+	
+	
+	echo "<div id='ficha_filme'>
+		<p><b>Título original:</b> $titoriginal</p>
+		<p><b>Estréia:</b> $estreia</p>
+		<p><b>Genêro:</b> $genero</p>
+		<p><b>Duração:</b> $duracao min</p>
+		<p><b>País origem:</b> $pais</p>
+		<p><b>Diretor:</b> $diretor</p>
+		<p><b>Atores:</b> $elenco</p>
+		<p><b>Sinopse:</b></p>
+		$sinopse
+		
+	</div>";
+	
+}
+?>
 </div>
 
 </main>

@@ -43,7 +43,15 @@ header{
 	float: none;
 }
 
-
+#mapasite {
+	position: relative;
+	width: 87.84773060029283%; /*1200px de 1366px*/
+	height: auto;
+	background-color: brown;
+	margin: 0 auto;
+	font-size: .75em; /*12px*/
+	padding: 3px 10px;
+}
 
 #barrabusca {
 	position: relative;

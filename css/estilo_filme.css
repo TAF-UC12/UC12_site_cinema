@@ -5,7 +5,12 @@
 	position: relative;
 	width: 100%;
 	height: 250px;
-	background-color: maroon;
+	overflow: hidden;
+}
+
+#lancamentos_topo img {
+	width: 100%;
+	height: auto;
 }
 
 .pg_titulo {
@@ -41,13 +46,15 @@
 
 #poster_filme img{
 	width: 100%;
+	border: 1px solid #000000;
+	box-shadow: 2px 2px 4px #000000;
 }
 
 #ficha_filme {
 	position: relative;
 	width: 66.66666666666667%; /*400px de 1200px*/
 	height: 600px;
-	background-color: green;
+	/*background-color: green;*/
 	margin: 0 auto;
 	float: left;
 	padding: 0 30px;

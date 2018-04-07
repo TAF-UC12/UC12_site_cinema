@@ -3,7 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1">
-<title>Notícia</title>
+<title>
+	
+	<?php
+		$pgtitulo = $_GET["pg"];
+		$titulo_aba = $_GET["pgtitulo"];
+		
+		if ($titulo_aba == "$titulo_aba") { echo "$titulo_aba";}
+		if ($pgtitulo == "noticias") { echo "Últimas notícias";}
+	
+	?>	
+	
+</title>
 
 <script defer src="js/fontawesome/fontawesome-all.js"></script>
 
@@ -98,11 +109,11 @@ include "config/conectar.php";
 $noticia = $_GET['news'];	
 	
 $sql = "SELECT * FROM noticias WHERE id='$noticia'";
-
-
+	
 $resultado = mysqli_query($strcon, $sql)
 or die ("Não foi possível realizar a consulta ao banco de dados");
-
+	
+	
 // Agora iremos "pegar" cada campo da notícia
 // e organizar no HTML
 
@@ -119,12 +130,9 @@ $autor = $linha["autor"];
 	echo "<img src='img/noticias/$img' alt=''>
 		<div class='noticia_titulo'>
 
-                
                  	
                  	<h1>$titulo</h1>
 
-                   
-                 
                  <div class='info_noticia'>
 			
 					<div>
@@ -138,9 +146,7 @@ $autor = $linha["autor"];
 					</div>
 					
 				
-				</div>";             
- 
-		
+				</div>";             		
 }
 ?>                    
                    
@@ -322,6 +328,7 @@ or die ("Não foi possível realizar a consulta ao banco de dados");
 	
 while ($linha2=mysqli_fetch_array($resultado2)) {
 
+$idfilme = $linha2["id"];	
 $titulo = $linha2["nome"];
 $poster = $linha2["poster"];
 	
@@ -332,7 +339,7 @@ $poster = $linha2["poster"];
 			<h2>$titulo</h2>
 			
 			<i class='fas fa-film'></i> 
-			<a href='#'>Ficha técnica</a>
+			<a href='filme.php?pgtitulo=$titulo&filme=$idfilme'>Ficha técnica</a>
 			<br>
 			<i class='far fa-star'></i> 
 			<a href='#'>Crítica</a>

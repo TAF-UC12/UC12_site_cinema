@@ -7,7 +7,8 @@
 	
 	<?php
 		$pgtitulo = $_GET["pg"];
-	
+		
+		if ($pgtitulo == "noticia") { echo "Últimas notícias";}
 		if ($pgtitulo == "noticias") { echo "Últimas notícias";}
 	
 	?>	
@@ -198,17 +199,25 @@
 	
 </div>
 <!--FIM DA DIV COM SLIDER E MENUS-->	
+<?php
 	
-<div class="pg_titulo">
-	
+$pgtitulo = $_GET["pg"];
+
+?>	
+	<div id='mapasite'>
+		<?php
+		echo "<a href='index.php'>Home | </i></a>";
+		echo "<a href='noticias_index.php'>Notícias</i></a>";
+		?>	
+	</div>
+
+	<div class='pg_titulo'>
 	<?php
-	$pgtitulo = $_GET["pg"];
-	
-	if ($pgtitulo == "noticias") { echo "Notícias";}
-	
-	?>
-	
-</div>
+		if ($pgtitulo == '') { echo 'Home';}
+		if ($pgtitulo == 'noticias') { echo 'Notícias';}
+		?>
+	</div>
+
 
 <div id="corpo_noticias">			
 										
@@ -217,52 +226,65 @@
 <section id="noticias_container">
 	
 	
-	<h2>Últimas notícias</h2>
+	<h2>Últimas</h2>
 	
 	<div class="lista_noticias">
-		
-		<div class="noticia">
-			
-			<img src="img/noticias/img_noticia_provisorio.jpg" alt="">
-			<div class="info_noticia">
-			
-				<div>data</div> 
-				<div>hora</div>
-				<div>autor</div>
-				
-			</div>
-			
-			
-			<div class="chamada_noticia">
-				<div><h1>titulo</h1></div>
-				<div><h2>subtitulo</h2></div>
-				<a href="noticia.php">continuar lendo</a>
-			</div>
-			
-			
-		</div>
-		
-		<div class="noticia">
-			
-			<img src="img/noticias/img_noticia_provisorio.jpg" alt="">
-			<div class="info_noticia">
-			
-				<div>data</div>
-				<div>hora</div>
-				<div>autor</div>
-				
-			</div>
-			
-			
-			<div class="chamada_noticia">
-				<div><h1>titulo</h1></div>
-				<div><h2>subtitulo</h2></div>
-				<a href="#">continuar lendo</a>
-			</div>
-			
-		</div>
+	
+	
+	<?php          
+           include "config/conectar.php";
+
+//Agora é realizar a querie de busca no banco de dados
+
+$noticia = $_GET['news'];		
 		
 		
+$sql = "SELECT * FROM noticias ORDER BY 
+id DESC LIMIT 20";
+
+
+$resultado = mysqli_query($strcon, $sql)
+or die ("Não foi possível realizar a consulta ao banco de dados");
+
+// Agora iremos "pegar" cada campo da notícia
+// e organizar no HTML
+
+while ($linha=mysqli_fetch_array($resultado)) {
+
+$id = $linha["id"];
+$titulo = $linha["titulo"];
+$subtitulo = $linha["subtitulo"];
+$data = $linha["data"];
+$hora = $linha["hora"];
+$img = $linha["img"];
+$autor = $linha["autor"];
+          
+
+
+		echo "<div class='noticia'>
+
+			<img src='img/noticias/$img' alt=''>
+			<div class='info_noticia'>
+
+				<div><i class='fas fa-calendar-alt'></i> $data</div>
+				<div><i class='fas fa-clock'></i> $hora</div>
+				<div><i class='fas fa-user'></i> $autor</div>
+
+
+			</div>
+
+
+			<div class='chamada_noticia'>
+				<div><h1>$titulo</h1></div>
+				<div><h2>$subtitulo</h2></div>
+				<a href='noticia.php?news=$id&pgtitulo=$titulo'><i class='fas fa-arrow-circle-right'></i> continuar lendo</a>
+			</div>
+
+
+		</div>";
+
+}
+  ?>
 		
 	</div>
 	

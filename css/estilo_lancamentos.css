@@ -4,8 +4,14 @@
 #lancamentos_topo {
 	position: relative;
 	width: 100%;
-	height: 250px;
+	max-height: 250px;
 	background-color: maroon;
+	overflow: hidden;
+}
+
+#lancamentos_topo img {
+	width: 100%;
+	height: auto;
 }
 
 #corpo_lancamentos {
@@ -138,6 +144,8 @@
 figure img {
 	width: 100%;
 	height: auto;
+	border: 1px solid #000000;
+	box-shadow: 2px 2px 4px #000000;
 }
 
 
