@@ -5,7 +5,7 @@
 	position: relative;
 	width: 100%;
 	height: auto;
-	max-height: 400px;
+	max-height: 600px;
 	background-color: aqua;
 	overflow: hidden;
 }
@@ -13,7 +13,7 @@
 #noticia_topo img {
 	width: 100%;
 	height: auto;
-	margin-bottom: 25%;
+	margin-top: 120px;
 	transform: translatey(-25%);
 }
 
