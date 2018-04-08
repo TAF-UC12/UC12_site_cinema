@@ -4,29 +4,39 @@
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1">
 <title>
-	
-<?php
+
+	<?php
 		$pgtitulo = $_GET["pg"];
-		$titulo_aba = $_GET["pgtitulo"];
-		
-		if ($titulo_aba == "$titulo_aba") { echo "$titulo_aba";}
-	
-	?>	
-		
+
+		if ($pgtitulo == "") { echo "Página inicial";}
+
+	?>
 
 </title>
 
 <script defer src="js/fontawesome/fontawesome-all.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--LINKS DA BARRA DE BUSCA-->
+		<link rel="shortcut icon" href="http://icanbecreative.com/resources/images/favico.ico" />
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+        <meta property="og:url"           content="http://demo.icanbecreative.com/css3-animated-search-box/" />
+        <meta property="og:type"          content="website" />
+        <meta property="og:title"         content="CSS3 Animated Search Box" />
+        <meta property="og:description"   content="Your description" />
+        <meta property="og:image"         content="http://demo.icanbecreative.com/css3-animated-search-box/featured.jpg" />
+
+
 
 <link href="css/estilo_geral.css" rel="stylesheet" type="text/css">
-<link href="css/estilo_filme.css" rel="stylesheet" type="text/css">
 <link href="css/estilo_menu.css" rel="stylesheet" type="text/css">
-
  <!-- #region Jssor Slider Begin -->
     <!-- Generator: Jssor Slider Maker -->
     <!-- Source: https://www.jssor.com -->
     <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
     <script src="js/jssor.slider-27.1.0.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         jssor_1_slider_init = function() {
@@ -84,114 +94,104 @@
         };
     </script>
 
+	<script type="text/javascript">
+        function searchToggle(obj, evt){
+            var container = $(obj).closest('.search-wrapper');
+
+            if(!container.hasClass('active')){
+                  container.addClass('active');
+                  evt.preventDefault();
+            }
+            else if(container.hasClass('active') && $(obj).closest('.input-holder').length == 0){
+                  container.removeClass('active');
+                  // clear input
+                  container.find('.search-input').val('');
+                  // clear and hide result container when we press close
+                  container.find('.result-container').fadeOut(100, function(){$(this).empty();});
+            }
+        }
+
+        function submitFn(obj, evt){
+            value = $(obj).find('.search-input').val().trim();
+
+            _html = "Yup yup! Your search text sounds like this: ";
+            if(!value.length){
+                _html = "Yup yup! Add some text friend :D";
+            }
+            else{
+                _html += "<b>" + value + "</b>";
+            }
+
+            $(obj).find('.result-container').html('<span>' + _html + '</span>');
+            $(obj).find('.result-container').fadeIn(100);
+
+            evt.preventDefault();
+        }
+        </script>
+
 </head>
+
+
 
 <body>
 <main role="main">
 
 <header>
-    
-  <?php
-	
-	include_once "menu.php";
-	
-	?>
-                          
-</header>	
 
-<div id="filme_topo">
+  <?php
+
+	include_once "menu.php";
+
+	?>
+
+</header>
+
+<div id="lancamentos_topo">
 	
 	<img src="img/capa_paginas.jpg" alt="img_topo">
 	
-</div>	
+</div>
 
 
+<!--FIM DA DIV COM SLIDER E MENUS-->
 <?php
 	
-$pgtitulo = $_GET["pgtitulo"];
+$pgtitulo = $_GET["pg"];
 
 ?>	
 	<div id='mapasite'>
 		<?php
 		echo "<a href='index.php'>Home </a>| ";
-		echo "<a href='lancamentos_index.php'>Lançamentos </a>| ";
-		echo "<a href='#'>$titulo_aba</a>";
+		echo "<a href='#'>Contato</a>";
 		?>	
 	</div>
 
 	<div class='pg_titulo'>
 	<?php
-		if ($pgtitulo == "$pgtitulo") { echo "$pgtitulo";}
+		if ($pgtitulo == '') { echo 'Contato';}
 		?>
 	</div>
 
-
-<!--<div class="pg_titulo">
-	
-	//<?php
-//	$pgtitulo = $_GET["pgtitulo"];
-//	
-//	if ($pgtitulo == "$pgtitulo") { echo "<h1>$pgtitulo</h1>";}
-//	
-//	?>
-	
-</div>-->
-
-<div id="corpo_filme">
+<div id="corpo_home">
 
 
 
-<?php
 
-include "config/conectar.php";
+<!--CONTEUDO DA PÁGINA CONTATO AQUI-->
 
-//Agora é realizar a querie de busca no banco de dados	
-	
-	
-$filme = $_GET["filme"];	
-	
-$sql = "SELECT * FROM filmes WHERE id = $filme";	
-	
-$resultado = mysqli_query($strcon, $sql)
-or die ("Não foi possível realizar a consulta ao banco de dados");
-	
-while ($linha=mysqli_fetch_array($resultado)) {
-	
-$titulo = $linha["nome"];
-$titoriginal = $linha["nomeOriginal"];
-$poster = $linha["poster"];	
-$estreia = $linha["estreia"];
-$elenco = $linha["elenco"];	
-$sinopse = $linha["sinopse"];
-$diretor = $linha["diretor"];
-$duracao = $linha["duracao"];
-$genero = $linha["genero"];
-$pais = $linha["paisOrigem"];	
-	
-	
-		echo "<div id='poster_filme'>
-				<img src='img/posters/$poster' alt='$titulo'>
-		
-			</div>";
-	
-	
-	echo "<div id='ficha_filme'>
-		<p><b>Título original:</b> $titoriginal</p>
-		<p><b>Estréia:</b> $estreia</p>
-		<p><b>Genêro:</b> $genero</p>
-		<p><b>Duração:</b> $duracao min</p>
-		<p><b>País origem:</b> $pais</p>
-		<p><b>Diretor:</b> $diretor</p>
-		<p><b>Atores:</b> $elenco</p>
-		<p><b>Sinopse:</b></p>
-		$sinopse
-		
-	</div>";
-	
-}
-?>
-</div>
+
+
+
+</div><!--final do corpo-->
+
+
+<footer>
+
+</footer>
 
 </main>
+
+
+
 </body>
 </html>

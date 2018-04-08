@@ -165,20 +165,13 @@
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;">
 
 <?php          
-           include "config/conectar.php";
+ include "config/conectar.php";
 
 //Agora é realizar a querie de busca no banco de dados
 
 $sql = "SELECT * FROM noticias WHERE destaque = 'on' ORDER BY 
 id DESC LIMIT 3";
 
-// Irá selecionar as últimas 15 notícias inseridas
-
-// O curioso aqui, é que ele só irá selecionar os campos onde
-// estiver o ver=on, isto foi discutido logo atrás, como um 
-// controle de notícias pelo webmaster
-// Por padrão o MySQL colocou off, mas o webmaster terá que 
-// revisar as notícias e alterar o campo ver para as que quiser validar.
 
 $resultado = mysqli_query($strcon, $sql)
 or die ("Não foi possível realizar a consulta ao banco de dados");
@@ -188,6 +181,7 @@ or die ("Não foi possível realizar a consulta ao banco de dados");
 
 while ($linha=mysqli_fetch_array($resultado)) {
 
+$id = $linha["id"];	
 $titulo = $linha["titulo"];
 $subtitulo = $linha["subtitulo"];
 $imgDestaque = $linha["imgDestaque"];	
@@ -204,7 +198,7 @@ $imgDestaque = $linha["imgDestaque"];
                  	<h1>$titulo</h1>
                     <h2>$subtitulo</h2>
 
-                 	<a href='#'><i class='fas fa-arrow-circle-right'></i> Continuar lendo</a>
+                 	<a href='noticia.php?news=$id&pgtitulo=$titulo'><i class='fas fa-arrow-circle-right'></i> Continuar lendo</a>
 
                 </div>
             </div>";
@@ -347,9 +341,19 @@ $subtitulo = $linha["subtitulo"];
 $data = $linha["data"];
 $hora = $linha["hora"];
 $img = $linha["img"];
-$autor = $linha["autor"];
+$idautor = $linha["autor"];
           
-
+	
+//AQUI É CAPTURADO O NOME DO AUTOR ATRAVÉS DO IDAUTOR:	
+$sql2 = "SELECT * FROM login WHERE id='$idautor'";
+	
+$nomeautor = mysqli_query($strcon, $sql2)
+or die ("Não foi possível realizar a consulta nome do autor!");
+	
+while ($linha2=mysqli_fetch_array($nomeautor)) {	
+	$autor = $linha2["nome"];
+}	
+	
 
 		echo "<div class='noticia'>
 
@@ -359,6 +363,8 @@ $autor = $linha["autor"];
 				<div><i class='fas fa-calendar-alt'></i> $data</div>
 				<div><i class='fas fa-clock'></i> $hora</div>
 				<div><i class='fas fa-user'></i> $autor</div>
+				<div><i class='fas fa-comment'></i> <a href='noticia.php?news=$id&pgtitulo=$titulo#disqus_thread'></a></div>
+				
 
 			</div>
 
@@ -366,7 +372,7 @@ $autor = $linha["autor"];
 			<div class='chamada_noticia'>
 				<div><h1>$titulo</h1></div>
 				<div><h2>$subtitulo</h2></div>
-				<a href='noticia.php?news=$id&pgtitulo=$titulo'><i class='fas fa-arrow-circle-right'></i> continuar lendo</a>
+				<a href='noticia.php?news=$id&pgtitulo=$titulo'><i class='fas fa-arrow-circle-right'></i> Continuar lendo</a>
 			</div>
 
 
@@ -418,7 +424,7 @@ $autor = $linha["autor"];
 	
 
 	</div>
-
+	
 	<p><a href="lancamentos_index.php">Ver todos</a></p>
 
 
@@ -474,6 +480,6 @@ $autor = $linha["autor"];
 </main>
 
 
-
+	<script id="dsq-count-scr" src="//cineontherocks.disqus.com/count.js" async></script>
 </body>
 </html>

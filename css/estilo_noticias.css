@@ -35,15 +35,35 @@
 	bottom: 30px;
 	width:100%;
 	height:auto;
-	background-color:rgba(255,188,5,0.8);
-	font-size: 2em;
-	color:#000000;
+	/*background-color:rgba(255,188,5,0.8);*/
 	line-height:1.27;
 	padding:5px 20px;
-	box-sizing:border-box;
 	z-index: 1;
 	text-align: center;
+	text-shadow: 2px 2px 4px #000000;
 }
+
+.noticia_titulo h1 {
+	font-size: 2em; 
+	color: #51708E;
+	text-shadow: 1px 1px 2px #000000;
+	font-weight: bold;
+}
+
+.noticia_titulo h2 {
+	font-size: 1em;
+	color: #A4B2C1;
+	text-shadow: 1px 1px 2px #000000;
+	
+}
+
+.noticia_titulo a {
+	text-decoration: none;
+	font-size: 1em;
+	color: #233B72;
+	border-bottom: 5px solid #233B72;
+}
+
 
         /*jssor slider bullet skin 032 css*/
         .jssorb032 {position:absolute;}

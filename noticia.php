@@ -124,27 +124,38 @@ $subtitulo = $linha["subtitulo"];
 $data = $linha["data"];
 $hora = $linha["hora"];
 $img = $linha["img"];
-$autor = $linha["autor"];
-	
-				
-	echo "<img src='img/noticias/$img' alt=''>
-		<div class='noticia_titulo'>
+$idautor = $linha["autor"];
 
-                 	
-                 	<h1>$titulo</h1>
+	
+	
+//AQUI É CAPTURADO O NOME DO AUTOR ATRAVÉS DO IDAUTOR:	
+$sql2 = "SELECT * FROM login WHERE id='$idautor'";
+	
+$nomeautor = mysqli_query($strcon, $sql2)
+or die ("Não foi possível realizar a consulta nome do autor!");
+	
+while ($linha2=mysqli_fetch_array($nomeautor)) {	
+	$autor = $linha2["nome"];
+}
+	
+	
+	echo "<img src='img/noticias/$img' alt=''>
+	
+		<div class='noticia_titulo'>
+  	
+             <h1>$titulo</h1>
 
                  <div class='info_noticia'>
 			
 					<div>
-					<i class='fas fa-calendar-alt'></i> 
-					$data - $hora
+						<i class='fas fa-calendar-alt'></i> 
+						$data - $hora
 					</div> 
 					
 					<div>
-					<i class='fas fa-user'></i>
-					$autor
+						<i class='fas fa-user'></i>
+						$autor
 					</div>
-					
 				
 				</div>";             		
 }
@@ -157,11 +168,13 @@ $autor = $linha["autor"];
 	
 </div>	
 	
-<!--<div class="pg_titulo">
-	
-	Notícias
-	
-</div>-->
+<div id='mapasite'>
+		<?php
+		echo "<a href='index.php'>Home </a>| ";
+		echo "<a href='noticias_index.php'>Notícias </a>| ";
+		echo "<a href='#'>$titulo_aba</a>";
+		?>	
+</div>
 
 <div id="corpo_noticia_individual">	
 
@@ -338,11 +351,10 @@ $poster = $linha2["poster"];
 		<div id='titulo_filme'>
 			<h2>$titulo</h2>
 			
-			<i class='fas fa-film'></i> 
-			<a href='filme.php?pgtitulo=$titulo&filme=$idfilme'>Ficha técnica</a>
+			<a href='filme.php?pgtitulo=$titulo&filme=$idfilme'><i class='fas fa-film'></i> Ficha técnica</a>
 			<br>
-			<i class='far fa-star'></i> 
-			<a href='#'>Crítica</a>
+			
+			<a href='#'><i class='far fa-star'></i> Crítica</a>
 			
 		</div>
 		

@@ -112,57 +112,50 @@
         </div>
         
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;">
+   
            
-            <div data-p="225.00">
-                <img data-u="image" src="img/slideshow_home/slide1.jpg" />
-                <div class="noticia_titulo">
-                    <!--<img style="position:absolute;top:0px;left:0px;width:470px;height:160px;" src="img/c-phone-horizontal.png" />-->
-                 <div>
-                 	
-                 	<h1>Título da notícia</h1>
-                    <h2>Subtitulo da notícia</h2>
-                 	
-                 	
-                 </div>   
-                        
-                   
-                   
+  <?php          
+ include "config/conectar.php";
+
+//Agora é realizar a querie de busca no banco de dados
+
+$sql = "SELECT * FROM noticias WHERE destaque = 'on' ORDER BY 
+id DESC LIMIT 5";
+
+
+$resultado = mysqli_query($strcon, $sql)
+or die ("Não foi possível realizar a consulta ao banco de dados");
+
+// Agora iremos "pegar" cada campo da notícia
+// e organizar no HTML
+
+while ($linha=mysqli_fetch_array($resultado)) {
+
+$id = $linha["id"];	
+$titulo = $linha["titulo"];
+$subtitulo = $linha["subtitulo"];
+$imgDestaque = $linha["imgDestaque"];	
+
+           
+           
+         
+           echo "<div data-p='225.00'>
+                <img data-u='image' src='img/slideshow/$imgDestaque' />
+                <div class='noticia_titulo'>
+                    <!--<img style='position:absolute;top:0px;left:0px;width:470px;height:160px;' src='img/c-phone-horizontal.png' />-->
+
+
+                 	<h1>$titulo</h1>
+                    <h2>$subtitulo</h2>
+
+                 	<a href='noticia.php?news=$id&pgtitulo=$titulo'><i class='fas fa-arrow-circle-right'></i> Continuar lendo</a>
+
                 </div>
-            </div>
+            </div>";
+}
+  ?>                 
+                                   
             
-            <div data-p="225.00">
-                <img data-u="image" src="img/slideshow_home/slide2.jpg" />
-                <div class="noticia_titulo_home">
-                    <!--<img style="position:absolute;top:0px;left:0px;width:470px;height:160px;" src="img/c-phone-horizontal.png" />-->
-                 <div>
-                 	
-                 	<h1>Título da notícia</h1>
-                    <h2>Subtitulo da notícia</h2>
-                 	
-                 	
-                 </div>   
-                        
-                   
-                   
-                </div>
-            </div>
-            
-            <div data-p="225.00">
-                <img data-u="image" src="img/slideshow_home/slide3.jpg" />
-                <div class="noticia_titulo_home">
-                    <!--<img style="position:absolute;top:0px;left:0px;width:470px;height:160px;" src="img/c-phone-horizontal.png" />-->
-                 <div>
-                 	
-                 	<h1>Título da notícia</h1>
-                    <h2>Subtitulo da notícia</h2>
-                 	
-                 	
-                 </div>   
-                        
-                   
-                   
-                </div>
-            </div>
         </div>
         
         <!-- Bullet Navigator -->

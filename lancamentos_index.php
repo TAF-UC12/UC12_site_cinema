@@ -101,8 +101,8 @@ $pgtitulo = $_GET["pg"];
 ?>	
 	<div id='mapasite'>
 		<?php
-		echo "<a href='index.php'>Home | </i></a>";
-		echo "<a href='lancamentos_index.php'>Lançamentos</i></a>";
+		echo "<a href='index.php'>Home </a>| ";
+		echo "<a href='lancamentos_index.php'>Lançamentos</a>";
 		?>	
 	</div>
 

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="index.php" server="192.168.1.10//var/www/html/" local="131676192402949431" remote="131676300000000000" Dst="1" />
-<file name="menu.php" server="192.168.1.10//var/www/html/" local="131676175909114544" remote="131676283800000000" Dst="1" />
-<file name="noticias_index.php" server="192.168.1.10//var/www/html/" local="131676214788943077" remote="131676322200000000" Dst="1" />
-<file name="noticia.php" server="192.168.1.10//var/www/html/" local="131676134548745820" remote="131676242400000000" Dst="1" />
+<file name="index.php" server="192.168.1.10//var/www/html/" local="131677046197249730" remote="131677153800000000" Dst="1" />
+<file name="menu.php" server="192.168.1.10//var/www/html/" local="131676994547876127" remote="131677102200000000" Dst="1" />
+<file name="noticias_index.php" server="192.168.1.10//var/www/html/" local="131677005818920425" remote="131677113600000000" Dst="1" />
+<file name="noticia.php" server="192.168.1.10//var/www/html/" local="131677053894609149" remote="131677161600000000" Dst="1" />
 <file name="README.md" server="192.168.1.10//var/www/html/" local="131664858987722104" remote="131666881200000000" Dst="1" />
-<file name="lancamentos_index.php" server="192.168.1.10//var/www/html/" local="131676183931988207" remote="131676291600000000" Dst="1" />
-<file name="filme.php" server="192.168.1.10//var/www/html/" local="131676174232549124" remote="131676282000000000" Dst="1" />
+<file name="lancamentos_index.php" server="192.168.1.10//var/www/html/" local="131677000365733809" remote="131677108200000000" Dst="1" />
+<file name="filme.php" server="192.168.1.10//var/www/html/" local="131677000639685011" remote="131677108200000000" Dst="1" />
+<file name="contato.php" server="192.168.1.10//var/www/html/" local="131677000175563893" remote="131677107600000000" Dst="1" />
 </dwsync>

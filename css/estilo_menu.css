@@ -17,12 +17,10 @@ table {
 	border-spacing: 0;
 }
 
-
-
 nav {
 	position: absolute;
 	left: 8.333333333333333%; /*100px de 1200px*/
-	top: 60px;
+	top: 70px;
 	z-index: 1;
 }
 

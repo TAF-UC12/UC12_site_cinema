@@ -19,6 +19,7 @@
 	/*background-color: burlywood;*/
 	margin-top: 0;
 	overflow: visible;
+	border-bottom: 2px solid #3f3f3f;
 	
 }
 /*################################
@@ -267,19 +268,38 @@ estilização do slideshow*/
 	margin-top: 30px;
 }
 
+#filmes_cartaz_container h2 {
+	display: table;
+	width: auto;
+	color: #ffffff;
+	background-color: #373737;
+	padding: 0px 10px;
+}
+
 #filmes_cartaz_container p{
 	position: relative;
 	width: auto;
-	margin: 0px 5% 20px 0px;
+	margin: 0px 0px 20px 0px;
 	font-size: .75em; /*12px*/
 	text-align: right;
+	padding: 6px 0px;
 	}
 
-#filmes_cartaz_container a {
+#filmes_cartaz_container p a:last-child {
 	text-decoration: none;
 	color: #FFFFFF;
+	border: 2px solid #FFFFFF;
+	padding: 2px 4px;
 }
 
+#filmes_cartaz_container p a:last-child:hover {
+	text-decoration: none;
+	color: #000000;
+	font-weight: bold;
+	background-color: #A0A0A0;
+	border: 2px solid #000000;
+	padding: 2px 4px;
+}
 
 .cartaz_container, .embreve_container {
 	position: relative;

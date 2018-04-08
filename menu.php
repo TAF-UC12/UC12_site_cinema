@@ -44,14 +44,15 @@
     	 </ul>
 </li>-->
 	<li><a href="criticas_index.php">Críticas</a></li>
-	<li><a href="lancamentos_index.php?pg=" class="dd dd-02">Lançamentos</a>
+	<!--<li><a href="lancamentos_index.php?pg=" class="dd dd-02">Lançamentos</a>
     	<ul class="dd-02-ul">
     		<li><a href="#">Filmes em cartaz</a></li>
     		<li><a href="#">Breve nos cinemas</a></li>
-    	</ul>
+    	</ul>-->
     </li>
+    <li><a href="lancamentos_index.php?pg=">Lançamentos</a></li>
     <li><a href="#">Artigos especiais</a></li>
-	<li><a href="contato.php">Contato</a></li>
+	<li><a href="contato.php?pg=">Contato</a></li>
 </ul>
 </nav>
 
