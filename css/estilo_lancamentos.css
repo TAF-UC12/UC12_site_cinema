@@ -5,8 +5,8 @@
 	position: relative;
 	width: 100%;
 	max-height: 250px;
-	background-color: maroon;
-	overflow: hidden;
+/*	background-color: maroon;
+*/	overflow: hidden;
 }
 
 #lancamentos_topo img {
@@ -18,7 +18,7 @@
 	position: relative;
 	width: 87.84773060029283%; /*1200px de 1366px*/
 	height: auto;
-	background-color: grey;
+	/*background-color: grey;*/
 	margin: 0 auto;
 	float: none;
 	}
@@ -27,7 +27,7 @@
 	position: relative;
 	width: 100%;
 	height: auto;
-	background-color: lemonchiffon;
+	/*background-color: lemonchiffon;*/
 	margin: 0 auto;
 }
 
@@ -117,19 +117,20 @@
 .conteudo {
 	position: relative;
 	width: 100%;
-	background-color: seagreen;
+	/*background-color: seagreen;*/
 	height: auto;
 }
 
 .conteudo section {
 	position: relative;
 	width: 100%;
-	background-color: olive;
+	background-color: #373737;
 	height: auto;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	flex-wrap: wrap;
+	padding: 5px;
 }
 
 .conteudo section figure {
@@ -151,6 +152,8 @@ figure img {
 
 figcaption {
 	text-align: center;
+	color: #ffffff;
+	text-shadow: 1px 1px 2px #000000;
 }
 
 .poster {

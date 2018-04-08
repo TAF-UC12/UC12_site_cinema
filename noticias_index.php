@@ -8,7 +8,6 @@
 	<?php
 		$pgtitulo = $_GET["pg"];
 		
-		if ($pgtitulo == "noticia") { echo "Últimas notícias";}
 		if ($pgtitulo == "noticias") { echo "Últimas notícias";}
 	
 	?>	
@@ -199,11 +198,7 @@
 	
 </div>
 <!--FIM DA DIV COM SLIDER E MENUS-->	
-<?php
-	
-$pgtitulo = $_GET["pg"];
 
-?>	
 	<div id='mapasite'>
 		<?php
 		echo "<a href='index.php'>Home | </i></a>";
@@ -213,8 +208,8 @@ $pgtitulo = $_GET["pg"];
 
 	<div class='pg_titulo'>
 	<?php
-		
-		if ($pgtitulo == '') { echo 'Notícias';}
+		$pgtitulo = $_GET["pg"];
+		if ($pgtitulo == $pgtitulo) { echo 'Notícias';}
 		?>
 	</div>
 
@@ -226,7 +221,7 @@ $pgtitulo = $_GET["pg"];
 <section id="noticias_container">
 	
 	
-	<h2>Últimas</h2>
+	<h2>Últimas notícias</h2>
 	
 	<div class="lista_noticias">
 	

@@ -35,14 +35,14 @@
 	bottom: 30px;
 	width:100%;
 	height:auto;
-	background-color:rgba(255,188,5,0.8);
+	/*background-color:rgba(255,188,5,0.8);*/
 	font-size: 2em;
-	color:#000000;
+	color:#ffffff;
 	line-height:1.27;
 	padding:5px 20px;
-	box-sizing:border-box;
 	z-index: 1;
 	text-align: center;
+	text-shadow: 2px 2px 4px #000000;
 }
 
         /*jssor slider bullet skin 032 css*/
@@ -79,14 +79,14 @@
 #noticia_completa_container {
 	position: relative;
 	width: 66.66666666666667%; /*800px de 1200px*/
-	background-color: khaki;
+	/*background-color: khaki;*/
 	float: left;
 	height: auto;
 }
 
 #noticia_completa_subtitulo{
 	padding: 30px 20px;
-	background-color: darkkhaki;
+	/*background-color: darkkhaki;*/
 }
 
 #noticia_completa_subtitulo p{

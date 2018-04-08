@@ -6,7 +6,7 @@
 	position: relative;
 	width: 100%;
 	height: auto;
-	background-color: aqua;
+	/*background-color: aqua;*/
 	overflow: visible;
 }
 
@@ -16,7 +16,7 @@
 	position: relative;
 	width: 100%;
 	height: auto;
-	background-color: burlywood;
+	/*background-color: burlywood;*/
 	margin-top: 0;
 	overflow: visible;
 	
@@ -103,7 +103,7 @@ estilização do slideshow*/
 	position: relative;
 	width: 87.84773060029283%; /*1200px de 1366px*/
 	height: auto;
-	background-color: grey;
+	/*background-color: grey;*/
 	margin: 0 auto;
 	float: none;
 }
@@ -111,7 +111,7 @@ estilização do slideshow*/
 #artigos_container {
 	position: relative;
 	width: 100%;
-	background-color: seagreen;
+	/*background-color: seagreen;*/
 	height: auto;
 	display: flex;
 	flex-direction: row;
@@ -121,7 +121,7 @@ estilização do slideshow*/
 .artigo {
 	position: relative;
 	width: 20,83333333333333%; /*250px de 1200px*/
-	background-color: cadetblue;
+	/*background-color: cadetblue;*/
 	height: auto;
 	float: left;
 	overflow: visible;
@@ -164,7 +164,7 @@ estilização do slideshow*/
 #noticias_container {
 	position: relative;
 	width: 66.66666666666667%; /*800px de 1200px*/
-	background-color: khaki;
+	/*background-color: khaki;*/
 	float: left;
 	height: auto;
 	margin-top: 30px;
@@ -176,7 +176,7 @@ estilização do slideshow*/
 	width: 100%;
 	height: auto;
 	margin-top: 20px ;
-	background-color: #555454;
+	/*background-color: #555454;*/
 }
 
 .noticia{
@@ -184,7 +184,7 @@ estilização do slideshow*/
 	width: auto; /*780px de 800px*/
 	height: auto;
 	margin: 2.5% ; /*10px de 800px*/
-	background-color: #867A7A;
+	/*background-color: #867A7A;*/
 	overflow: auto;
 	border-bottom: 2px dotted #000000;
 }
@@ -261,7 +261,7 @@ estilização do slideshow*/
 #filmes_cartaz_container {
 	position: relative;
 	width: 33.33333333333333%; /*400px de 1200px*/
-	background-color: lightcoral;
+	/*background-color: lightcoral;*/
 	float: left;
 	height: auto;
 	margin-top: 30px;
@@ -285,7 +285,7 @@ estilização do slideshow*/
 	position: relative;
 	width: 100%;
 	height: 340px;
-	background-color: darkslateblue;
+	background-color: #373737;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
