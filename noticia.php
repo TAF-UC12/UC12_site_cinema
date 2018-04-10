@@ -170,8 +170,8 @@ while ($linha2=mysqli_fetch_array($nomeautor)) {
 	
 <div id='mapasite'>
 		<?php
-		echo "<a href='index.php'>Home </a>| ";
-		echo "<a href='noticias_index.php'>Notícias </a>| ";
+		echo "<a href='index.php'>Home</a> | ";
+		echo "<a href='noticias_index.php'>Notícias</a> | ";
 		echo "<a href='#'>$titulo_aba</a>";
 		?>	
 </div>
@@ -346,7 +346,7 @@ $titulo = $linha2["nome"];
 $poster = $linha2["poster"];
 	
 								
-		echo "<img src='img/posters/$poster' alt=''>
+		echo "<img src='img/posters/$poster' alt='$titulo'>
 		
 		<div id='titulo_filme'>
 			<h2>$titulo</h2>
@@ -375,6 +375,10 @@ $poster = $linha2["poster"];
 	
 </main>
 
+<!--PLUGIN DO BOTÃO DE COMPARTILHAMENTO DO TWITTER-->
+
+
+<!--AREA DE COMENTÁRIOS DISCUS-->
 <script id="dsq-count-scr" src="//cineontherocks.disqus.com/count.js" async></script>
 </body>
 </html>

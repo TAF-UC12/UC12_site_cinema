@@ -194,7 +194,7 @@ $imgDestaque = $linha["imgDestaque"];
 
 	<div id='mapasite'>
 		<?php
-		echo "<a href='index.php'>Home | </i></a>";
+		echo "<a href='index.php'>Home</i></a> | ";
 		echo "<a href='noticias_index.php'>Notícias</i></a>";
 		?>	
 	</div>
@@ -228,7 +228,7 @@ $noticia = $_GET['news'];
 		
 		
 $sql = "SELECT * FROM noticias ORDER BY 
-id DESC LIMIT 20";
+id DESC LIMIT 15";
 
 
 $resultado = mysqli_query($strcon, $sql)
@@ -245,9 +245,19 @@ $subtitulo = $linha["subtitulo"];
 $data = $linha["data"];
 $hora = $linha["hora"];
 $img = $linha["img"];
-$autor = $linha["autor"];
+$idautor = $linha["autor"];
           
-
+	
+//AQUI É CAPTURADO O NOME DO AUTOR ATRAVÉS DO IDAUTOR:	
+$sql2 = "SELECT * FROM login WHERE id='$idautor'";
+	
+$nomeautor = mysqli_query($strcon, $sql2)
+or die ("Não foi possível realizar a consulta nome do autor!");
+	
+while ($linha2=mysqli_fetch_array($nomeautor)) {	
+	$autor = $linha2["nome"];
+}	
+	
 
 		echo "<div class='noticia'>
 
@@ -257,7 +267,8 @@ $autor = $linha["autor"];
 				<div><i class='fas fa-calendar-alt'></i> $data</div>
 				<div><i class='fas fa-clock'></i> $hora</div>
 				<div><i class='fas fa-user'></i> $autor</div>
-
+				<div><i class='fas fa-comment'></i> <a href='noticia.php?news=$id&pgtitulo=$titulo#disqus_thread'></a></div>
+				
 
 			</div>
 
@@ -265,7 +276,7 @@ $autor = $linha["autor"];
 			<div class='chamada_noticia'>
 				<div><h1>$titulo</h1></div>
 				<div><h2>$subtitulo</h2></div>
-				<a href='noticia.php?news=$id&pgtitulo=$titulo'><i class='fas fa-arrow-circle-right'></i> continuar lendo</a>
+				<a href='noticia.php?news=$id&pgtitulo=$titulo'><i class='fas fa-arrow-circle-right'></i> Continuar lendo</a>
 			</div>
 
 
@@ -316,5 +327,7 @@ $autor = $linha["autor"];
 </footer>					
 	
 </main>
+
+<script id="dsq-count-scr" src="//cineontherocks.disqus.com/count.js" async></script>
 </body>
 </html>

@@ -41,6 +41,8 @@ header{
 	/*background-color: grey;*/
 	margin: 0 auto;
 	float: none;
+	color: #ffffff;
+	text-shadow: 2px 2px 3px #000000;
 }
 
 #mapasite {
@@ -65,6 +67,11 @@ header{
 	width: 300px;
 	float: right;
 	margin-right: 5%;
+}
+
+#mapasite a:hover {
+	color: #000000;
+	transition: .5s all ease;
 }
 
 #wrap {

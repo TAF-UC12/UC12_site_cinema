@@ -110,7 +110,7 @@
 	width: 100%;
 	height: auto;
 	margin-top: 20px ;
-	background-color: #555454;
+	/*background-color: #555454;*/
 }
 
 .noticia{
@@ -118,7 +118,7 @@
 	width: auto; /*780px de 800px*/
 	height: auto;
 	margin: 2.5% ; /*10px de 800px*/
-	background-color: #867A7A;
+	/*background-color: #867A7A;*/
 	overflow: auto;
 	border-bottom: 2px dotted #000000;
 }
@@ -136,7 +136,7 @@
 	display: flex;
 	flex-direction: row;
 	width: 79%; /*624px de 780px descontado 1%*/
-	background-color: darkgoldenrod;
+	/*background-color: darkgoldenrod;*/
 	float: left;
 	margin: 5px 0 5px 1%;
 }
