@@ -32,6 +32,11 @@ header{
 	background-color: #3F3F3F;
 }
 
+
+#logo {
+	margin-left: 5%;
+}
+
 .pg_titulo {
 	position: relative;
 	width: 87.84773060029283%; /*1200px de 1366px*/

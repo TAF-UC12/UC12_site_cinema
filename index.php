@@ -262,46 +262,45 @@ $pgtitulo = $_GET["pg"];
 <!--INICIO SECTION COM AS DIVS DE CRITICAS, ARTIGOS, ETC-->
 <section id="artigos_container">
 
-	<div class="artigo">
-		<a href="#">
+<div class='artigo'>
+		<a href='#'>
 
-			<img src="img/artigos/img_provisória.jpg">
-			<h4>Nome do artigo</h4>
+			<img src='img/noticias/hansolo_artigo.jpg'>
+			<h4>Titulo artigo titulo artigo titulo artigo</h4>
+
+		</a>
+
+	</div>	
+	
+<div class='artigo'>
+		<a href='#'>
+
+			<img src='img/noticias/hansolo_artigo.jpg'>
+			<h4>Titulo artigo titulo artigo titulo artigo</h4>
 
 		</a>
 
 	</div>
+	
+<div class='artigo'>
+		<a href='#'>
 
-	<div class="artigo">
-		<a href="#">
-
-			<img src="img/artigos/img_provisória.jpg">
-			<h4>Nome do artigo</h4>
-
-		</a>
-
-	</div>
-
-	<div class="artigo">
-		<a href="#">
-
-			<img src="img/artigos/img_provisória.jpg">
-			<h4>Nome do artigo</h4>
+			<img src='img/noticias/hansolo_artigo.jpg'>
+			<h4>Titulo artigo titulo artigo titulo artigo</h4>
 
 		</a>
 
 	</div>
+																					
+	<div class='artigo'>
+		<a href='#'>
 
-	<div class="artigo">
-		<a href="#">
-
-			<img src="img/artigos/img_provisória.jpg">
-			<h4>Nome do artigo</h4>
+			<img src='img/noticias/hansolo_artigo.jpg'>
+			<h4>Titulo artigo titulo artigo titulo artigo</h4>
 
 		</a>
 
-	</div>
-
+	</div>	
 
 
 </section>
