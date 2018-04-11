@@ -132,8 +132,18 @@ estilização do slideshow*/
 }
 
 .artigo:hover {
-	border: 1px solid #000000;
+	background-color: #E0E8F0;
 	box-shadow: 2px 2px 4px #000000;
+}
+
+.artigo_tag {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	font-weight: bold;
+	background-color: #1F3F60;
+	color:#C0C0C0;
+	padding: 0px 6px;
 }
 
 .artigo a{
@@ -143,7 +153,7 @@ estilização do slideshow*/
 
 .artigo h4{
 	font-size: 1.125em; /*8px*/
-	color: gray;
+	color: #1F3F60;
 	text-shadow: 1px 1px 1px #c0c0c0;
 }
 
@@ -156,7 +166,6 @@ estilização do slideshow*/
 	width: 100%;
 	border: 0;
 }
-
 
 #noticias_container {
 	position: relative;

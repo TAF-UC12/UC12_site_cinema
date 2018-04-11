@@ -262,45 +262,51 @@ $pgtitulo = $_GET["pg"];
 <!--INICIO SECTION COM AS DIVS DE CRITICAS, ARTIGOS, ETC-->
 <section id="artigos_container">
 
-<div class='artigo'>
+
+
+<?php          
+           include "config/conectar.php";
+
+//Agora é realizar a querie de busca no banco de dados
+
+$noticia = $_GET['news'];		
+		
+		
+$sql = "SELECT * FROM noticias WHERE TIPO= 2 LIMIT 4";
+
+
+$resultado = mysqli_query($strcon, $sql)
+or die ("Não foi possível realizar a consulta ao banco de dados");
+
+// Agora iremos "pegar" cada campo da notícia
+// e organizar no HTML
+
+while ($linha=mysqli_fetch_array($resultado)) {
+
+$id = $linha["id"];
+$titulo = $linha["titulo"];
+$subtitulo = $linha["subtitulo"];
+$data = $linha["data"];
+$hora = $linha["hora"];
+$img = $linha["img"];
+$idautor = $linha["autor"];
+          		
+
+		echo "<div class='artigo'>
+		
+		<div class='artigo_tag'>Artigo</div>
+		
 		<a href='#'>
 
-			<img src='img/noticias/hansolo_artigo.jpg'>
-			<h4>Titulo artigo titulo artigo titulo artigo</h4>
+			<img src='img/noticias/$img'>
+			<h4>$titulo</h4>
 
 		</a>
 
-	</div>	
-	
-<div class='artigo'>
-		<a href='#'>
+	</div>";
 
-			<img src='img/noticias/hansolo_artigo.jpg'>
-			<h4>Titulo artigo titulo artigo titulo artigo</h4>
-
-		</a>
-
-	</div>
-	
-<div class='artigo'>
-		<a href='#'>
-
-			<img src='img/noticias/hansolo_artigo.jpg'>
-			<h4>Titulo artigo titulo artigo titulo artigo</h4>
-
-		</a>
-
-	</div>
-																					
-	<div class='artigo'>
-		<a href='#'>
-
-			<img src='img/noticias/hansolo_artigo.jpg'>
-			<h4>Titulo artigo titulo artigo titulo artigo</h4>
-
-		</a>
-
-	</div>	
+}
+  ?>
 
 
 </section>
@@ -322,7 +328,7 @@ $pgtitulo = $_GET["pg"];
 $noticia = $_GET['news'];		
 		
 		
-$sql = "SELECT * FROM noticias ORDER BY 
+$sql = "SELECT * FROM noticias WHERE tipo= 1 ORDER BY 
 id DESC LIMIT 15";
 
 

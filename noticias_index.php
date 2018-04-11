@@ -227,7 +227,7 @@ $imgDestaque = $linha["imgDestaque"];
 $noticia = $_GET['news'];		
 		
 		
-$sql = "SELECT * FROM noticias ORDER BY 
+$sql = "SELECT * FROM noticias WHERE tipo= 1 ORDER BY 
 id DESC LIMIT 15";
 
 
