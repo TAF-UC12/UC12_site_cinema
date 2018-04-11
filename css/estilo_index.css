@@ -116,7 +116,7 @@ estilização do slideshow*/
 	height: auto;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 
 .artigo {

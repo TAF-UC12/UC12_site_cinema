@@ -296,7 +296,7 @@ $idautor = $linha["autor"];
 		
 		<div class='artigo_tag'>Artigo</div>
 		
-		<a href='#'>
+		<a href='noticia.php?news=$id&pgtitulo=$titulo'>
 
 			<img src='img/noticias/$img'>
 			<h4>$titulo</h4>
