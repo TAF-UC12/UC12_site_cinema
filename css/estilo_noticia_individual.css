@@ -70,13 +70,13 @@
 .info_noticia div{
 	position: relative;
 	font-size: .5em; /*8px*/
-	color: crimson;
+	color: #44B4FF;
 	width: auto;
 	}
 
 .info_noticia div:first-of-type{
 	width: auto;
-	border-top: 2px dotted #ffffff;
+	border-top: 2px solid #1E76B2;
 	padding-top: 3px;
 	}
 
@@ -84,7 +84,7 @@
 	position: relative;
 	width: 87.84773060029283%; /*1200px de 1366px*/
 	height: auto;
-	background-color: grey;
+	/*background-color: grey;*/
 	margin: 0 auto;
 	}
 
@@ -111,7 +111,7 @@
 	position: relative;
 	width: 100%; /*800px de 1200px*/
 	height: auto;
-	background-color: green;
+	/*background-color: green;*/
 	padding: 0 10px;
 }
 
@@ -130,7 +130,7 @@
 #ficha_tec_filme_container {
 	position: relative;
 	width: 33.33333333333333%; /*400px de 1200px*/
-	background-color: #373737;
+	background-color: #C0C0C0;
 	float: left;
 	height: auto;
 	margin-top: 30px;

@@ -13,7 +13,7 @@ body{
 	font-size: 1em;
 	font-weight: normal;
 	line-height: 1.6;
-	background-color: #727272;
+	background-color: #ffffff;
 }
 
 main{
@@ -29,7 +29,7 @@ header{
 	position: relative;
 	width: 100%; /*1366px*/
 	height: 60px;
-	background-color: #3F3F3F;
+	background-color: #44B4FF;
 }
 
 
@@ -46,7 +46,7 @@ header{
 	/*background-color: grey;*/
 	margin: 0 auto;
 	float: none;
-	color: #ffffff;
+	color: #1E76B2;
 	text-shadow: 2px 2px 3px #000000;
 }
 
@@ -57,14 +57,15 @@ header{
 	/*background-color: brown;*/
 	margin: 0 auto;
 	font-size: .75em; /*12px*/
+	font-weight: bold;
 	padding: 3px 10px;
 	text-decoration: none;
-	color: #FFFFFF;
+	color: #1E76B2;
 }
 
 #mapasite a {
 	text-decoration: none;
-	color: #FFFFFF;
+	color: #1E76B2;
 }
 
 #barrabusca {
@@ -75,7 +76,7 @@ header{
 }
 
 #mapasite a:hover {
-	color: #000000;
+	color: #B2B127;
 	transition: .5s all ease;
 }
 
@@ -109,13 +110,13 @@ input[type="text"] {
 }
 
 input[type="text"]:focus:hover {
-  border-bottom: 2px solid #BBB;
+  border-bottom: 2px solid #FF5F5E;
 }
 
 input[type="text"]:focus {
   width: 300px;
   z-index: 1;
-  border-bottom: 2px solid #BBB;
+  border-bottom: 2px solid #FF5F5E;
   cursor: text;
 }
 input[type="submit"] {
@@ -160,7 +161,7 @@ input[type="submit"]:hover {
 }
 
 #redessociais a:hover {
-	color: #000000;
+	color: #FF5F5E;
 	transition: .5s all;
 }
 
@@ -203,7 +204,7 @@ footer {
 	position: relative;
 	width: 100%; /*1366px*/
 	height: 50px;
-	background-color: blueviolet;
+	background-color: #44B4FF;
 	clear: both;
 }
 

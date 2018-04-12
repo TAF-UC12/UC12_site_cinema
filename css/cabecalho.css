@@ -78,6 +78,7 @@ input[type="submit"]:hover {
 	color: #ffffff;
 	padding: 0 10px;
 	display: inline-block;
+	transform: rotate(x) translate(y,x);
 }
 
 #redessociais p {

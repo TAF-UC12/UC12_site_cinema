@@ -137,7 +137,8 @@ header nav ul {
 .mobile-nav a:focus,
 .mobile-nav a:hover,
 .mobile-nav a:active {
-	background-color: #004301;	
+	/*background-color: #004301;*/
+	color: #FF5F5E;
 }
 
 .mobile-nav li:first-child a {

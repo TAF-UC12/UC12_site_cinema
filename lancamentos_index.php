@@ -282,7 +282,12 @@ $pgtitulo = $_GET["pg"];
 	
 			
 </div>		
+
 	
+<footer>
+
+</footer>		
+				
 </main>
 <!--SCRIPT PARA FUNCIONAMENTO DAS ABAS-->
 <script type="text/javascript">
