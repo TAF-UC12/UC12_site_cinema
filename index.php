@@ -141,7 +141,7 @@
 
   <?php
 
-	include_once "menu.php";
+	require_once "menu.php";
 
 	?>
 
@@ -165,7 +165,7 @@
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;">
 
 <?php          
- include "config/conectar.php";
+ require_once "config/conectar.php";
 
 //Agora é realizar a querie de busca no banco de dados
 

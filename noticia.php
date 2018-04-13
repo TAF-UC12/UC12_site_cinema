@@ -92,7 +92,7 @@
     
   <?php
 	
-	include_once "menu.php";
+	require_once "menu.php";
 	
 	?>
                           
@@ -102,7 +102,7 @@
 
 	
 <?php          
-include "config/conectar.php";
+require_once "config/conectar.php";
 
 //Agora é realizar a querie de busca no banco de dados
 
@@ -184,7 +184,7 @@ while ($linha2=mysqli_fetch_array($nomeautor)) {
 	
 	
 <?php          
-include "config/conectar.php";
+//require_once "config/conectar.php";
 
 //Agora é realizar a querie de busca no banco de dados
 
@@ -307,7 +307,7 @@ $autor = $linha["autor"];
 	<div id="ficha_tec">
 
 <?php          
-include "config/conectar.php";
+//require_once "config/conectar.php";
 
 //Agora é realizar a querie de busca no banco de dados
 

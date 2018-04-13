@@ -143,7 +143,7 @@ $pgtitulo = $_GET["pgtitulo"];
 
 <?php
 
-include "config/conectar.php";
+require_once "config/conectar.php";
 
 //Agora é realizar a querie de busca no banco de dados	
 	
