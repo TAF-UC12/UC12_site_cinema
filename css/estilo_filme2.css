@@ -22,23 +22,24 @@
 	line-height: normal
 }
 
-.pg_titulo > p {
-	font-size: .5em;
-}
 
 #corpo_filme {
 	position: relative;
 	width: 87.84773060029283%; /*1200px de 1366px*/
-	height: 800px;
+	height: auto;
 	background-color: thistle;
 	margin: 0 auto;
-	float: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 	}
+
 
 #poster_filme {
 	position: relative;
-	width: 33.33333333333333%; /*400px de 1200px*/
-	height: 600px;
+	width: 200px; /*300px de 1200px*/
+	height: auto;
+	padding: 10px;
 	background-color: navajowhite;
 	margin: 0 auto;
 	float: left;
@@ -52,19 +53,41 @@
 
 #ficha_filme {
 	position: relative;
-	width: 66.66666666666667%; /*400px de 1200px*/
-	height: 600px;
-	/*background-color: green;*/
-	margin: 0 auto;
-	float: left;
-	padding: 0 30px;
+	width: auto;
+	height: auto;
+	padding: 10px;
+	background-color: green;
+	flex-grow: 1;
 }
 
 #ficha_filme p{
-	padding-bottom: 20px;
+	font-size: .875em; /*14px*/
 }
 
-#ficha_filme img{
-	width: 22px;
-	height: auto;
+#ficha_filme h4{
+	font-size: 1em;
+	padding-bottom: 5px;
+	font-weight: bold;
 }
+
+#galeria_filme {
+	position: relative;
+	width: 200px; /*200px de 1200px*/
+	height: auto;
+	background-color: hotpink;
+	margin: 0 auto;
+	float: right;
+}
+
+#filme_sinopse{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: lawngreen;
+	padding: 10px;
+	}
+
+#filme_sinopse p:first-child{
+	font-size: 1.25em;
+	font-weight: bold;
+	}

@@ -16,14 +16,6 @@ body{
 	background-color: #ffffff;
 }
 
-main{
-	margin: 0 auto;
-	/*max-width:1366px; largura máxima do layout*/
-	width: 100%; /*ajuste do layout à tela*/
-	height:auto;
-	/*background-color: aqua;*/
-	display: block;
-	}
 
 header{
 	position: relative;
@@ -36,6 +28,15 @@ header{
 #logo {
 	margin-left: 5%;
 }
+
+main{
+	margin: 0 auto;
+	/*max-width:1366px; largura máxima do layout*/
+	width: 100%; /*ajuste do layout à tela*/
+	height:auto;
+	/*background-color: aqua;*/
+	display: block;
+	}
 
 .pg_titulo {
 	position: relative;
@@ -192,11 +193,6 @@ input[type="submit"]:hover {
 #login a:hover{
 	text-decoration: underline
 }
-
-
-/*ESTILO DA BARRA DE BUSCA*/
-
-
 
 
 
