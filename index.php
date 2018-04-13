@@ -262,6 +262,7 @@ $pgtitulo = $_GET["pg"];
 <!--INICIO SECTION COM AS DIVS DE CRITICAS, ARTIGOS, ETC-->
 <section id="artigos_container">
 
+	<div id='lista_artigos'>
 
 
 <?php          
@@ -292,22 +293,31 @@ $img = $linha["img"];
 $idautor = $linha["autor"];
           		
 
-		echo "<div class='artigo'>
+		echo "
+		<div class='artigo'>
 		
 		<div class='artigo_tag'>Artigo</div>
 		
-		<a href='noticia.php?news=$id&pgtitulo=$titulo'>
-
+		
+			<a href='noticia.php?news=$id&pgtitulo=$titulo'>
+			
 			<img src='img/noticias/$img'>
-			<h4>$titulo</h4>
+			
+				<h4>$titulo</h4>
 
-		</a>
+			</a>
 
 	</div>";
 
 }
   ?>
 
+	
+	</div> <!--FINAL DO CONTAINER DOS ARTIGOS-->
+	
+<?php 
+	echo "<p><a href='noticia.php?news=$id&pgtitulo=$titulo'><i class='fas fa-plus-square'></i> TODOS OS ARTIGOS</a></p>";
+?>
 
 </section>
 
@@ -430,7 +440,7 @@ while ($linha2=mysqli_fetch_array($nomeautor)) {
 
 	</div>
 	
-	<p><a href="lancamentos_index.php">Ver todos</a></p>
+	<p><a href="lancamentos_index.php"><i class="fas fa-list-alt"></i> TODOS</a></p>
 
 
 
@@ -466,7 +476,7 @@ while ($linha2=mysqli_fetch_array($nomeautor)) {
 
 		</div>
 
-		<p><a href="lancamentos_index.php">Ver todos</a></p>
+		<p><a href="lancamentos_index.php"><i class="fas fa-list-alt"></i> TODOS</a></p>
 
 </section>
 

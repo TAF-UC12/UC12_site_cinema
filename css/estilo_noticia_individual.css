@@ -143,12 +143,14 @@
 	margin: 1.25%;
 	/*background-color: lightblue;*/
 	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 #ficha_tec img {
-	width: 76.92307692307692%; /*300px de 390px*/
+	width: 100%;
 	height: auto;
-	margin-left: 11.53846153846154%;
 	border: 1px solid #000000;
 	box-shadow: 2px 2px 4px #000000;
 }
