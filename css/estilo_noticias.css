@@ -53,7 +53,7 @@
 .noticia_titulo h2 {
 	font-size: 1em;
 	color: #A4B2C1;
-	text-shadow: 1px 1px 2px #000000;
+	/*text-shadow: 1px 1px 2px #000000;*/
 	
 }
 
@@ -111,7 +111,7 @@
 
 #noticias_container > h2{
 	color: #FF5F5E;
-	text-shadow: 1px 1px 2px #000000;
+	/*text-shadow: 1px 1px 2px #000000;*/
 }
 
 .lista_noticias {
