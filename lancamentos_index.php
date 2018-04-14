@@ -169,7 +169,7 @@ $pgtitulo = $_GET["pg"];
 					
 				echo "<figure>
   				
-					<a class='poster' href='filme2.php?pgtitulo=$titulo&filme=$idfilme'>
+					<a class='poster' href='filme.php?pgtitulo=$titulo&filme=$idfilme'>
 						<img src='img/posters/$poster' alt='$titulo'>
 					</a>
 

@@ -376,19 +376,51 @@ estilização do slideshow*/
 	overflow: hidden;
 }
 
-.cartaz_container > div, .embreve_container > div {
-	width: 100px;
+figure {
+	width: 100px; 
 	height: auto;
+	line-height: 1em;
 	margin-top: 10px;
 	margin-bottom: 5px;
-	
 }
 
-.cartaz_container img, .embreve_container img {
+figure img {
 	width: 100%;
 	height: auto;
-	border: 1px solid #000000;
-	box-shadow: 2px 2px 4px #000000;
 }
 
+
+figcaption {
+	text-align: center;
+	color: #ffffff;
+	text-shadow: 1px 1px 2px #000000;
+}
+
+.poster {
+  display: inline-block;
+  height: auto;
+  position: relative;
+  width: auto;
+}
+
+.poster:hover::after {
+  visibility: visible
+}
+
+.poster img {
+  width: 100%
+}
+
+.poster::after {
+  background: url(../img/posters/info.png) no-repeat;
+  background-size: 100%;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+}
 

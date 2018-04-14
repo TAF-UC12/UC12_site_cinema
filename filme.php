@@ -139,8 +139,6 @@ $pgtitulo = $_GET["pgtitulo"];
 
 <div id="corpo_filme">
 
-
-
 <?php
 
 require_once "config/conectar.php";
@@ -166,30 +164,49 @@ $sinopse = $linha["sinopse"];
 $diretor = $linha["diretor"];
 $duracao = $linha["duracao"];
 $genero = $linha["genero"];
-$pais = $linha["paisOrigem"];	
-	
-	
-		echo "<div id='poster_filme'>
+$pais = $linha["paisOrigem"];
+
+echo "<div id='poster_filme'>
 				<img src='img/posters/$poster' alt='$titulo'>
 		
-			</div>";
+			</div>
 	
-	
-	echo "<div id='ficha_filme'>
-		<p><b>Título original:</b> $titoriginal</p>
-		<p><b>Estréia:</b> $estreia</p>
-		<p><b>Genêro:</b> $genero</p>
-		<p><b>Duração:</b> $duracao min</p>
-		<p><b>País origem:</b> $pais</p>
-		<p><b>Diretor:</b> $diretor</p>
-		<p><b>Atores:</b> $elenco</p>
-		<p><b>Sinopse:</b></p>
-		$sinopse
+<div id='ficha_filme'>
+		<p>Título original</p>
+		<h4>$titoriginal</h4>
+		<p>País origem</p>
+		<h4>$pais</h4>
+		<p>Direção</p>
+		<h4>$diretor</h4>
+		<p>Elenco</p>
+		<h4>$elenco</h4>
+		<p>Estréia</p>
+		<h4>$estreia</h4>
+		<p>Genêro</p>
+		<h4>$genero</h4>
+		<p>Duração</p>
+		<h4>$duracao min</h4>
 		
 	</div>";
+
+?>	
 	
+<div id="galeria_filme">
+	
+	
+</div>	
+	
+<?php 
+	echo "<div id='filme_sinopse'>
+	
+	<p>Sinopse</p>
+	<h4>$sinopse</h4>";
 }
 ?>
+	
+</div>
+
+
 </div>
 
 </main>

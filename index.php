@@ -427,10 +427,19 @@ while ($linha2=mysqli_fetch_array($nomeautor)) {
 				or die ("Não foi possível realizar a consulta ao banco de dados");
 
 				while ($linha=mysqli_fetch_array($resultado)) {
-
+						
+				$idfilme = $linha["id"];	
 				$poster = $linha["poster"];
-				$titulo = $linha["nome"];		
-				echo  "<div><a href='#'><img src='img/posters/$poster' alt='$titulo'></a></div>";	
+				$titulo = $linha["nome"];	
+					
+					
+				echo "<figure>
+  				
+					<a class='poster' href='filme.php?pgtitulo=$titulo&filme=$idfilme'>
+						<img src='img/posters/$poster' alt='$titulo'>
+					</a>
+
+				</figure>"; 
 					
 
 				}
@@ -467,9 +476,20 @@ while ($linha2=mysqli_fetch_array($nomeautor)) {
 				while ($linha=mysqli_fetch_array($resultado)) {
 
 				$poster = $linha["poster"];
+			
+					
+				echo "<figure>
+  				
+					<a class='poster' href='filme.php?pgtitulo=$titulo&filme=$idfilme'>
+						<img src='img/posters/$poster' alt='$titulo'>
+					</a>
 
-				echo  "<div><a href='#'><img src='img/posters/$poster'></a></div>";			
-
+				</figure>"; 	
+					
+					
+					
+					
+					
 				}
 		?>
 
@@ -489,6 +509,10 @@ while ($linha2=mysqli_fetch_array($nomeautor)) {
 
 
 <footer>
+
+	<?php
+		require_once "footer.php";
+	?>
 
 </footer>
 
