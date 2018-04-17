@@ -45,22 +45,75 @@
                           
 </header>	
 
-<section id="filme_topo_container">
+<?php
+
+require_once "config/conectar.php";
+
+//Agora é realizar a querie de busca no banco de dados	
 	
-	<div id="filme_info">
+	
+$filme = $_GET["filme"];	
+	
+$sql = "SELECT * FROM filmes WHERE id = $filme";	
+	
+$resultado = mysqli_query($strcon, $sql)
+or die ("Não foi possível realizar a consulta ao banco de dados");
+	
+while ($linha=mysqli_fetch_array($resultado)) {
+	
+$titulo = $linha["nome"];
+$titoriginal = $linha["nomeOriginal"];
+$poster = $linha["poster"];	
+$estreia = $linha["estreia"];
+$elenco = $linha["elenco"];	
+$sinopse = $linha["sinopse"];
+$diretor = $linha["diretor"];
+$duracao = $linha["duracao"];
+$genero = $linha["genero"];
+$pais = $linha["paisOrigem"];
+
+
+
+echo "<section id='filme_topo_container' style='background-image: url(img/noticias/jogador1news1.jpg); background-repeat: no-repeat; background-size: 100%;background-blend-mode:color-dodge'>
+	
+	<div id='filme_info'>
 		
 		<div id='poster_filme'>
 		
-			<img src='img/posters/submersao.jpg'>
+			<img src='img/posters/$poster'>
 		
 		</div>
 		
-		<div id="info"></div>
+		<div id='info'>
+			
+			<h1>$titulo</h1>
+			<h2>$titoriginal</h2>
+			
+			<h3>Lançamento </h3>
+			<p>$estreia</p>
+			
+			<h3>Direção </h3>
+			<p>$diretor</p>
+			
+			<h3>Elenco </h3>
+			<p>$elenco</p>
+			
+			<h3>Sinopse</h3><br>
+			<p class='sinopse'>$sinopse</p>
+			
+			<ol>
+				<li><h4>Gênero</h4>$genero</li>
+				<li><h4>Duração</h4>$duracao</li>
+				<li><h4>País</h4>$pais</li>
+			</ol>
+			
+		</div>
 		
 	</div>
 	
-</section>	
-
+</section>";	
+}
+?>
 
 <?php
 	
