@@ -283,11 +283,15 @@ $pgtitulo = $_GET["pg"];
 			
 </div>		
 
-	
 <footer>
 
+	<?php
+		require_once "footer.php";
+	?>
+
 </footer>		
-				
+
+								
 </main>
 <!--SCRIPT PARA FUNCIONAMENTO DAS ABAS-->
 <script type="text/javascript">
@@ -314,6 +318,7 @@ $pgtitulo = $_GET["pg"];
 	function(){/*função a ser executada ao tirar o cursor do elemento*/}
 	);
 </script>
+
 
 </body>
 </html>

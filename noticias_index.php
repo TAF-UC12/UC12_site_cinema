@@ -323,7 +323,11 @@ while ($linha2=mysqli_fetch_array($nomeautor)) {
 </div><!--final do corpo-->		
 		
 <footer>
-	
+
+	<?php
+		require_once "footer.php";
+	?>
+
 </footer>					
 	
 </main>

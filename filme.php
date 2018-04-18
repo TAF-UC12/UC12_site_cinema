@@ -289,6 +289,17 @@ while ($linha2=mysqli_fetch_array($nomeautor)) {
 
 </div>
 
+<footer>
+
+	<?php
+		require_once "footer.php";
+	?>
+
+</footer>
+
+
 </main>
+
+<script id="dsq-count-scr" src="//cineontherocks.disqus.com/count.js" async></script>
 </body>
 </html>

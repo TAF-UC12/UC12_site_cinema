@@ -157,6 +157,8 @@ while ($linha2=mysqli_fetch_array($nomeautor)) {
 						$autor
 					</div>
 				
+					<div><i class='fas fa-comment'></i> <a href='noticia.php?#disqus_thread'></a></div>
+				
 				</div>";             		
 }
 ?>                    
@@ -368,9 +370,14 @@ $poster = $linha2["poster"];
 	
 </aside>
 
+</div> <!--FINAL DO CORPO DO SITE-->
 
 <footer>
-	
+
+	<?php
+		require_once "footer.php";
+	?>
+
 </footer>			
 	
 </main>
