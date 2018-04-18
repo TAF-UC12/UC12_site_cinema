@@ -362,7 +362,8 @@ $poster = $linha2["poster"];
 		
 	</div>";
 	}
-				
+
+	
 
 }
 ?>	
