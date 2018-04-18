@@ -368,7 +368,13 @@ $poster = $linha2["poster"];
 }
 ?>	
 	
+<div class="ad_aside">
+		
+		<img src="img/propaganda/ad_word_1.png" alt="">
+		
+	</div>
 	
+			
 </aside>
 
 </div> <!--FINAL DO CORPO DO SITE-->

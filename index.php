@@ -452,6 +452,13 @@ while ($linha2=mysqli_fetch_array($nomeautor)) {
 	<p><a href="lancamentos_index.php"><i class="fas fa-list-alt"></i> TODOS</a></p>
 
 
+	<div class="ad_aside">
+		
+		<img src="img/propaganda/ad_word_1.png" alt="">
+		
+	</div>
+
+
 
 	<h2>Em breve</h2>
 
