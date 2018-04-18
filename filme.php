@@ -71,10 +71,11 @@ $diretor = $linha["diretor"];
 $duracao = $linha["duracao"];
 $genero = $linha["genero"];
 $pais = $linha["paisOrigem"];
+$imgFundo = $linha["imgFundo"];
 
 
 
-echo "<section id='filme_topo_container' style='background-image: url(img/noticias/jogador1news1.jpg); background-repeat: no-repeat; background-size: 100%;background-blend-mode:color-dodge'>
+echo "<section id='filme_topo_container' style='background-image: url(img/posters/$imgFundo); background-repeat: no-repeat; background-size: 100%;'>
 	
 	<div id='filme_info'>
 		
@@ -128,79 +129,194 @@ $pgtitulo = $_GET["pgtitulo"];
 		?>	
 	</div>
 
-	<div class='pg_titulo'>
-	<?php
-		if ($pgtitulo == "$pgtitulo") { echo "$pgtitulo";}
-		?>
-	</div>
+	
 
 
 <div id="corpo_filme">
 
-<?php
+	<!--INICIO SECTION COM AS DIVS DE LISTA DE NOTICIAS DO FILME-->
+<section id="noticias_container">
 
-require_once "config/conectar.php";
 
-//Agora é realizar a querie de busca no banco de dados	
-	
-	
-$filme = $_GET["filme"];	
-	
-$sql = "SELECT * FROM filmes WHERE id = $filme";	
-	
+	<h2>Mais sobre <?php echo "$titulo_aba";
+		?></h2>
+
+	<div class="lista_noticias">
+		
+		
+<?php          
+           include "config/conectar.php";
+
+//Agora é realizar a querie de busca no banco de dados
+
+$noticia = $_GET['filme'];		
+		
+		
+$sql = "SELECT * FROM noticias WHERE relacionado = $noticia ORDER BY 
+id DESC LIMIT 10";
+
+
 $resultado = mysqli_query($strcon, $sql)
 or die ("Não foi possível realizar a consulta ao banco de dados");
-	
+
+// Agora iremos "pegar" cada campo da notícia
+// e organizar no HTML
+
 while ($linha=mysqli_fetch_array($resultado)) {
-	
-$titulo = $linha["nome"];
-$titoriginal = $linha["nomeOriginal"];
-$poster = $linha["poster"];	
-$estreia = $linha["estreia"];
-$elenco = $linha["elenco"];	
-$sinopse = $linha["sinopse"];
-$diretor = $linha["diretor"];
-$duracao = $linha["duracao"];
-$genero = $linha["genero"];
-$pais = $linha["paisOrigem"];
 
-echo "<div id='poster_filme'>
-				<img src='img/posters/$poster' alt='$titulo'>
-		
+$id = $linha["id"];
+$titulo = $linha["titulo"];
+$subtitulo = $linha["subtitulo"];
+$data = $linha["data"];
+$hora = $linha["hora"];
+$img = $linha["img"];
+$idautor = $linha["autor"];
+          
+	
+//AQUI É CAPTURADO O NOME DO AUTOR ATRAVÉS DO IDAUTOR:	
+$sql2 = "SELECT * FROM login WHERE id='$idautor'";
+	
+$nomeautor = mysqli_query($strcon, $sql2)
+or die ("Não foi possível realizar a consulta nome do autor!");
+	
+while ($linha2=mysqli_fetch_array($nomeautor)) {	
+	$autor = $linha2["nome"];
+}	
+	
+
+		echo "<div class='noticia'>
+
+			<img src='img/noticias/$img' alt=''>
+			<div class='info_noticia'>
+
+				<div><i class='fas fa-calendar-alt'></i> $data</div>
+				<div><i class='fas fa-clock'></i> $hora</div>
+				<div><i class='fas fa-user'></i> $autor</div>
+				<div><i class='fas fa-comment'></i> <a href='noticia.php?news=$id&pgtitulo=$titulo#disqus_thread'></a></div>
+				
+
 			</div>
-	
-<div id='ficha_filme'>
-		<p>Título original</p>
-		<h4>$titoriginal</h4>
-		<p>País origem</p>
-		<h4>$pais</h4>
-		<p>Direção</p>
-		<h4>$diretor</h4>
-		<p>Elenco</p>
-		<h4>$elenco</h4>
-		<p>Estréia</p>
-		<h4>$estreia</h4>
-		<p>Genêro</p>
-		<h4>$genero</h4>
-		<p>Duração</p>
-		<h4>$duracao min</h4>
-		
-	</div>";
 
-?>	
-	
-<div id="galeria_filme">
-	
-	
-</div>	
-	
-<?php 
-	echo "<div id='filme_sinopse'>
-	
-	<p>Sinopse</p>
-	<h4>$sinopse</h4>";
+
+			<div class='chamada_noticia'>
+				<div><h1>$titulo</h1></div>
+				<div><h2>$subtitulo</h2></div>
+				<a href='noticia.php?news=$id&pgtitulo=$titulo'><i class='fas fa-arrow-circle-right'></i> Continuar lendo</a>
+			</div>
+
+
+		</div>";
+
 }
-?>
+  ?>				
+
+	</div>
+
+
+
+
+</section>
+	
+<!--INICIO SECTION COM AS DIVS DE FILMES-->
+<section id="filmes_cartaz_container">
+
+	<h2>???????</h2>
+
+	<div class="cartaz_container">
+		
+		<?php
+
+				
+
+				//conectar ao banco de dados
+				include 'config/conectar.php';
+
+
+				//Agora é realizar a querie de busca no banco de dados
+
+				$sql = "SELECT * FROM filmes WHERE emCartaz='sim' ORDER BY 
+				id DESC LIMIT 8";
+
+				$resultado = mysqli_query($strcon, $sql)
+				or die ("Não foi possível realizar a consulta ao banco de dados");
+
+				while ($linha=mysqli_fetch_array($resultado)) {
+						
+				$idfilme = $linha["id"];	
+				$poster = $linha["poster"];
+				$titulo = $linha["nome"];	
+					
+					
+				echo "<figure>
+  				
+					<a class='poster' href='filme.php?pgtitulo=$titulo&filme=$idfilme'>
+						<img src='img/posters/$poster' alt='$titulo'>
+					</a>
+
+				</figure>"; 
+					
+
+				}
+		?>
+	
+	
+
+	</div>
+	
+	<p><a href="lancamentos_index.php"><i class="fas fa-list-alt"></i> TODOS</a></p>
+
+
+
+	<h2>Você pode gostar</h2>
+
+	<div class="embreve_container">
+
+			<?php
+
+				
+
+				//conectar ao banco de dados
+				include 'config/conectar.php';
+
+
+				//Agora é realizar a querie de busca no banco de dados
+
+				$sql = "SELECT * FROM filmes WHERE genero ='$genero' ORDER BY 
+				id DESC LIMIT 8";
+
+				$resultado = mysqli_query($strcon, $sql)
+				or die ("Não foi possível realizar a consulta ao banco de dados");
+
+				while ($linha=mysqli_fetch_array($resultado)) {
+
+				$idFilmeRelacionado= $linha["id"];	
+				$posterRelacionado = $linha["poster"];
+				$tituloRelacionado = $linha["nome"];
+			
+					
+				echo "<figure>
+  				
+					<a class='poster' href='filme.php?pgtitulo=$tituloRelacionado&filme=$idFilmeRelacionado'>
+						<img src='img/posters/$posterRelacionado' alt='$tituloRelacionado'>
+					</a>
+
+				</figure>"; 	
+					
+					
+					
+					
+					
+				}
+		?>
+
+
+		</div>
+
+		<p><a href="lancamentos_index.php"><i class="fas fa-list-alt"></i> TODOS</a></p>
+
+</section>
+
+
 	
 </div>
 
