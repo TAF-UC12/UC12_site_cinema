@@ -220,18 +220,14 @@ while ($linha2=mysqli_fetch_array($nomeautor)) {
 <!--INICIO SECTION COM AS DIVS DE FILMES-->
 <section id="filmes_cartaz_container">
 
-	<h2>???????</h2>
+	<h2>Galeria de imagens</h2>
 
 	<div class="cartaz_container">
-		
 
- 
+
+
+	</div> 
 	
-
-	
-			
-
-	</div>
 	
 	<p><a href="lancamentos_index.php"><i class="fas fa-list-alt"></i> TODOS</a></p>
 
