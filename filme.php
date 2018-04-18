@@ -224,42 +224,12 @@ while ($linha2=mysqli_fetch_array($nomeautor)) {
 
 	<div class="cartaz_container">
 		
-		<?php
 
-				
-
-				//conectar ao banco de dados
-				include 'config/conectar.php';
-
-
-				//Agora é realizar a querie de busca no banco de dados
-
-				$sql = "SELECT * FROM filmes WHERE emCartaz='sim' ORDER BY 
-				id DESC LIMIT 8";
-
-				$resultado = mysqli_query($strcon, $sql)
-				or die ("Não foi possível realizar a consulta ao banco de dados");
-
-				while ($linha=mysqli_fetch_array($resultado)) {
-						
-				$idfilme = $linha["id"];	
-				$poster = $linha["poster"];
-				$titulo = $linha["nome"];	
-					
-					
-				echo "<figure>
-  				
-					<a class='poster' href='filme.php?pgtitulo=$titulo&filme=$idfilme'>
-						<img src='img/posters/$poster' alt='$titulo'>
-					</a>
-
-				</figure>"; 
-					
-
-				}
-		?>
+ 
 	
+
 	
+			
 
 	</div>
 	
