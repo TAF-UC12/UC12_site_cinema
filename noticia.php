@@ -229,6 +229,62 @@ $autor = $linha["autor"];
 		<p>Notícias relacionadas</p>
 		
 		
+		<?php          
+           include "config/conectar.php";
+
+//Agora é realizar a querie de busca no banco de dados
+
+$noticia = $_GET['filme'];		
+		
+		
+$sql = "SELECT * FROM noticias WHERE relacionado = $noticia ORDER BY 
+id DESC LIMIT 10";
+
+
+$resultado = mysqli_query($strcon, $sql)
+or die ("Não foi possível realizar a consulta ao banco de dados");
+
+// Agora iremos "pegar" cada campo da notícia
+// e organizar no HTML
+
+while ($linha=mysqli_fetch_array($resultado)) {
+
+$id = $linha["id"];
+$titulo = $linha["titulo"];
+$subtitulo = $linha["subtitulo"];
+$data = $linha["data"];
+$hora = $linha["hora"];
+$img = $linha["img"];
+$idautor = $linha["autor"];
+          
+	
+//AQUI É CAPTURADO O NOME DO AUTOR ATRAVÉS DO IDAUTOR:	
+$sql2 = "SELECT * FROM login WHERE id='$idautor'";
+	
+$nomeautor = mysqli_query($strcon, $sql2)
+or die ("Não foi possível realizar a consulta nome do autor!");
+	
+while ($linha2=mysqli_fetch_array($nomeautor)) {	
+	$autor = $linha2["nome"];
+}	
+	
+
+		echo "<div id='relacionadas'>
+		
+			<div class='noticia_relacionada'>
+		
+				<img src='img/noticias/$img' alt=''>
+			
+				<a href='#'>$titulo</a>
+
+			</div>
+
+		</div>";
+
+}
+  ?>
+		
+		
 		<div id="relacionadas">
 		
 			<div class="noticia_relacionada">

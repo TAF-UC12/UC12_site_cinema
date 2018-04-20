@@ -78,6 +78,7 @@
 	padding-right: 10px;
 	font-weight: bold;
 	color: #1E77B2;
+	text-shadow: 1px 1px 1px #000000;
 }
 
 #info p {
@@ -111,6 +112,7 @@
 #info ol li h4{
 	color: #1E77B2;
 	font-weight: bold;
+	text-shadow: 1px 1px 2px #000000;
 }
 
 
