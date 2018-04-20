@@ -75,7 +75,7 @@ $imgFundo = $linha["imgFundo"];
 
 
 
-echo "<section id='filme_topo_container' style='background-image: url(img/posters/$imgFundo); background-repeat: no-repeat; background-size: 100%;'>
+echo "<section id='filme_topo_container' style='background-image: url(img/posters/backgrounds/$imgFundo); background-repeat: no-repeat; background-size: 100%;'>
 	
 	<div id='filme_info'>
 		
