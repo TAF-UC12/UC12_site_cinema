@@ -228,17 +228,18 @@ $autor = $linha["autor"];
 		
 		<p>Notícias relacionadas</p>
 		
+		<div id='relacionadas'>
 		
 		<?php          
            include "config/conectar.php";
 
 //Agora é realizar a querie de busca no banco de dados
 
-$noticia = $_GET['filme'];		
+$relacionados = $_GET['rel'];		
 		
 		
-$sql = "SELECT * FROM noticias WHERE relacionado = $noticia ORDER BY 
-id DESC LIMIT 10";
+$sql = "SELECT * FROM noticias WHERE relacionado = $relacionados ORDER BY 
+id DESC LIMIT 3";
 
 
 $resultado = mysqli_query($strcon, $sql)
@@ -257,65 +258,19 @@ $hora = $linha["hora"];
 $img = $linha["img"];
 $idautor = $linha["autor"];
           
-	
-//AQUI É CAPTURADO O NOME DO AUTOR ATRAVÉS DO IDAUTOR:	
-$sql2 = "SELECT * FROM login WHERE id='$idautor'";
-	
-$nomeautor = mysqli_query($strcon, $sql2)
-or die ("Não foi possível realizar a consulta nome do autor!");
-	
-while ($linha2=mysqli_fetch_array($nomeautor)) {	
-	$autor = $linha2["nome"];
-}	
-	
 
-		echo "<div id='relacionadas'>
-		
-			<div class='noticia_relacionada'>
+		echo "<div class='noticia_relacionada'>
 		
 				<img src='img/noticias/$img' alt=''>
 			
 				<a href='#'>$titulo</a>
 
-			</div>
-
-		</div>";
+			</div>";
 
 }
   ?>
+	</div>	
 		
-		
-		<div id="relacionadas">
-		
-			<div class="noticia_relacionada">
-		
-				<img src="img/noticias/img_noticia_provisorio.jpg" alt="">
-			
-				<a href="#">Título da noticia</a>
-
-			</div>
-
-			<div class="noticia_relacionada">
-		
-				<img src="img/noticias/img_noticia_provisorio.jpg" alt="">
-			
-				<a href="#">Título da noticia Título da noticia</a>
-
-			</div>
-
-			<div class="noticia_relacionada">
-		
-				<img src="img/noticias/img_noticia_provisorio.jpg" alt="">
-			
-				<a href="#">Título da noticia</a>
-
-			</div>
-
-		</div>
-		
-	</div>
-	
-	
 	
 	<div id="comentarios_container">
 		
@@ -423,7 +378,9 @@ $poster = $linha2["poster"];
 
 }
 ?>	
-	
+
+
+			
 <div class="ad_aside">
 		
 		<img src="img/propaganda/ad_word_1.png" alt="">

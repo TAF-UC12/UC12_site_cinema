@@ -148,7 +148,7 @@ $imgDestaque = $linha["imgDestaque"];
                  	<h1>$titulo</h1>
                     <h2>$subtitulo</h2>
 
-                 	<a href='noticia.php?news=$id&pgtitulo=$titulo'><i class='fas fa-arrow-circle-right'></i> Continuar lendo</a>
+                 	<a href='noticia.php?news=$id&pgtitulo=$titulo&rel=$relacionado'><i class='fas fa-arrow-circle-right'></i> Continuar lendo</a>
 
                 </div>
             </div>";
@@ -246,6 +246,7 @@ $data = $linha["data"];
 $hora = $linha["hora"];
 $img = $linha["img"];
 $idautor = $linha["autor"];
+$relacionado = $linha["relacionado"];	
           
 	
 //AQUI É CAPTURADO O NOME DO AUTOR ATRAVÉS DO IDAUTOR:	
@@ -267,7 +268,7 @@ while ($linha2=mysqli_fetch_array($nomeautor)) {
 				<div><i class='fas fa-calendar-alt'></i> $data</div>
 				<div><i class='fas fa-clock'></i> $hora</div>
 				<div><i class='fas fa-user'></i> $autor</div>
-				<div><i class='fas fa-comment'></i> <a href='noticia.php?news=$id&pgtitulo=$titulo#disqus_thread'></a></div>
+				<div><i class='fas fa-comment'></i> <a href='noticia.php?news=$id&pgtitulo=$titulo&rel=$relacionado#disqus_thread'></a></div>
 				
 
 			</div>
@@ -276,7 +277,7 @@ while ($linha2=mysqli_fetch_array($nomeautor)) {
 			<div class='chamada_noticia'>
 				<div><h1>$titulo</h1></div>
 				<div><h2>$subtitulo</h2></div>
-				<a href='noticia.php?news=$id&pgtitulo=$titulo'><i class='fas fa-arrow-circle-right'></i> Continuar lendo</a>
+				<a href='noticia.php?news=$id&pgtitulo=$titulo&rel=$relacionado'><i class='fas fa-arrow-circle-right'></i> Continuar lendo</a>
 			</div>
 
 
