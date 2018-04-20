@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="estilo_geral.css" server="192.168.1.10//var/www/html/" local="131687257667030115" remote="131687367000000000" Dst="1" />
+<file name="estilo_geral.css" server="192.168.1.10//var/www/html/" local="131687301553270610" remote="131687409000000000" Dst="1" />
 <file name="estilo_menu.css" server="192.168.1.10//var/www/html/" local="131687257667050175" remote="131687367000000000" Dst="1" />
 <file name="estilo_index.css" server="192.168.1.10//var/www/html/" local="131687257667035135" remote="131687367000000000" Dst="1" />
 <file name="estilo_noticias.css" server="192.168.1.10//var/www/html/" local="131687257667065217" remote="131687367000000000" Dst="1" />
@@ -8,4 +8,5 @@
 <file name="estilo_lancamentos.css" server="192.168.1.10//var/www/html/" local="131687269631373988" remote="131687377200000000" Dst="1" />
 <file name="cabecalho.css" server="192.168.1.10//var/www/html/" local="131687257667015075" remote="131687367000000000" Dst="1" />
 <file name="estilo_filme.css" server="192.168.1.10//var/www/html/" local="131687257667020086" remote="131687367000000000" Dst="1" />
+<file name="estilo_formulario.css" server="192.168.1.10//var/www/html/" local="131687303046467931" remote="131687410800000000" Dst="1" />
 </dwsync>

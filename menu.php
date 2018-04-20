@@ -59,7 +59,7 @@
     </li>
     <li><a href="lancamentos_index.php?pg=">Lançamentos</a></li>
     <li><a href="noticias_index.php?pg=noticias">Artigos especiais</a></li>
-	<li><a href="contato.php?pg=">Contato</a></li>
+	<li><a href="contato.php?pg=contato">Contato</a></li>
 </ul>
 </nav>
 

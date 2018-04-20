@@ -8,7 +8,7 @@
 	<?php
 		$pgtitulo = $_GET["pg"];
 
-		if ($pgtitulo == "") { echo "Página inicial";}
+		if ($pgtitulo == "contato") { echo "Página de contato";}
 
 	?>
 
@@ -33,6 +33,7 @@
 
 <link href="css/estilo_geral.css" rel="stylesheet" type="text/css">
 <link href="css/estilo_menu.css" rel="stylesheet" type="text/css">
+<link href="css/estilo_formulario.css" rel="stylesheet" type="text/css">
  <!-- #region Jssor Slider Begin -->
     <!-- Generator: Jssor Slider Maker -->
     <!-- Source: https://www.jssor.com -->
@@ -146,9 +147,9 @@
 
 </header>
 
-<div id="lancamentos_topo">
+<div id="formulario_topo">
 	
-	<img src="img/capa_paginas.jpg" alt="img_topo">
+	
 	
 </div>
 
@@ -168,17 +169,54 @@ $pgtitulo = $_GET["pg"];
 
 	<div class='pg_titulo'>
 	<?php
-		if ($pgtitulo == '') { echo 'Contato';}
+		if ($pgtitulo == 'contato') { echo 'Contato';}
 		?>
 	</div>
 
 <div id="corpo_home">
 
 
-
-
 <!--CONTEUDO DA PÁGINA CONTATO AQUI-->
 
+<div class="container">
+  <form action='' method='post' accept-charset="UTF-8">
+   
+
+    <div class="row">
+      <div class="col-25">
+        <label for="nome">Nome completo*</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="nome" placeholder="Digite seu nome..">
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-25">
+        <label for="email">Email*</label>
+      </div>
+      <div class="col-75">
+        <input type="email" id="lname" name="email" placeholder="Digite seu email..">
+      </div>
+    </div>
+    
+	
+	<div class="row">
+      <div class="col-25">
+        <label for="mensagem">Mensagem*</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="mensagem" placeholder="Digite sua mensagem.." style="height:200px"></textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <input type="submit" value="Enviar" name='submit'>
+    </div>
+    
+  </form>
+  
+</div>
 
 
 
@@ -186,6 +224,10 @@ $pgtitulo = $_GET["pg"];
 
 
 <footer>
+
+	<?php
+		require_once "footer.php";
+	?>
 
 </footer>
 

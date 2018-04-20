@@ -81,7 +81,7 @@ main{
 	transition: .5s all ease;
 }
 
-#wrap {
+#barrabusca #wrap {
   margin: 5px 10px;
   display: inline-block;
   position: relative;
@@ -90,7 +90,7 @@ main{
   padding: 0;
 }
 
-input[type="text"] {
+#barrabusca #wrap input[type="text"] {
   height: 50px;
   font-size: 2em;
   display: inline-block;
@@ -110,17 +110,17 @@ input[type="text"] {
   cursor: pointer;
 }
 
-input[type="text"]:focus:hover {
+#barrabusca #wrap input[type="text"]:focus:hover {
   border-bottom: 2px solid #FF5F5E;
 }
 
-input[type="text"]:focus {
+#barrabusca #wrap input[type="text"]:focus {
   width: 300px;
   z-index: 1;
   border-bottom: 2px solid #FF5F5E;
   cursor: text;
 }
-input[type="submit"] {
+#barrabusca #wrap input[type="submit"] {
   height: 50px;
   width: 50px;
   display: inline-block;
@@ -138,7 +138,7 @@ input[type="submit"] {
   transition: opacity .4s ease;
 }
 
-input[type="submit"]:hover {
+#barrabusca #wrap input[type="submit"]:hover {
   opacity: 0.8;
 }
 
