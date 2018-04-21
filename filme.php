@@ -73,8 +73,7 @@ $genero = $linha["genero"];
 $pais = $linha["paisOrigem"];
 $imgFundo = $linha["imgFundo"];
 
-
-
+	
 echo "<section id='filme_topo_container' style='background-image: url(img/posters/backgrounds/$imgFundo); background-repeat: no-repeat; background-size: 100%;'>
 	
 	<div id='filme_info'>
@@ -185,6 +184,8 @@ while ($linha2=mysqli_fetch_array($nomeautor)) {
 }	
 	
 
+	
+	
 		echo "<div class='noticia'>
 
 			<img src='img/noticias/$img' alt=''>
@@ -219,7 +220,7 @@ while ($linha2=mysqli_fetch_array($nomeautor)) {
 </section>
 	
 <!--INICIO SECTION COM AS DIVS DE FILMES-->
-<section id="filmes_cartaz_container">
+<section id="filmes_relacionados_container">
 
 	<h2>Galeria de imagens</h2>
 
@@ -236,7 +237,7 @@ while ($linha2=mysqli_fetch_array($nomeautor)) {
 
 	<h2>Você pode gostar</h2>
 
-	<div class="embreve_container">
+	<div class="relacionados_container">
 
 			<?php
 

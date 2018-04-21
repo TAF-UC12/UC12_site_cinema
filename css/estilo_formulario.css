@@ -11,9 +11,8 @@
 
 .container {
 	width: 90%;
-	margin: 20px;
-	padding: 20px;
 	margin: auto;
+	padding: 20px;
 }
 
 .container input[type=text], .container input[type=email], .container input[type=number], .container select, .container textarea {

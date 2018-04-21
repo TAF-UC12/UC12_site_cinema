@@ -291,6 +291,7 @@ $data = $linha["data"];
 $hora = $linha["hora"];
 $img = $linha["img"];
 $idautor = $linha["autor"];
+$relacionado = $linha["relacionado"];		
           		
 
 		echo "
@@ -299,7 +300,7 @@ $idautor = $linha["autor"];
 		<div class='artigo_tag'>Artigo</div>
 		
 		
-			<a href='noticia.php?news=$id&pgtitulo=$titulo'>
+			<a href='noticia.php?news=$id&pgtitulo=$titulo&rel=$relacionado'>
 			
 			<img src='img/noticias/$img'>
 			

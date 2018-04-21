@@ -4,9 +4,9 @@
 #lancamentos_topo {
 	position: relative;
 	width: 100%;
-	max-height: 250px;
-/*	background-color: maroon;
-*/	overflow: hidden;
+	height: 250px;
+	background-color: #1E77B2;
+	overflow: hidden;
 }
 
 #lancamentos_topo img {

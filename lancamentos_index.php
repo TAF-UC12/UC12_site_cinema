@@ -90,7 +90,7 @@
 	
 <div id="lancamentos_topo">
 	
-	<img src="img/capa_paginas.jpg" alt="img_topo">
+	
 	
 </div>	
 

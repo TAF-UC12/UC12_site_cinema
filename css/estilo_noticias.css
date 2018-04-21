@@ -214,7 +214,7 @@
 	transition: .5s all ease;
 }
 
-#mais_comentados_container {
+#artigos_aside_container {
 	position: relative;
 	width: 33.33333333333333%; /*400px de 1200px*/
 	background-color: lightcoral;
@@ -222,25 +222,74 @@
 	height: auto;
 }
 
-#mais_comentados_container h2 {
+#artigos_aside_container h2 {
 	font-size: 1.125em; /*18px*/
 }
 
-.noticia_comentadas {
+.artigos_aside {
 	position: relative;
 	width: 100%;
 	height: auto;
 	background-color: silver;
-	padding-left: 10px;
 }
 
-.n_comentarios {
-	margin-top: 30px;
-	font-size: .875em; /*14px*/
-	font-weight: bold;
-}
-
-.titulo_noticia_comentada {
+#lista_artigos {
+	position: relative;
+	width: 100%;
+	background-color: #CCCB22;
 	height: auto;
-	font-size: .875em; /*14px*/
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 10px;
+}
+
+.artigo {
+	position: relative;
+	width: 100%; /*250px de 1200px*/
+	height: 100%;
+	float: left;
+	display: block;
+	margin-bottom: 20px;
+}
+
+.artigo:hover {
+	/*background-color: #E0E8F0;*/
+	/*box-shadow: 2px 2px 4px #1E76B2;*/
+}
+
+.artigo_tag {
+	position: absolute;
+	background-color: #B2B127;
+	left: 10px;
+	top: 10px;
+	font-weight: bold;
+	color: #ffffff;
+	padding: 0px 6px;
+}
+
+.artigo a{
+	text-decoration: none;
+	
+}
+
+.artigo h4{
+	position: absolute;
+	width: 93%;
+	bottom: 10px;
+	left: 10px;
+	font-size: 1.125em; /*8px*/
+	color: #ffffff;
+	text-align: left;
+}
+
+
+.artigo:last-child {
+	margin-right: 0px;
+}
+
+.artigo img {
+	width: 100%;
+	height: auto;
+	border: 0;
 }

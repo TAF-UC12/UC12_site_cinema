@@ -135,10 +135,9 @@ $id = $linha["id"];
 $titulo = $linha["titulo"];
 $subtitulo = $linha["subtitulo"];
 $imgDestaque = $linha["imgDestaque"];	
+$relacionado = $linha["relacionado"];	
 
-           
-           
-         
+
            echo "<div data-p='225.00'>
                 <img data-u='image' src='img/slideshow/$imgDestaque' />
                 <div class='noticia_titulo'>
@@ -294,26 +293,62 @@ while ($linha2=mysqli_fetch_array($nomeautor)) {
 </section>		
 	
 <!--INICIO SECTION COM AS DIVS DE NOTICIAS MAIS COMENTADAS-->	
-<section id="mais_comentados_container">
+<section id="artigos_aside_container">
 
-	<h2>Notícias mais comentadas</h2>
+	<h2>Últimos artigos</h2>
 	
-	<div class="noticia_comentadas">
+	<div class="artigos_aside">
 		
-		<div class="comentadas">
-			<div class="n_comentarios"> 125 COMENTÁRIOS</div>
-			<div class="titulo_noticia_comentada">Título notícia</div>
-		</div>
+		<div id='lista_artigos'>         		
+
 		
-		<div class="comentadas">
-			<div class="n_comentarios"> 120 COMENTÁRIOS</div>
-			<div class="titulo_noticia_comentada">Título notícia</div>
-		</div>
 		
-		<div class="comentadas">
-			<div class="n_comentarios"> 15 COMENTÁRIOS</div>
-			<div class="titulo_noticia_comentada">Título notícia</div>
-		</div>
+		<?php          
+           include "config/conectar.php";
+
+//Agora é realizar a querie de busca no banco de dados
+
+$noticia = $_GET['news'];		
+		
+		
+$sql = "SELECT * FROM noticias WHERE TIPO= 2 LIMIT 8";
+
+
+$resultado = mysqli_query($strcon, $sql)
+or die ("Não foi possível realizar a consulta ao banco de dados");
+
+// Agora iremos "pegar" cada campo da notícia
+// e organizar no HTML
+
+while ($linha=mysqli_fetch_array($resultado)) {
+
+$id = $linha["id"];
+$titulo = $linha["titulo"];
+$subtitulo = $linha["subtitulo"];
+$data = $linha["data"];
+$hora = $linha["hora"];
+$img = $linha["img"];
+$idautor = $linha["autor"];
+$relacionado = $linha["relacionado"];          		
+
+		echo "
+		<div class='artigo'>
+
+			<a href='noticia.php?news=$id&pgtitulo=$titulo&rel=$relacionado'>
+			
+			<img src='img/noticias/$img'>
+			
+				<h4>$titulo</h4>
+
+			</a>
+
+		</div>";
+
+}
+  ?>
+
+	
+	</div>
 		
 	</div>
 	

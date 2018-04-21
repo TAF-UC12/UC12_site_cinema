@@ -58,6 +58,7 @@ header nav ul {
 	text-transform: uppercase;
 	font-weight: bolder;
 	color: #FFFFFF;
+	z-index: 1;
 }
 
 
@@ -71,6 +72,7 @@ header nav ul {
 	background-color: #fff;
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+	z-index: 1;
 }
 
 .btn-menu .bar {
@@ -83,6 +85,7 @@ header nav ul {
 	content: '';
 	top: 10px;
 	left: 0;
+	z-index: 1;
 }
 
 .btn-menu .bar:after {
@@ -90,6 +93,7 @@ header nav ul {
 	content: '';
 	top: -10px;	
 	left: 0;
+	z-index: 1;
 }
 
 .show .btn-menu .bar {
@@ -121,6 +125,7 @@ header nav ul {
 	border-bottom: none;
 	-webkit-transition: height 0.3s ease-in-out;
 	transition: height 0.3s ease-in-out;	
+	z-index: 1;
 }
 
 .mobile-nav a {
@@ -132,6 +137,7 @@ header nav ul {
 	line-height: 32px;
 	/*border-bottom: 1px solid #005500;*/	
 	text-align: left;
+	z-index: 1;
 }
 
 .mobile-nav a:focus,
