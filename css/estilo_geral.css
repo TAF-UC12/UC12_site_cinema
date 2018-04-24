@@ -19,9 +19,12 @@ body{
 
 header{
 	position: relative;
+	display: flex;
+	flex-direction: row;
 	width: 100%; /*1366px*/
 	height: 60px;
 	background-color: #44B4FF;
+	justify-content:space-between
 }
 
 
@@ -158,7 +161,6 @@ main{
 	font-size: 2.1em;
 	color: #ffffff;
 	padding: 0 10px;
-	display: inline-block;
 }
 
 #redessociais a:hover {

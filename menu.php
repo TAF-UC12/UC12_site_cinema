@@ -1,33 +1,10 @@
 
-<!--BARRA DE BUSCA-->
-<div id="barrabusca">
-	 
-	<div id="wrap">
-	  <form action="" autocomplete="on">
-	  <input id="search" name="search" type="text" placeholder="Buscar..."><input id="search_submit" value="Rechercher" type="submit">
-	  </form>
-	</div>
-	
-	
-</div>
-
-<div id="redessociais">
-	<p>Siga-nos nas redes</p>
-	<a href="#"><i class="fab fa-facebook"></i></a>
-	<a href="#"><i class="fab fa-instagram"></i></a>
-	<a href="#"><i class="fab fa-twitter-square"></i></i></a>
-	
-	
-</div>
-
 
 <div id="logo">
 	
 	<img src="img/logosite.png" alt="">
 	
 </div>
-
-
 
 <nav>
 
@@ -40,28 +17,31 @@
 <ul>
 	<li><a href="index.php?pg=">Home</a></li>
 	<li><a href="noticias_index.php?pg=noticias">Notícias</a></li>
-	<!--<li><a href="#" class="dd dd-01">Notícias</a>
-    	<ul class="dd-01-ul">
-			<li><a href="#">One</a></li>
-			<li><a href="#">Two</a></li>
-			<li><a href="#">Three</a></li>
-			<li><a href="#">Four</a></li>
-			<li><a href="#">Five</a></li>
-			<li><a href="#">Six</a></li>
-    	 </ul>
-</li>-->
-	<li><a href="criticas_index.php">Críticas</a></li>
-	<!--<li><a href="lancamentos_index.php?pg=" class="dd dd-02">Lançamentos</a>
-    	<ul class="dd-02-ul">
-    		<li><a href="#">Filmes em cartaz</a></li>
-    		<li><a href="#">Breve nos cinemas</a></li>
-    	</ul>-->
-    </li>
     <li><a href="lancamentos_index.php?pg=">Lançamentos</a></li>
-    <li><a href="noticias_index.php?pg=noticias">Artigos especiais</a></li>
 	<li><a href="contato.php?pg=contato">Contato</a></li>
 </ul>
 </nav>
+
+
+<div id="redessociais">
+	<p>Siga-nos nas redes</p>
+	<a href="#"><i class="fab fa-facebook"></i></a>
+	<a href="#"><i class="fab fa-instagram"></i></a>
+	<a href="#"><i class="fab fa-twitter-square"></i></i></a>
+</div>
+
+<!--BARRA DE BUSCA-->
+<div id="barrabusca">
+	 
+	<div id="wrap">
+	  <form action="" autocomplete="on">
+	  <input id="search" name="search" type="text" placeholder="Buscar..."><input id="search_submit" value="Rechercher" type="submit">
+	  </form>
+	</div>
+	
+	
+</div>
+
 
  <script>
 
