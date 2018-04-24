@@ -249,7 +249,7 @@ while ($linha2=mysqli_fetch_array($nomeautor)) {
 
 				//Agora é realizar a querie de busca no banco de dados
 
-				$sql = "SELECT * FROM filmes WHERE genero ='$genero' ORDER BY 
+				$sql = "SELECT * FROM filmes WHERE genero ='$genero' AND id !=$noticia ORDER BY 
 				id DESC LIMIT 8";
 
 				$resultado = mysqli_query($strcon, $sql)
