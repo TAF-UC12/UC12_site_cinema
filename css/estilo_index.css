@@ -164,11 +164,15 @@ estilização do slideshow*/
 	float: left;
 	display: block;
 	margin-right: 2.5%;
+	overflow: hidden;
+	transition: .3s all;
 }
 
-.artigo:hover {
-	/*background-color: #E0E8F0;*/
-	/*box-shadow: 2px 2px 4px #1E76B2;*/
+.artigo:hover img{
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
 .artigo_tag {
@@ -179,6 +183,7 @@ estilização do slideshow*/
 	font-weight: bold;
 	color: #ffffff;
 	padding: 0px 6px;
+	z-index: 1;
 }
 
 .artigo a{
@@ -400,7 +405,7 @@ figure img {
 }
 
 .poster:hover::after {
-  visibility: visible
+  visibility: visible; 
 }
 
 .poster img {

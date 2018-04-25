@@ -1,11 +1,5 @@
 
 
-<div id="logo">
-	
-	<img src="img/logosite.png" alt="">
-	
-</div>
-
 <nav>
 
 
@@ -21,6 +15,15 @@
 	<li><a href="contato.php?pg=contato">Contato</a></li>
 </ul>
 </nav>
+
+
+<div id="logo">
+	
+	<img src="img/logosite.png" alt="">
+	
+</div>
+
+
 
 
 <div id="redessociais">

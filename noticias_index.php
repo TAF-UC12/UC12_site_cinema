@@ -318,7 +318,8 @@ while ($linha2=mysqli_fetch_array($nomeautor)) {
 $noticia = $_GET['news'];		
 		
 		
-$sql = "SELECT * FROM noticias WHERE TIPO= 2 LIMIT 8";
+$sql = "SELECT * FROM noticias WHERE TIPO= 2 ORDER BY 
+id DESC LIMIT 8";
 
 
 $resultado = mysqli_query($strcon, $sql)

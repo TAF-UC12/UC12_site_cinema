@@ -130,7 +130,6 @@
 #ficha_tec_filme_container {
 	position: relative;
 	width: 33.33333333333333%; /*400px de 1200px*/
-	background-color: #C0C0C0;
 	float: left;
 	height: auto;
 	margin-top: 30px;
@@ -141,7 +140,7 @@
 	width: 97.5%; /*390px*/
 	height: auto;
 	margin: 1.25%;
-	/*background-color: lightblue;*/
+	background-color: #C0C0C0;
 	padding: 5px;
 	display: flex;
 	flex-direction: column;
@@ -165,6 +164,24 @@
 	font-size: 1.5em; /*24px*/
 	color: #FFFFFF;
 	text-shadow: 1px 1px 2px #000000;
+}
+
+#titulo_filme li{
+	list-style: none;
+	color: #E0E0E0;
+	font-weight: bold;
+	display: block;
+	margin: 5px;
+	width: auto;
+	background-color: #b2b127;
+	border-radius: 3px;
+	
+}
+
+#titulo_filme li:hover {
+	background-color: #CCCB22;
+	transition: .5s all ease;
+	
 }
 
 #titulo_filme a{

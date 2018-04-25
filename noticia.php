@@ -362,10 +362,11 @@ $poster = $linha2["poster"];
 		<div id='titulo_filme'>
 			<h2>$titulo</h2>
 			
-			<a href='filme.php?pgtitulo=$titulo&filme=$idfilme'><i class='fas fa-film'></i> Ficha técnica</a>
-			<br>
 			
-			<a href='#'><i class='far fa-star'></i> Crítica</a>
+			<li><a href='filme.php?pgtitulo=$titulo&filme=$idfilme'><i class='fas fa-film'></i> Ficha técnica</a></li>
+			
+			<li><a href='#'><i class='far fa-star'></i> Crítica</a></li>
+			
 			
 		</div>
 		

@@ -30,7 +30,6 @@
 	/*padding-left: 50px;*/
 	/*background-color: navajowhite;*/
 	margin: 0 auto;
-	float: left;
 }
 
 #poster_filme img{
@@ -46,8 +45,7 @@
 	padding: 0px 0px 0px 20px;
 	/*background-color: navajowhite;*/
 	margin: 0 auto;
-	float: left;
-	flex-grow: 1;
+	flex-grow: 2;
 }
 
 #info h1 {

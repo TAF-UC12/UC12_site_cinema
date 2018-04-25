@@ -217,20 +217,21 @@
 #artigos_aside_container {
 	position: relative;
 	width: 33.33333333333333%; /*400px de 1200px*/
-	background-color: lightcoral;
 	float: left;
 	height: auto;
 }
 
 #artigos_aside_container h2 {
 	font-size: 1.125em; /*18px*/
+	color: #5F5F5F;
+	background-color: #CCCB22;
+	padding: 10px 10px 0px 10px;
 }
 
 .artigos_aside {
 	position: relative;
 	width: 100%;
 	height: auto;
-	background-color: silver;
 }
 
 #lista_artigos {

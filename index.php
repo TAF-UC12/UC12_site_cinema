@@ -281,7 +281,8 @@ $pgtitulo = $_GET["pg"];
 $noticia = $_GET['news'];		
 		
 		
-$sql = "SELECT * FROM noticias WHERE TIPO= 2 LIMIT 4";
+$sql = "SELECT * FROM noticias WHERE TIPO= 2 ORDER BY 
+id DESC LIMIT 5";
 
 
 $resultado = mysqli_query($strcon, $sql)
@@ -484,7 +485,7 @@ while ($linha2=mysqli_fetch_array($nomeautor)) {
 
 				//Agora é realizar a querie de busca no banco de dados
 
-				$sql = "SELECT poster FROM filmes WHERE emCartaz='nao' ORDER BY 
+				$sql = "SELECT * FROM filmes WHERE emCartaz='nao' ORDER BY 
 				id DESC LIMIT 8";
 
 				$resultado = mysqli_query($strcon, $sql)
@@ -492,7 +493,9 @@ while ($linha2=mysqli_fetch_array($nomeautor)) {
 
 				while ($linha=mysqli_fetch_array($resultado)) {
 
+				$idfilme = $linha["id"];	
 				$poster = $linha["poster"];
+				$titulo = $linha["nome"];	
 			
 					
 				echo "<figure>

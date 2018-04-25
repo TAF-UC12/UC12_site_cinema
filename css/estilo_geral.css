@@ -24,12 +24,12 @@ header{
 	width: 100%; /*1366px*/
 	height: 60px;
 	background-color: #44B4FF;
-	justify-content:space-between
+	justify-content: space-around;
 }
 
 
 #logo {
-	margin-left: 5%;
+	margin-left: 30px;
 }
 
 main{
@@ -188,22 +188,6 @@ main{
 	font-weight: 500;
 	/*display: inline;*/
 }
-
-
-/*FAZ O HEADER FICAR NO TOPO DA PÁGINA*/
-
-/* The sticky class is added to the header with JS when it reaches its scroll position */
-.sticky {
-  position: absolute;
-  top: 0;
-  width: 100%
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 102px;
-}
-
 
 
 
