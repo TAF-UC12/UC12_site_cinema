@@ -90,7 +90,14 @@
 	
 <div id="lancamentos_topo">
 	
-	
+	<div class='pg_titulo_topo'>
+	<?php
+		
+		$pgtitulo = $_GET["pg"];
+		
+		if ($pgtitulo == '') { echo 'Lançamentos';}
+		?>
+	</div>
 	
 </div>	
 
@@ -106,11 +113,7 @@ $pgtitulo = $_GET["pg"];
 		?>	
 	</div>
 
-	<div class='pg_titulo'>
-	<?php
-		if ($pgtitulo == '') { echo 'Lançamentos';}
-		?>
-	</div>
+	
 
 
 <div id="corpo_lancamentos">

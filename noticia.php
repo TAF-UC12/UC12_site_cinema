@@ -6,11 +6,9 @@
 <title>
 	
 	<?php
-		$pgtitulo = $_GET["pg"];
 		$titulo_aba = $_GET["pgtitulo"];
 		
-		if ($titulo_aba == "$titulo_aba") { echo "$titulo_aba";}
-		if ($pgtitulo == "noticias") { echo "Últimas notícias";}
+		echo "$titulo_aba";
 	
 	?>	
 	

@@ -149,7 +149,15 @@
 
 <div id="formulario_topo">
 	
-	
+	<div class='pg_titulo_topo'>
+	<?php
+		
+		$pgtitulo = $_GET["pg"];
+		
+		if ($pgtitulo == 'contato') { echo 'Contato';}
+		
+		?>
+	</div>
 	
 </div>
 
@@ -165,12 +173,6 @@ $pgtitulo = $_GET["pg"];
 		echo "<a href='index.php'>Home </a>| ";
 		echo "<a href='#'>Contato</a>";
 		?>	
-	</div>
-
-	<div class='pg_titulo'>
-	<?php
-		if ($pgtitulo == 'contato') { echo 'Contato';}
-		?>
 	</div>
 
 <div id="corpo_home">

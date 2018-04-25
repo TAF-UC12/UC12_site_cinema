@@ -6,10 +6,10 @@
 <title>
 	
 <?php
-		$pgtitulo = $_GET["pg"];
+		
 		$titulo_aba = $_GET["pgtitulo"];
 		
-		if ($titulo_aba == "$titulo_aba") { echo "$titulo_aba";}
+		echo "$titulo_aba";
 	
 	?>	
 		
@@ -28,11 +28,13 @@
     <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
     <script src="js/jssor.slider-27.1.0.min.js" type="text/javascript"></script>
-    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="flipgallery/settings.js"></script>
+	<script type="text/javascript" src="flipgallery/flipgallery.min.js"></script>
 
 </head>
 
-<body>
+<body onLoad="flipGallery()">
 <main role="main">
 
 <header>
@@ -227,8 +229,7 @@ while ($linha2=mysqli_fetch_array($nomeautor)) {
 	<div class="cartaz_container">
 
 
-
-	</div> 
+	</div>
 	
 	
 	<p><a href="lancamentos_index.php"><i class="fas fa-list-alt"></i> TODOS</a></p>

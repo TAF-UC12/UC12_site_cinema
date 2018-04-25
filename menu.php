@@ -12,7 +12,7 @@
 <button class="btn-menu">
 
   <span class="bar"></span>
-  <span class="text">Menu</span>
+  <!--<span class="text">Menu</span>-->
 </button>
 <ul>
 	<li><a href="index.php?pg=">Home</a></li>

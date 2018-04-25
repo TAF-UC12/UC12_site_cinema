@@ -1,4 +1,12 @@
 <!doctype html>
+
+<?php
+
+error_reporting(0);
+ini_set(“display_errors”, 0 );
+
+?>
+
 <html>
 <head>
 <meta charset="utf-8">
@@ -6,9 +14,8 @@
 <title>
 	
 	<?php
-		$pgtitulo = $_GET["pg"];
 		
-		if ($pgtitulo == "noticias") { echo "Últimas notícias";}
+		echo "Últimas notícias";
 	
 	?>	
 
