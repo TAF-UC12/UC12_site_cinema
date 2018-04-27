@@ -222,7 +222,7 @@ $relacionado = $linha["relacionado"];
 	
 	<h2>Últimas notícias</h2>
 	
-	<div class="lista_noticias">
+	<article class="lista_noticias">
 	
 	
 	<?php          
@@ -292,7 +292,7 @@ while ($linha2=mysqli_fetch_array($nomeautor)) {
 }
   ?>
 		
-	</div>
+	</article>
 	
 	
 	

@@ -58,7 +58,7 @@
 
 #info h2 {
 	width: auto;
-	font-size: 1em;
+	font-size: 1.375em; /*22px*/
 	color: #C0C0C0;
 	text-shadow: 1px 1px 1px #000000;
 }
@@ -72,16 +72,17 @@
 #info h3 {
 	width: auto;
 	font-size: 1em;
+	font-weight: bold;
 	float: left;
 	padding-right: 10px;
-	font-weight: bold;
-	color: #1E77B2;
+	color: #FF5F5E;
 	text-shadow: 1px 1px 1px #000000;
 }
 
 #info p {
 	width: auto;
 	color: #ffffff;
+	text-shadow: 1px 1px 1px #000000;
 }
 
 #info ol {
@@ -105,10 +106,11 @@
 	color: #ffffff;
 	height: auto;
 	float: left;
+	text-shadow: 1px 1px 1px #000000;
 }
 
 #info ol li h4{
-	color: #1E77B2;
+	color: #FF5F5E;
 	font-weight: bold;
 	text-shadow: 1px 1px 2px #000000;
 }

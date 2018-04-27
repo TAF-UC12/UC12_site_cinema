@@ -190,7 +190,19 @@ main{
 	/*display: inline;*/
 }
 
+.ad_aside {
+	position: relative;
+	width: 33.33333333333333%; /*400px de 1200px*/
+	/*background-color: lightcoral;*/
+	height: auto;
+	margin: 50px 0px 50px 40px;
+}
 
+.ad_aside img{
+	width: auto;
+	height: auto
+	
+}
 
 footer {
 	position: relative;

@@ -11,6 +11,7 @@ ini_set(“display_errors”, 0 );
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1">
+
 <title>
 
 	<?php
@@ -23,31 +24,31 @@ ini_set(“display_errors”, 0 );
 </title>
 
 <script defer src="js/fontawesome/fontawesome-all.js"></script>
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!--LINKS DA BARRA DE BUSCA-->
-		<link rel="shortcut icon" href="http://icanbecreative.com/resources/images/favico.ico" />
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="http://icanbecreative.com/resources/images/favico.ico" />
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
-        <meta property="og:url"           content="http://demo.icanbecreative.com/css3-animated-search-box/" />
-        <meta property="og:type"          content="website" />
-        <meta property="og:title"         content="CSS3 Animated Search Box" />
-        <meta property="og:description"   content="Your description" />
-        <meta property="og:image"         content="http://demo.icanbecreative.com/css3-animated-search-box/featured.jpg" />
-
-
+<meta property="og:url"           content="http://demo.icanbecreative.com/css3-animated-search-box/" />
+<meta property="og:type"          content="website" />
+<meta property="og:title"         content="CSS3 Animated Search Box" />
+<meta property="og:description"   content="Your description" />
+<meta property="og:image"         content="http://demo.icanbecreative.com/css3-animated-search-box/featured.jpg" />
 
 <link href="css/estilo_geral.css" rel="stylesheet" type="text/css">
 <link href="css/estilo_index.css" rel="stylesheet" type="text/css">
 <link href="css/estilo_menu.css" rel="stylesheet" type="text/css">
+
  <!-- #region Jssor Slider Begin -->
     <!-- Generator: Jssor Slider Maker -->
     <!-- Source: https://www.jssor.com -->
-    <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
-    <script src="js/jssor.slider-27.1.0.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
+<script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+<script src="js/jssor.slider-27.1.0.min.js" type="text/javascript"></script>
+<script type="text/javascript">
         jssor_1_slider_init = function() {
 
             var jssor_1_SlideoTransitions = [
@@ -101,9 +102,9 @@ ini_set(“display_errors”, 0 );
             $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
             /*#endregion responsive code end*/
         };
-    </script>
+</script>
 
-	<script type="text/javascript">
+<script type="text/javascript">
         function searchToggle(obj, evt){
             var container = $(obj).closest('.search-wrapper');
 
@@ -136,7 +137,7 @@ ini_set(“display_errors”, 0 );
 
             evt.preventDefault();
         }
-        </script>
+</script>
 
 </head>
 
@@ -336,7 +337,7 @@ $relacionado = $linha["relacionado"];
 
 	<h2>Últimas notícias</h2>
 
-	<div class="lista_noticias">
+	<article class="lista_noticias">
 		
 		
 <?php          
@@ -406,7 +407,7 @@ while ($linha2=mysqli_fetch_array($nomeautor)) {
 }
   ?>				
 
-	</div>
+	</article>
 
 
 
