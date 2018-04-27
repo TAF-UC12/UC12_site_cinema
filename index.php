@@ -143,6 +143,7 @@ ini_set(“display_errors”, 0 );
 
 
 <body>
+
 <main role="main">
 
 <header>
@@ -154,8 +155,6 @@ ini_set(“display_errors”, 0 );
 	?>
 
 </header>
-
-
 
 <div id="topo_slides_container">
 
