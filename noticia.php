@@ -18,7 +18,6 @@
 
 <link href="css/estilo_geral.css" rel="stylesheet" type="text/css">
 <link href="css/estilo_noticia_individual.css" rel="stylesheet" type="text/css">
-<link href="css/estilo_menu.css" rel="stylesheet" type="text/css">
 
  <!-- #region Jssor Slider Begin -->
     <!-- Generator: Jssor Slider Maker -->

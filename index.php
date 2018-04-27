@@ -41,7 +41,6 @@ ini_set(“display_errors”, 0 );
 
 <link href="css/estilo_geral.css" rel="stylesheet" type="text/css">
 <link href="css/estilo_index.css" rel="stylesheet" type="text/css">
-<link href="css/estilo_menu.css" rel="stylesheet" type="text/css">
 
  <!-- #region Jssor Slider Begin -->
     <!-- Generator: Jssor Slider Maker -->
