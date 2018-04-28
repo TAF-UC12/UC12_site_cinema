@@ -23,3 +23,9 @@
 	
 	
 </div>
+
+<div id="btn_topo">
+	
+	<a href="#topo"><i class="fas fa-arrow-alt-circle-up"></i></a>
+	
+</div>

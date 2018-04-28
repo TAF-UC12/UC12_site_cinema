@@ -85,7 +85,7 @@ header nav ul {
 
 .btn-menu .text {
 	position: absolute;
-	left: 8.333333333333333%;
+	left: 0%;
 	top: -20px;
 	display: block;
 	white-space: nowrap;
@@ -111,7 +111,7 @@ header nav ul {
 
 .btn-menu .bar {
 	top: 10px;
-	left: 8.333333333333333%;	
+	left: 0;	
 }
 	
 .btn-menu .bar:before {
@@ -198,7 +198,7 @@ header nav ul {
 }
 
 .mobile-nav .dd + ul a {
-	text-indent: 30px;	
+	text-indent: 0px;	
 }
 
 .mobile-nav .dd + ul a:focus,
@@ -404,7 +404,24 @@ footer {
 	justify-content: space-around;
 }
 
+#btn_topo {
+	position: fixed;
+	font-size: 2em;
+	bottom: 5px;
+	right: 40px;
+	text-decoration: none;
+}
 
+#btn_topo a{
+	color: #FF5F5E;	
+	text-decoration: none;
+}
+
+#btn_topo a:hover {
+	color: #1E76B2;	
+	text-decoration: none;
+	transition: .6s all ease;
+}
 
 
 /*-------------------------------------------------*/
@@ -502,3 +519,5 @@ header {
 	
 	
 }
+
+

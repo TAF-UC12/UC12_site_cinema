@@ -146,7 +146,7 @@ ini_set(“display_errors”, 0 );
 
 <main role="main">
 
-<header>
+<header id="topo">
 
   <?php
 
@@ -176,7 +176,7 @@ ini_set(“display_errors”, 0 );
 
 //Agora é realizar a querie de busca no banco de dados
 
-$sql = "SELECT * FROM noticias WHERE destaque = 'on' ORDER BY 
+$sql = "SELECT * FROM noticias WHERE destaque = 'on' AND validar = 'on' ORDER BY 
 id DESC LIMIT 3";
 
 

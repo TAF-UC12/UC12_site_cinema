@@ -37,7 +37,7 @@
 <body onLoad="flipGallery()">
 <main role="main">
 
-<header>
+<header id="topo">
     
   <?php
 	
