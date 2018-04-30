@@ -7,13 +7,7 @@
 	
 </div>
 
-
-<div id="mapa_site_rodape">
-	
-	
-	
-</div>
-
+<p>2018 Todos os diretos reservados</p>
 
 <div id="redessociais">
 	<p>Siga-nos nas redes</p>

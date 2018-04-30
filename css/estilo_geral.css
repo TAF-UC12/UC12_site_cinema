@@ -404,6 +404,12 @@ footer {
 	justify-content: space-around;
 }
 
+footer > p{
+	font-weight: bold;
+	color: #ffffff;
+	padding-top: 20px;
+}
+
 #btn_topo {
 	position: fixed;
 	font-size: 2em;
