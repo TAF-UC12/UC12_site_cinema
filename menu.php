@@ -1,20 +1,25 @@
 
+<div>
 
-<nav>
+	<nav>
 
+	<button class="btn-menu">
 
-<button class="btn-menu">
+	  <span class="bar"></span>
+	  <!--<span class="text">Menu</span>-->
 
-  <span class="bar"></span>
-  <!--<span class="text">Menu</span>-->
-</button>
-<ul>
-	<li><a href="index.php?pg=">Home</a></li>
-	<li><a href="noticias_index.php?pg=noticias">Notícias</a></li>
-    <li><a href="lancamentos_index.php?pg=">Lançamentos</a></li>
-	<li><a href="contato.php?pg=contato">Contato</a></li>
-</ul>
-</nav>
+	</button>
+
+		<ul>
+			<li><a href="index.php?pg=">Home</a></li>
+			<li><a href="noticias_index.php?pg=noticias">Notícias</a></li>
+			<li><a href="lancamentos_index.php?pg=">Lançamentos</a></li>
+			<li><a href="contato.php?pg=contato">Contato</a></li>
+		</ul>
+
+	</nav>	
+	
+</div>
 
 
 <div id="logo">
@@ -23,7 +28,14 @@
 	
 </div>
 
+<div id="redessociais">
 
+	<p>Siga-nos nas redes</p>
+	<a href="#"><i class="fab fa-facebook"></i></a>
+	<a href="#"><i class="fab fa-instagram"></i></a>
+	<a href="#"><i class="fab fa-twitter-square"></i></i></a>
+	
+</div>
 
 <!--BARRA DE BUSCA-->
 <div id="barrabusca">
@@ -36,12 +48,7 @@
 		
 </div>
 
-<div id="redessociais">
-	<p>Siga-nos nas redes</p>
-	<a href="#"><i class="fab fa-facebook"></i></a>
-	<a href="#"><i class="fab fa-instagram"></i></a>
-	<a href="#"><i class="fab fa-twitter-square"></i></i></a>
-</div>
+
 
 
  <script>

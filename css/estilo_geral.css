@@ -19,13 +19,14 @@ body{
 
 header{
 	position: relative;
-	display: flex;
-	flex-direction: row;
 	width: 100%; /*1366px*/
 	height: 60px;
 	background-color: #44B4FF;
-	justify-content: space-around;
 	overflow: hidden;
+}
+
+header div {
+	float: left;
 }
 
 ol, ul {
@@ -86,7 +87,7 @@ header nav ul {
 .btn-menu .text {
 	position: absolute;
 	left: 0%;
-	top: -20px;
+	top: 20px;
 	display: block;
 	white-space: nowrap;
 	text-transform: uppercase;
@@ -219,7 +220,7 @@ header nav ul {
 
 
 #logo {
-	margin-left: -150px;
+	margin-left: 2%;
 }
 
 main{
@@ -284,7 +285,6 @@ main{
 	position: relative;
 	width: 300px;
 	float: right;
-	margin-right: 5%;
 }
 
 #barrabusca #wrap {
