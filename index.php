@@ -24,7 +24,8 @@ ini_set(“display_errors”, 0 );
 </title>
 
 <script defer src="js/fontawesome/fontawesome-all.js"></script>
-
+	
+	
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!--LINKS DA BARRA DE BUSCA-->
@@ -319,9 +320,10 @@ $relacionado = $linha["relacionado"];
 	</div>";
 
 }
-  ?>
+  ?>	
 
-	
+		
+		
 	</div> <!--FINAL DO CONTAINER DOS ARTIGOS-->
 	
 <?php 
