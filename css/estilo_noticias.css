@@ -223,8 +223,8 @@
 
 #artigos_aside_container h2 {
 	font-size: 1.125em; /*18px*/
-	color: #5F5F5F;
-	background-color: #CCCB22;
+	color: #ff5f5e;
+/*	background-color: #CCCB22;*/
 	padding: 10px 10px 0px 10px;
 }
 
@@ -237,7 +237,7 @@
 #lista_artigos {
 	position: relative;
 	width: 100%;
-	background-color: #CCCB22;
+	/*background-color: #CCCB22;*/
 	height: auto;
 	display: flex;
 	flex-direction: column;

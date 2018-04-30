@@ -281,7 +281,7 @@ $noticia = $_GET['news'];
 		
 		
 $sql = "SELECT * FROM noticias WHERE TIPO= 2 ORDER BY 
-id DESC LIMIT 5";
+id DESC LIMIT 4";
 
 
 $resultado = mysqli_query($strcon, $sql)

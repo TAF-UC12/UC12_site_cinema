@@ -254,13 +254,14 @@ $data = $linha["data"];
 $hora = $linha["hora"];
 $img = $linha["img"];
 $idautor = $linha["autor"];
-          
+$relacionado = $linha["relacionado"];
+
 
 		echo "<div class='noticia_relacionada'>
 		
 				<img src='img/noticias/$img' alt=''>
 			
-				<a href='#'>$titulo</a>
+				<a href='noticia.php?news=$id&pgtitulo=$titulo&rel=$relacionado'>$titulo</a>
 
 			</div>";
 

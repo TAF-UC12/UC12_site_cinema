@@ -149,7 +149,7 @@ estilização do slideshow*/
 #lista_artigos {
 	position: relative;
 	width: 100%;
-	background-color: #CCCB22;
+	/*background-color: #CCCB22;*/
 	height: auto;
 	display: flex;
 	flex-direction: row;
