@@ -354,6 +354,9 @@ $relacionado = $linha["relacionado"];
 }
   ?>
 
+<?php 
+	echo "<p><a href='artigos_index.php?pg='><i class='fas fa-plus-square'></i> TODOS OS ARTIGOS</a></p>";
+?>
 	
 	</div>
 		

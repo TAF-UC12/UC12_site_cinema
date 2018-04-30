@@ -122,24 +122,35 @@ $data = $linha["data"];
 $hora = $linha["hora"];
 $img = $linha["img"];
 $idautor = $linha["autor"];
+$relacionado = $linha["relacionado"];
 
+
+//AQUI É CAPTURADO O NOME DO FILME ATRAVES DO RELACIONADO:	
+$sql2 = "SELECT * FROM filmes WHERE id='$relacionado'";
+	
+$nomefilme = mysqli_query($strcon, $sql2)
+or die ("Não foi possível realizar a consulta nome do autor!");
+	
+while ($linha2=mysqli_fetch_array($nomefilme)) {	
+	$filme = $linha2["nome"];
+}	
 	
 	
 //AQUI É CAPTURADO O NOME DO AUTOR ATRAVÉS DO IDAUTOR:	
-$sql2 = "SELECT * FROM login WHERE id='$idautor'";
+$sql3 = "SELECT * FROM login WHERE id='$idautor'";
 	
-$nomeautor = mysqli_query($strcon, $sql2)
+$nomeautor = mysqli_query($strcon, $sql3)
 or die ("Não foi possível realizar a consulta nome do autor!");
 	
-while ($linha2=mysqli_fetch_array($nomeautor)) {	
-	$autor = $linha2["nome"];
+while ($linha3=mysqli_fetch_array($nomeautor)) {	
+	$autor = $linha3["nome"];
 }
 	
 	
 	echo "<img src='img/noticias/$img' alt=''>
 	
 		<div class='noticia_titulo'>
-  	
+	
              <h1>$titulo</h1>
 
                  <div class='info_noticia'>

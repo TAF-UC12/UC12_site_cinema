@@ -327,7 +327,7 @@ $relacionado = $linha["relacionado"];
 	</div> <!--FINAL DO CONTAINER DOS ARTIGOS-->
 	
 <?php 
-	echo "<p><a href='noticia.php?news=$id&pgtitulo=$titulo'><i class='fas fa-plus-square'></i> TODOS OS ARTIGOS</a></p>";
+	echo "<p><a href='artigos_index.php?pg='><i class='fas fa-plus-square'></i> TODOS OS ARTIGOS</a></p>";
 ?>
 
 </section>

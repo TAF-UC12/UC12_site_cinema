@@ -13,6 +13,7 @@
 		<ul>
 			<li><a href="index.php?pg=">Home</a></li>
 			<li><a href="noticias_index.php?pg=noticias">Notícias</a></li>
+			<li><a href="artigos_index.php?pg=artigos">Artigos especiais</a></li>
 			<li><a href="lancamentos_index.php?pg=">Lançamentos</a></li>
 			<li><a href="contato.php?pg=contato">Contato</a></li>
 		</ul>
