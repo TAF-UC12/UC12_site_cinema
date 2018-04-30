@@ -74,7 +74,7 @@ $duracao = $linha["duracao"];
 $genero = $linha["genero"];
 $pais = $linha["paisOrigem"];
 $imgFundo = $linha["imgFundo"];
-
+$trailer = $linha["trailer"];
 	
 echo "<section id='filme_topo_container' style='background-image: url(img/posters/backgrounds/$imgFundo); background-repeat: no-repeat; background-size: 100%;'>
 	
@@ -100,7 +100,7 @@ echo "<section id='filme_topo_container' style='background-image: url(img/poster
 			<h3>Elenco </h3>
 			<p>$elenco</p>
 			
-			<h3>Sinopse</h3><br>
+			<h3>Sinopse </h3>
 			<p class='sinopse'>$sinopse</p>
 			
 			<ol>
@@ -224,17 +224,14 @@ while ($linha2=mysqli_fetch_array($nomeautor)) {
 <!--INICIO SECTION COM AS DIVS DE FILMES-->
 <section id="filmes_relacionados_container">
 
-	<h2>Galeria de imagens</h2>
+	<h2>Trailer</h2>
 
-	<div class="cartaz_container">
-
+	<div class="trailer_container">
+	
+	<iframe width="100%" height="auto" src="<?php echo 'https://www.youtube.com/embed/'.$trailer?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 	</div>
 	
-	
-	<p><a href="lancamentos_index.php"><i class="fas fa-list-alt"></i> TODOS</a></p>
-
-
 
 	<h2>Você pode gostar</h2>
 
