@@ -199,6 +199,11 @@ estilização do slideshow*/
 	text-align: left;
 }
 
+.artigo:hover h4 {	
+	transition: .3s ease-in-out all;
+	text-shadow: 1px 1px 2px #000000;
+	font-weight: bold;
+}
 
 .artigo:last-child {
 	margin-right: 0px;
