@@ -428,7 +428,7 @@ ini_set(“display_errors”, 0 );
 			
 				//Agora é realizar a querie de busca no banco de dados
 				$sql = "SELECT * FROM filmes WHERE emCartaz='sim' ORDER BY 
-				id DESC LIMIT 8";
+				estreia DESC LIMIT 8";
 			
 				$resultado = mysqli_query($strcon, $sql)
 				or die ("Não foi possível realizar a consulta ao banco de dados");
@@ -472,7 +472,7 @@ ini_set(“display_errors”, 0 );
 
 
 					$sql = "SELECT * FROM filmes WHERE emCartaz='nao' ORDER BY 
-					id DESC LIMIT 8";
+					estreia DESC LIMIT 8";
 
 					$resultado = mysqli_query($strcon, $sql)
 					or die ("Não foi possível realizar a consulta ao banco de dados");

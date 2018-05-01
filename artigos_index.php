@@ -244,10 +244,7 @@ $relacionado = $linha["relacionado"];
           		
 
 		echo "
-		<div class='artigo'>
-		
-		<div class='artigo_tag'>Artigo</div>
-		
+		<div class='artigo'>		
 		
 			<a href='noticia.php?news=$id&pgtitulo=$titulo&rel=$relacionado'>
 			
