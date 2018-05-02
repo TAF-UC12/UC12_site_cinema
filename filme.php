@@ -232,6 +232,48 @@ while ($linha2=mysqli_fetch_array($nomeautor)) {
 
 	</div>
 	
+	
+	
+	<h2>Galeria de imagens</h2>
+
+	<div class="galeria_container">
+			
+	<?php
+	
+	$idFilmeGaleria = $_GET['filme'];	
+	
+	$sql6 = "SELECT * FROM galeriaImg WHERE idImg = $idFilmeGaleria LIMIT 6";
+
+
+$resultado = mysqli_query($strcon, $sql6)
+or die ("Não foi possível realizar a consulta ao banco de dados");
+
+// Agora iremos "pegar" cada campo da notícia
+// e organizar no HTML
+
+while ($linha=mysqli_fetch_array($resultado)) {
+
+$idGaleria = $linha["idImg"];
+$nomeGaleria = $linha["nomeImg"];
+$diretorio = $linha["diretorio"];	
+
+			echo "<figure class='fotogaleria'>
+				
+					<img src='img/galerias/Vingadores Guerra Infinita/$nomeGaleria' alt='#'>
+				
+
+			</figure>";
+				
+}
+?>																								
+							
+					
+		</div>
+
+	<p><a href="lancamentos_index.php"><i class="fas fa-list-alt"></i> TODOS</a></p>
+	
+
+
 
 	<h2>Você pode gostar</h2>
 

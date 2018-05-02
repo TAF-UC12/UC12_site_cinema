@@ -311,6 +311,31 @@
 	margin-bottom: 50px;
 }
 
+.galeria_container {
+	position: relative;
+	width: 100%;
+	height: 300px;
+	background-color: #C0C0C0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	overflow: hidden;
+}
+
+.fotogaleria {
+	width: 120px;
+	height: 120px;
+	background-color: brown;
+	overflow: hidden;
+}
+
+.fotogaleria img{
+	width: auto;
+	height: 100%;
+	margin-left: -16%;
+}
+
+
 .relacionados_container {
 	position: relative;
 	width: 100%;
