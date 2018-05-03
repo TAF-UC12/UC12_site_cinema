@@ -105,7 +105,7 @@ echo "<section id='filme_topo_container' style='background-image: url(img/poster
 			
 			<ol>
 				<li><h4>Gênero</h4>$genero</li>
-				<li><h4>Duração</h4>$duracao</li>
+				<li><h4>Duração</h4>$duracao min</li>
 				<li><h4>País</h4>$pais</li>
 			</ol>
 			
@@ -242,7 +242,7 @@ while ($linha2=mysqli_fetch_array($nomeautor)) {
 	
 	$idFilmeGaleria = $_GET['filme'];	
 	
-	$sql6 = "SELECT * FROM galeriaImg WHERE idImg = $idFilmeGaleria LIMIT 6";
+	$sql6 = "SELECT * FROM galeriaImg WHERE idImg = $idFilmeGaleria ORDER BY nomeImg ASC LIMIT 6";
 
 
 $resultado = mysqli_query($strcon, $sql6)
