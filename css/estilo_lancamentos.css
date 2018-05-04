@@ -186,3 +186,32 @@ figcaption {
   width: 100%;
 }
 
+
+#form_filtro {
+	position: relative;
+	width: 100%; /*1200px*/
+	height: 60px;
+	background-color: beige;
+}
+
+#form_filtro label {
+	color: #ff5f5e;
+	font-weight: bold;
+}
+
+#form_filtro select {
+	color: #000000;
+	font-weight: bold;
+	border: none;
+	background-color: transparent;
+	text-decoration: none;
+	 -webkit-appearance: none;
+    -moz-appearance: none;
+	
+}
+
+#form_filtro select option {
+	color: #000000;
+	font-weight: bold;
+	
+}

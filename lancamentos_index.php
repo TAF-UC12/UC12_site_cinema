@@ -140,6 +140,11 @@ $pgtitulo = $_GET["pg"];
 					<span>Mostrar todos</span>
 				</div>
 			</li>
+			<li>
+				<div class="aba">
+					<span>Busca avançada</span>
+				</div>
+			</li>
 		</ul>
 	</div>
 	<div id="content">
@@ -156,8 +161,7 @@ $pgtitulo = $_GET["pg"];
 
 				//Agora é realizar a querie de busca no banco de dados
 
-				$sql = "SELECT * FROM filmes WHERE emCartaz='sim' ORDER BY 
-				id DESC";
+				$sql = "SELECT * FROM filmes WHERE emCartaz='sim' ORDER BY estreia DESC";
 
 				$resultado = mysqli_query($strcon, $sql)
 				or die ("Não foi possível realizar a consulta ao banco de dados");
@@ -199,8 +203,7 @@ $pgtitulo = $_GET["pg"];
 
 				//Agora é realizar a querie de busca no banco de dados
 
-				$sql = "SELECT * FROM filmes WHERE emCartaz='nao' ORDER BY 
-				id DESC";
+				$sql = "SELECT * FROM filmes WHERE emCartaz='nao' ORDER BY estreia DESC";
 
 				$resultado = mysqli_query($strcon, $sql)
 				or die ("Não foi possível realizar a consulta ao banco de dados");
@@ -243,8 +246,7 @@ $pgtitulo = $_GET["pg"];
 
 				//Agora é realizar a querie de busca no banco de dados
 
-				$sql = "SELECT * FROM filmes ORDER BY 
-				id DESC";
+				$sql = "SELECT * FROM filmes ORDER BY estreia DESC";
 
 				$resultado = mysqli_query($strcon, $sql)
 				or die ("Não foi possível realizar a consulta ao banco de dados");
@@ -274,6 +276,86 @@ $pgtitulo = $_GET["pg"];
 							
 		</div> 	
 		
+		
+		 <div class="conteudo">
+			<section>
+
+				<form action="lancamentos_filtro.php" accept-charset="UTF-8" method="post" id="form_filtro">
+					
+					<label for="selGenero">Filtrar por gênero </label>
+					<select name="selGenero" id="">
+						
+						
+						<?php
+				
+					include_once('config/conectar.php');
+
+
+					if (!$strcon) {
+ 					die('Não foi possível conectar ao MySQL');
+					}
+ 					$sql = "SELECT * FROM generos ORDER BY idGenero";
+					$resultado = mysqli_query($strcon,$sql) or die(mysql_error()."<br>Erro ao executar a inserção dos dados");
+
+					if (mysqli_num_rows($resultado)!=0){
+
+ 						while($elemento = mysqli_fetch_array($resultado))
+ 						{
+   						$idgenero = $elemento['idGenero'];
+						$genero = $elemento['nomeGenero'];
+   						echo '<option value='.$idgenero.'>'.$genero.'</option>';
+						}
+          
+			}
+		?>
+						
+						
+					</select>
+					
+					<input type="submit" value="Filtrar" name='submit'>
+					
+				</form>
+				
+				<?php
+
+				
+
+				//conectar ao banco de dados
+				include 'config/conectar.php';
+
+
+				//Agora é realizar a querie de busca no banco de dados
+
+				$sql = "SELECT * FROM filmes ORDER BY 
+				id DESC";
+
+				$resultado = mysqli_query($strcon, $sql)
+				or die ("Não foi possível realizar a consulta ao banco de dados");
+
+				while ($linha=mysqli_fetch_array($resultado)) {
+				
+				$idfilme = $linha["id"];
+				$titulo = $linha["nome"];
+				$lancamento = $linha["estreia"];
+				$poster = $linha["poster"];
+
+					
+				echo "<figure>
+  				
+					<a class='poster' href='filme.php?pgtitulo=$titulo&filme=$idfilme'>
+						<img src='img/posters/$poster' alt='$titulo'>
+					</a>
+
+					<figcaption><b>$titulo</b><br>$lancamento</figcaption>
+
+				</figure>"; 			
+
+				}
+		?>
+				
+			</section>	
+							
+		</div>
 			
 	</div>
 		
