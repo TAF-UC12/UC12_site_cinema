@@ -4,4 +4,8 @@
 <file name="001.jpg" server="192.168.1.10//var/www/html/" local="131687257667491489" remote="131687367000000000" Dst="1" />
 <file name="004.jpg" server="192.168.1.10//var/www/html/" local="131687257667536818" remote="131687367000000000" Dst="1" />
 <file name="003.jpg" server="192.168.1.10//var/www/html/" local="131687257667521574" remote="131687367000000000" Dst="1" />
+<file name="001.jpg" server="192.168.1.4//var/www/html/" local="131687257667491489" remote="131799834900000000" Dst="1" />
+<file name="002.jpg" server="192.168.1.4//var/www/html/" local="131687257667506528" remote="131799834900000000" Dst="1" />
+<file name="003.jpg" server="192.168.1.4//var/www/html/" local="131687257667521574" remote="131799834900000000" Dst="1" />
+<file name="004.jpg" server="192.168.1.4//var/www/html/" local="131687257667536818" remote="131799834900000000" Dst="1" />
 </dwsync>

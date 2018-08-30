@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="portal_cinema_19042018.sql" server="192.168.1.10//var/www/html/" local="131687257667391227" remote="131687367000000000" Dst="1" />
-<file name="portal_cinema_23042018.sql" server="192.168.1.10//var/www/html/" local="131689353814256689" remote="131694492000000000" Dst="1" />
 <file name="portal_cinema_27042018.sql" server="192.168.1.10//var/www/html/" local="131693235617829171" remote="131694492000000000" Dst="1" />
+<file name="portal_cinema_01052018.sql" server="192.168.1.4//var/www/html/" local="131696848562283755" remote="131799834890000000" Dst="1" />
+<file name="portal_cinema_02052018.sql" server="192.168.1.4//var/www/html/" local="131697797356092443" remote="131799834900000000" Dst="1" />
+<file name="portal_cinema_27042018.sql" server="192.168.1.4//var/www/html/" local="131695321939762148" remote="131799834900000000" Dst="1" />
+<file name="portal_cinema_30042018.sql" server="192.168.1.4//var/www/html/" local="131696836234441719" remote="131799834900000000" Dst="1" />
 </dwsync>
